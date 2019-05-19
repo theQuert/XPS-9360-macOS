@@ -182,6 +182,7 @@
       - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
       - Finding the `QuietTimeAfterTyping`
       - Changing the value you like
+   ##### I have preset the value to `0`
     
    ## HIDPI on Hackintosh
    Using `one-key-HIDPI`, Link is on below
