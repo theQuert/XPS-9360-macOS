@@ -113,8 +113,7 @@
  
  #### 2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
  
- #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path:
- - /EFI/EFI/CLOVER/CLOVERX64.efi
+ #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
  
  #### 4. Activate the Wifi and Bluetooth functions
  The kexts for `BCM94352z` has already put in 
