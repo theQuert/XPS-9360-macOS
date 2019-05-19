@@ -32,7 +32,7 @@
 ```
 #### SSD to 4k sector
   You need any Linux version to create bootable USB
-  - using nvme-cli formatting into 4k sector to work better with APFS, see the giude 
+  - using nvme-cli formatting into 4k sector to work better with `APFS`, see the giude 
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
 #### BIOS settings
@@ -109,7 +109,7 @@
     - /CLOVER/kexts/Other/BrcmFirmwareData.kext
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
- 5. You have to copy the three kext above to `/Library/Extensions`, and then running /tools/Kext Utility to fix the permission 
+ 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission 
     #### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts already
  
  6. Change your SMBIOS serial number for your Hackintosh
@@ -146,7 +146,7 @@
    ```
       
   # HIDPI on Hackintosh
-   Using one-key-HIDPI, Link is on below
+   Using `one-key-HIDPI`, Link is on below
       https://github.com/xzhih/one-key-hidpi
   
       
@@ -168,4 +168,11 @@
         setup_var 0x85C 0x01     (Negative voltage for 0x85A)
     ```
     ## Warning!!! This may cause crash on your device, please be aware.
+    
+    
+   # Credits
+   ## [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
+   ## [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
+   ## [HIDPI](https://github.com/xzhih/one-key-hidpi)
+   
 
