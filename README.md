@@ -120,7 +120,8 @@ Upate_Date: 20190519
   7. Running XPS9360.sh
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
     ##Find the disk name of you EFI partition with the command
-      sudo diskutil list
+      ˋˋˋsudo diskutil list
+      ˋˋˋ
     ## Mount the disk name of your EFI partition with the command
       sudo diskutil mount /dev/disk?s?   <--The position of your EFI partition
    -  Running XPS9360.sh to Ccompile DSDT
