@@ -181,9 +181,9 @@
    
    ## For disable the delay between trackpad and keyboard 
    To do that you need to edit Info.plist in VoodooI2CHID.kext:
-      - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
-      - Finding the `QuietTimeAfterTyping`
-      - Changing the value you like
+   - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
+   - Finding the `QuietTimeAfterTyping`
+   - Changing the value you like
    #### I have preset the value to `0`
     
    ## HiDPI on Hackintosh
