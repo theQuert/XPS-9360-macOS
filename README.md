@@ -120,21 +120,27 @@ Upate_Date: 20190519
   7. Running XPS9360.sh
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
     ##Find the disk name of you EFI partition with the command
-      ˋˋˋBASH
+      ```BASH
       sudo diskutil list
-      ˋˋˋ
+      ```
     ## Mount the disk name of your EFI partition with the command
-      sudo diskutil mount /dev/disk?s?   <--The position of your EFI partition
+    ``` BASH
+      sudo diskutil mount /dev/disk?s?   ///The position of your EFI partition ```
    -  Running XPS9360.sh to Ccompile DSDT
-      bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt
+   ```BASH
+      bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt 
    -  Running XPS9360.sh to Enable Third Party Application
-      bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
+   ```BASH
+      bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty ```
    -  Running XPS9360.sh to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
+   ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
-   
+   ```
    # Fixing the Headset Jack 
    1. Running the below commands to fix Headset Jack
+      ```BASH
       bash /Volumes/EFI/EFI/ComboJack/install.sh
+      ```
       
   # For best resolution when you change the scale in the settings... enable HIDPI on Hackintosh
    Using one-key-HIDPI, Link is on below
@@ -146,13 +152,17 @@ Upate_Date: 20190519
    ## Warning!!! This may cause crash on your device, please be aware.
     1. Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
     (1) Overclock, CFG, WDT & XTU enable
+    ```
         setup_var 0x4DE 0x00
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
+        ```
     (2) Undervolt values:
+    ```
         setup_var 0x653 0x64     (CPU: -100 mV)
         setup_var 0x655 0x01     (Negative voltage for 0x653)
         setup_var 0x85A 0x1E     (GPU: -30 mV)
         setup_var 0x85C 0x01     (Negative voltage for 0x85A)
+        ```
     ## Warning!!! This may cause crash on your device, please be aware.
 
