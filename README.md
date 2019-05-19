@@ -7,7 +7,7 @@
 - CPU:        i7-8550U
 - Graphics:   Intel UHD 620
 - Sound:      ALC256 (ALC3246)
-- SSD:        Sk-hynix PC401
+- SSD:        SK-hynix PC401
 - Screen:     1080P FHD
 - Wifi-Card:  Swap the Original Killer 1535 with BCM94352z(DW1560)
 - Thunderbolt 3 Dongle: Dell DA300
