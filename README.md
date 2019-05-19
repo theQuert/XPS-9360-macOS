@@ -118,16 +118,16 @@
  
  #### 4. Activate the Wifi and Bluetooth functions
  The kexts for `BCM94352z` has already put in 
-    - /CLOVER/kexts/Other/BrcmFirmwareData.kext
-    - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
-    - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
+- /CLOVER/kexts/Other/BrcmFirmwareData.kext
+- /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
+- /CLOVER/kexts/Other/AirportBrcmFixup.kext  
  
  #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth 
  ##### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to `/OC/Kexts` already.
  
  #### 6. Change your `SMBIOS` Serial number for your Hackintosh
-    - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
-    - Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
+- Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
+- Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
  ##### If you boot with `OpenCore Configurator` rather than `Clover`, just Install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), and enter `SMBIOS` then do the same things above.
   
  #### 7. Running `XPS9360.sh`
