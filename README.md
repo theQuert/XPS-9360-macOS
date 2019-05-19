@@ -23,19 +23,19 @@
 - Thunderbolt Version: NVM 26
 
 # Before Installation
-1. DVMT
+#### DVMT
   - Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
 ```
   setup_var 0x4de 0x00 (Disable CFG Lock)
   setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M)
   setup_var 0x786 0x03 (Increase CFG Memory to maximum)
 ```
-2. SSD to 4k sector
+#### SSD to 4k sector
   You need any Linux version to create bootable USB
   - using nvme-cli formatting into 4k sector to work better with APFS, see the giude 
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
-3. BIOS settings
+#### BIOS settings
   - Sata: AHCI
 
   - Enable SMART Reporting
