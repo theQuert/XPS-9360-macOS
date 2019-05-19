@@ -145,12 +145,12 @@ Upate_Date: 20190519
       bash /Volumes/EFI/EFI/ComboJack/install.sh
    ```
       
-  # For best resolution when you change the scale in the settings... enable HIDPI on Hackintosh
+  # HIDPI on Hackintosh
    Using one-key-HIDPI, Link is on below
       https://github.com/xzhih/one-key-hidpi
   
       
-   # OPTIONAL Settings
+   # Optional Settings
    IF you have the same CPU as mine, we can do the Undervolting settings below.
    ## Warning!!! This may cause crash on your device, please be aware.
     1. Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
