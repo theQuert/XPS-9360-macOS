@@ -189,8 +189,8 @@
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
   
    ## Optional Settings
-   ### IF you have the same CPU as mine, we can do the Undervolting settings below.
-   ### Warning!!! This may cause crash on your device, please be aware.
+   #### IF you have the same CPU as mine, we can do the Undervolting settings below.
+   #### Warning!!! This may cause crash on your device, please be aware.
  Enter `BIOS/Boot Sequence` then add new Boot with `/tool/DVMT.efi` , then run the following commands
  ```
     (1) Overclock, CFG, WDT & XTU enable
