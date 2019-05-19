@@ -185,8 +185,7 @@
    #### I have preset the value to `0`
     
    ## HIDPI on Hackintosh
-   Using `one-key-HIDPI`, Link is on below
-      https://github.com/xzhih/one-key-hidpi
+   Using [one-key-HIDPI](https://github.com/xzhih/one-key-hidpi)
   
    ## Optional Settings
    ### IF you have the same CPU as mine, we can do the Undervolting settings below.
