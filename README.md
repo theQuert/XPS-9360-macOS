@@ -8,7 +8,7 @@
 - Graphics:   Intel UHD 620
 - Memory:     SK Hynix 16GB 2133 MHz
 - Sound:      ALC256 (ALC3246)
-- SSD:        SK Hynix PC401 1TB
+- SSD:        SK Hynix PC401 512GB
 - Screen:     1080P FHD
 - Wifi-Card:  Swap the Original Killer 1535 with BCM94352z(DW1560)
 - Thunderbolt 3 Dongle: Dell DA300
