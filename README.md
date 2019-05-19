@@ -119,21 +119,19 @@ Upate_Date: 20190519
   
   7. Running XPS9360.sh
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
-    ##Find the disk name of you EFI partition with the command
+   -  Find the disk name of you EFI partition with the command
       ```BASH
       sudo diskutil list
       ```
-    ## Mount the disk name of your EFI partition with the command
+   - Mount the disk name of your EFI partition with the command
     ``` BASH
       sudo diskutil mount /dev/disk?s?   ///The position of your EFI partition ```
    -  Running XPS9360.sh to Ccompile DSDT
    ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt 
    -  Running XPS9360.sh to Enable Third Party Application
-   ```BASH
-      bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty ```
+      bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
    -  Running XPS9360.sh to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
-   ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
    # Fixing the Headset Jack 
