@@ -183,6 +183,7 @@
    - [Macxin](https://macxin.com) to download some software, for testing purpose.
    - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP Server.
    - [Atom](https://atom.io/) to edit profile and programming.
+   - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
    
    ## Custom setting the delay between trackpad and keyboard 
    To do that you need to edit Info.plist in VoodooI2CHID.kext:
