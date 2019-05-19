@@ -215,8 +215,8 @@
    ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
    ### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    ### [HIDPI](https://github.com/xzhih/one-key-hidpi)
+   ### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    ### [daliansky](https://github.com/daliansky)
    ### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
-   ### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
    #### Kexts version and authors are included in `kexts_info.txt`
