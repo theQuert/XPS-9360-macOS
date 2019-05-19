@@ -156,6 +156,7 @@
  	  sudo rm /private/var/vm/sleepimage
  	  sudo touch /private/var/vm/sleepimage
  	  sudo chflags uchg /private/var/vm/sleepimage
+   
    ```
    
    ## Fixing the Headset Jack 
