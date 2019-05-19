@@ -26,6 +26,11 @@
 - Clover `r4920`
 
 ## Before Installation
+#### Make Bootable Installation Drive
+  - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
+  - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) to open the EFI partition of the USB drive.
+  - Following the `Readme.md` in the EFI partition, to remove the essential kexts in `CLOVER/kexts/Other`
+  
 #### DVMT
   - Enter `BIOS/Boot Sequence`  add new Boot with `/tool/DVMT.efi` , then run the following commands
 ```
@@ -101,7 +106,7 @@
 
   - SupportAssist OS Recovery: OFF
   
-  ## Things to FIX after Boot into System
+  ## Things to FIX after Boot into the System
  
  #### 1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
  
@@ -116,7 +121,7 @@
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
  
- #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
+ #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth 
  ##### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to `/OC/Kexts` already.
  
  #### 6. Change your `SMBIOS` Serial number for your Hackintosh
@@ -184,7 +189,6 @@
         setup_var 0x655 0x01     (Negative voltage for 0x653)
         setup_var 0x85A 0x1E     (GPU: -30 mV)
         setup_var 0x85C 0x01     (Negative voltage for 0x85A)
-    ## Warning!!! This may cause crash on your device, please be aware.
 ``` 
     
    ## Credits
