@@ -1,5 +1,5 @@
 # macOS_XPS13_9360 Hackintosh
-## XPS 9360_Mojave 10.14.4 
+## XPS 9360 Mojave 10.14.4 
 
 ### Last_Update: 20190519
 
