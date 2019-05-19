@@ -176,4 +176,4 @@
    ### [HIDPI](https://github.com/xzhih/one-key-hidpi)
    ### [Original_Image](https://blog.daliansky.net/macOS-Mojave-10.14.4-18E226-official-version-with-Clover-4903-original-image.html)
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
-   ### [Dalian_sky](https://github.com/daliansky)
+   ### [daliansky](https://github.com/daliansky)
