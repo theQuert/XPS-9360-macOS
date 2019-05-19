@@ -8,7 +8,7 @@
 - Graphics:   Intel UHD 620
 - Memory:     SK Hynix 16GB 2133 MHz
 - Sound:      ALC256 (ALC3246)
-- SSD:        SK Hynix PC401
+- SSD:        SK Hynix PC401 1TB
 - Screen:     1080P FHD
 - Wifi-Card:  Swap the Original Killer 1535 with BCM94352z(DW1560)
 - Thunderbolt 3 Dongle: Dell DA300
@@ -109,7 +109,7 @@
   
   ## Things to FIX after Boot into the System
  
- #### 1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
+ #### 1. Download and Installation the [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Mount EFI partition with it.
  
  #### 2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
  
