@@ -152,6 +152,12 @@
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
    
+   ## Enable TRIM on Hackintosh
+   Although it's set Native TRIM support with the settings on this installation, if it's disabled, run the commands below.
+   ```
+   sudo trimforce enable
+   ```
+   
    ## Fixing the Headset Jack 
   Running the below commands to fix Headset Jack
    ```BASH
