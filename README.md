@@ -110,12 +110,12 @@
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
  5. You have to copy the three kext above to /Library/Extensions, and then running /tools/Kext Utility to fix the permission 
-    ## If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts
+    #### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts already
  
  6. Change your SMBIOS serial number for your Hackintosh
     Install CLover Configurator, then Open /CLOVER/config.plist with Clover_Configurator, enter the SMBIOS Mode.
     Then, generate new Serial Number, SMUUID, and save the changes.---> Then REBOOT
-    ## If you boot with OpenCore Configurator rather than Clover, just Install OpenCore Configutrator, and enter SMBIOS then do the same things above.
+    #### If you boot with OpenCore Configurator rather than Clover, just Install OpenCore Configutrator, and enter SMBIOS then do the same things above.
   
   7. Running XPS9360.sh
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
