@@ -162,7 +162,7 @@
    ## For Better Sleep
    Run the Commands below:
 ```
-      sudo pmset -a hibernatemode 0
+    sudo pmset -a hibernatemode 0
  	  sudo pmset -a autopoweroff 0
  	  sudo pmset -a standby 0
  	  sudo rm /private/var/vm/sleepimage
@@ -170,7 +170,7 @@
  	  sudo chflags uchg /private/var/vm/sleepimage
    ```
    ## For Better Using Experience
-   You may need 
+ You may need 
    - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
    - [Bartender](https://www.macbartender.com/) to add/remove the icon showing on the status bar.
    - [FruitJuice](https://fruitjuiceapp.com/) to monitor the battery status and usage time.
