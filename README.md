@@ -215,7 +215,7 @@
    ## Credits
    #### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
-   #### [HIDPI](https://github.com/xzhih/one-key-hidpi)
+   #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
    #### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    #### [daliansky](https://github.com/daliansky)
