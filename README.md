@@ -174,8 +174,8 @@
    - `BetterSnapTool` to arrange the position of the windows on screen better.
    - `Bartender` to add/remove the icon showing on the status bar.
    - `FruitJuice` to monitor the battery status and usage time.
-   - [Xclient](xclient.info) to download some software, for testing purpose.
-   - [Macxin](macxin.com) to download some software, for testing purpose.
+   - [Xclient](https://xclient.info) to download some software, for testing purpose.
+   - [Macxin](https://macxin.com) to download some software, for testing purpose.
    
    ## For disable the delay between trackpad and keyboard 
       To do that you need to edit Info.plist in VoodooI2CHID.kext:
