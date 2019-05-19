@@ -197,6 +197,7 @@
         setup_var 0x4DE 0x00
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
+        
     (2) Undervolt values:
         setup_var 0x653 0x64     (CPU: -100 mV)
         setup_var 0x655 0x01     (Negative voltage for 0x653)
