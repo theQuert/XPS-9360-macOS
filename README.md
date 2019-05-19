@@ -152,6 +152,12 @@
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
    
+   ## Fixing the Headset Jack 
+      Running the below commands to fix Headset Jack
+   ```BASH
+      bash /Volumes/EFI/EFI/ComboJack/install.sh
+   ```
+   
    ## For Better Sleep
    Run the Commands below:
    ```
@@ -161,20 +167,26 @@
  	  sudo rm /private/var/vm/sleepimage
  	  sudo touch /private/var/vm/sleepimage
  	  sudo chflags uchg /private/var/vm/sleepimage
-   
+    
    ```
+   ## For Better Using Experience
+   You may need 
+    - `BetterSnapTool` to arrange the position of the windows on screen better.
+    - `Bartender` to add/remove the icon showing on the status bar.
+    - `FruitJuice` to monitor the battery status and usage time.
+    - [Xclient](xclient.info) to download some software, for testing purpose.
+    - [Macxin](macxin.com) to download some software, for testing purpose.
    
-   ## Fixing the Headset Jack 
-      Running the below commands to fix Headset Jack
-   ```BASH
-      bash /Volumes/EFI/EFI/ComboJack/install.sh
-   ```
-      
+   ## For disable the delay between trackpad and keyboard 
+      To do that you need to edit Info.plist in VoodooI2CHID.kext:
+      - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
+      - Finding the `QuietTimeAfterTyping`
+      - Changing the value you like
+    
    ## HIDPI on Hackintosh
    Using `one-key-HIDPI`, Link is on below
       https://github.com/xzhih/one-key-hidpi
   
-      
    ## Optional Settings
    ### IF you have the same CPU as mine, we can do the Undervolting settings below.
    ## Warning!!! This may cause crash on your device, please be aware.
