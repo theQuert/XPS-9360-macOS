@@ -135,7 +135,7 @@
    ```BASH
       sudo diskutil list
    ```
-   - Mount the disk name of your EFI partition with the command
+   -  Mount the disk name of your EFI partition with the command
    ```
       sudo diskutil mount /dev/disk?s?   ///The position of your EFI partition 
    ```
@@ -171,18 +171,18 @@
    ```
    ## For Better Using Experience
    You may need 
-    - `BetterSnapTool` to arrange the position of the windows on screen better.
-    - `Bartender` to add/remove the icon showing on the status bar.
-    - `FruitJuice` to monitor the battery status and usage time.
-    - [Xclient](xclient.info) to download some software, for testing purpose.
-    - [Macxin](macxin.com) to download some software, for testing purpose.
+   - `BetterSnapTool` to arrange the position of the windows on screen better.
+   - `Bartender` to add/remove the icon showing on the status bar.
+   - `FruitJuice` to monitor the battery status and usage time.
+   - [Xclient](xclient.info) to download some software, for testing purpose.
+   - [Macxin](macxin.com) to download some software, for testing purpose.
    
    ## For disable the delay between trackpad and keyboard 
       To do that you need to edit Info.plist in VoodooI2CHID.kext:
       - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
       - Finding the `QuietTimeAfterTyping`
       - Changing the value you like
-   ##### I have preset the value to `0`
+   #### I have preset the value to `0`
     
    ## HIDPI on Hackintosh
    Using `one-key-HIDPI`, Link is on below
