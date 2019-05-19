@@ -3,16 +3,15 @@ XPS_9360_Mojave_Beta
 
 Upate_Date: 20190519
 
-Device: Dell XPS 9360
-CPU: i7-8550U
-Graphics: Intel UHD 620
-Sound: ALC256 also kown as #ALC3246
-SSD: Sk-hynix PC401
-Screen: 1080P FHD
-Wifi-Card: Swap the Original Killer 1535 with BCM94352z(DW1560)
-Thunderbolt 3 Dongle: Dell DA300
+- Device: Dell XPS 9360
+- CPU: i7-8550U
+- Graphics: Intel UHD 620
+- Sound: ALC256 also kown as #ALC3246
+- SSD: Sk-hynix PC401
+- Screen: 1080P FHD
+- Wifi-Card: Swap the Original Killer 1535 with BCM94352z(DW1560)
+- Thunderbolt 3 Dongle: Dell DA300
 
-# EVERYTHING WORKS FINE EXCEPT THE NOT_WORK THINS BELOW
 # Not Work
 1. Fingerprint Sensor
 2. Card Reader
@@ -20,15 +19,16 @@ Thunderbolt 3 Dongle: Dell DA300
 4. Messages
 
 # Firmware
-BIOS Version: 2.8.1
-Thunderbolt Version: NVM 26
+- BIOS Version: 2.8.1
+- Thunderbolt Version: NVM 26
 
 # Before Installation
 1. DVMT
-  Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
-  (1) setup_var 0x4de 0x00 (Disable CFG Lock)
-  (2) setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M //For FHD version, it's also recommanded set to 192M)
-  (3) setup_var 0x786 0x03 (Increase CFG Memory to maximum)
+  - Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
+  - (1) setup_var 0x4de 0x00 (Disable CFG Lock)
+  - (2) setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M 
+  For FHD version, it's also recommanded set to 192M)
+  - (3) setup_var 0x786 0x03 (Increase CFG Memory to maximum)
 
 2. SSD to 4k sector
   You need any Linux version to create bootable USB, then enter Terminal run the following commands
@@ -102,10 +102,13 @@ Thunderbolt Version: NVM 26
  
  1. Download and Installation the Clover_Configurator, then Mount EFI partition with it.
  2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
- 3. Enter the BIOS/Boot_Sequence adding new entry with path /EFI/EFI/CLOVER/CLOVERX64.efi
+ 3. Enter the BIOS/Boot_Sequence adding new entry with path 
+ - /EFI/EFI/CLOVER/CLOVERX64.efi
  4. Activate the Wifi and Bluetooth functions
-    The kexts for BCM94352z has already put in /CLOVER/kexts/Other/BrcmFirmwareData.kext /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
-    /CLOVER/kexts/Other/AirportBrcmFixup.kext  
+    The kexts for BCM94352z has already put in 
+    - /CLOVER/kexts/Other/BrcmFirmwareData.kext
+    - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
+    - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
     ## You have to copy the three kext above to /Library/Extensions, and then running /tools/Kext Utility to fix the permission 
     ## If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts
  
