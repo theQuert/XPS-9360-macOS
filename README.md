@@ -138,7 +138,7 @@
    ```
    -  Mount the disk name of your EFI partition with the command
    ```
-      sudo diskutil mount /dev/disk?s?   ///The position of your EFI partition 
+      sudo diskutil mount /dev/disk0s1   ///The position of your EFI partition 
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
    ```
