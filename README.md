@@ -4,7 +4,7 @@
 #### Last_Update: `20190519`
 
 - Device:     Dell XPS 13 9360
-- CPU:        i7-8550U
+- CPU:        Intel i7-8550U
 - Graphics:   Intel UHD 620
 - Memory:     SK Hynix 16GB 2133 MHz
 - Sound:      ALC256 (ALC3246)
@@ -19,7 +19,7 @@
 - FaceTime
 - Messages
 
-## DeviceFirmware
+## Device Firmware
 - BIOS Version: BIOS `2.8.1`
 - Thunderbolt Version: `NVM 26`
 
@@ -215,4 +215,4 @@
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    ### [daliansky](https://github.com/daliansky)
    ### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
-   ##### Kexts version and author are included in `kexts_info.txt`
+   #### Kexts version and author are included in `kexts_info.txt`
