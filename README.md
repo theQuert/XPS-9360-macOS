@@ -1,7 +1,7 @@
 # macOS Mojave_XPS13_9360 
 ## XPS 9360 Mojave 10.14.4 (18E226)
 
-### Last_Update: `20190519`
+#### Last_Update: `20190519`
 
 - Device:     Dell XPS 13 9360
 - CPU:        i7-8550U
