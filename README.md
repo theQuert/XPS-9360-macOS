@@ -104,14 +104,18 @@
   ## After Booting into System successfuly, FIX the things below
  
  1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
+ 
  2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
- 3. Enter the BIOS/Boot_Sequence adding new entry with path:
+ 
+ 3. Enter the `BIOS/Boot Sequence` adding new entry with path:
  - /EFI/EFI/CLOVER/CLOVERX64.efi
+ 
  4. Activate the Wifi and Bluetooth functions
     The kexts for `BCM94352z` has already put in 
     - /CLOVER/kexts/Other/BrcmFirmwareData.kext
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
+ 
  5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
     #### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to `/OC/Kexts` already.
  
