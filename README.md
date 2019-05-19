@@ -117,7 +117,7 @@
  - /EFI/EFI/CLOVER/CLOVERX64.efi
  
  #### 4. Activate the Wifi and Bluetooth functions
-    The kexts for `BCM94352z` has already put in 
+ The kexts for `BCM94352z` has already put in 
     - /CLOVER/kexts/Other/BrcmFirmwareData.kext
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
@@ -126,9 +126,9 @@
  ##### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to `/OC/Kexts` already.
  
  #### 6. Change your `SMBIOS` Serial number for your Hackintosh
-    - Install CLover Configurator, then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
+    - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
     - Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
- ##### If you boot with `OpenCore Configurator` rather than `Clover`, just Install `OpenCore Configutrator`, and enter `SMBIOS` then do the same things above.
+ ##### If you boot with `OpenCore Configurator` rather than `Clover`, just Install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), and enter `SMBIOS` then do the same things above.
   
  #### 7. Running `XPS9360.sh`
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
@@ -172,16 +172,16 @@
    ```
    ## For Better Using Experience
    You may need 
-   - `BetterSnapTool` to arrange the position of the windows on screen better.
-   - `Bartender` to add/remove the icon showing on the status bar.
-   - `FruitJuice` to monitor the battery status and usage time.
+   - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
+   - [Bartender](https://www.macbartender.com/) to add/remove the icon showing on the status bar.
+   - [FruitJuice](https://fruitjuiceapp.com/) to monitor the battery status and usage time.
    - [Xclient](https://xclient.info) to download some software, for testing purpose.
    - [Macxin](https://macxin.com) to download some software, for testing purpose.
    - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP.
    - [Atom](https://atom.io/) to edit profile and programming.
    
    ## For disable the delay between trackpad and keyboard 
-      To do that you need to edit Info.plist in VoodooI2CHID.kext:
+   To do that you need to edit Info.plist in VoodooI2CHID.kext:
       - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
       - Finding the `QuietTimeAfterTyping`
       - Changing the value you like
