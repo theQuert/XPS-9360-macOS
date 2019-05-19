@@ -1,7 +1,7 @@
 # macOS_XPS13_9360
-XPS_9360_Mojave_Beta
+##XPS_9360_Mojave 10.14.4 
 
-Upate_Date: 20190519
+###Upate_Date: 20190519
 
 - Device: Dell XPS 9360
 - CPU: i7-8550U
