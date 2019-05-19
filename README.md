@@ -25,10 +25,10 @@ Upate_Date: 20190519
 # Before Installation
 1. DVMT
   - Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
-  - (1) setup_var 0x4de 0x00 (Disable CFG Lock)
-  - (2) setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M 
+  (1) setup_var 0x4de 0x00 (Disable CFG Lock)
+  (2) setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M 
   For FHD version, it's also recommanded set to 192M)
-  - (3) setup_var 0x786 0x03 (Increase CFG Memory to maximum)
+  (3) setup_var 0x786 0x03 (Increase CFG Memory to maximum)
 
 2. SSD to 4k sector
   You need any Linux version to create bootable USB, then enter Terminal run the following commands
