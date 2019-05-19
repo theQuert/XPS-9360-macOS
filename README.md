@@ -220,4 +220,4 @@
    #### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    #### [daliansky](https://github.com/daliansky)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
-   ##### Kexts version and authors are included in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
+   #### Kexts version and authors are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
