@@ -137,7 +137,7 @@
    ```
    -  Mount the disk name of your EFI partition with the command
    ```
-      sudo diskutil mount /dev/disk0s1   ///The position of your EFI partition 
+      sudo diskutil mount /dev/disk0s1   //The position of your EFI partition 
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
    ```
@@ -175,7 +175,7 @@
    - [FruitJuice](https://fruitjuiceapp.com/) to monitor the battery status and usage time.
    - [Xclient](https://xclient.info) to download some software, for testing purpose.
    - [Macxin](https://macxin.com) to download some software, for testing purpose.
-   - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP.
+   - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP Server.
    - [Atom](https://atom.io/) to edit profile and programming.
    
    ## For disable the delay between trackpad and keyboard 
@@ -213,4 +213,5 @@
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    ### [daliansky](https://github.com/daliansky)
    ### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
-   #### Kexts version and author are included in `kexts_info.txt`
+   ### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
+   #### Kexts version and authors are included in `kexts_info.txt`
