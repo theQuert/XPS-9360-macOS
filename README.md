@@ -184,7 +184,7 @@
    - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP Server.
    - [Atom](https://atom.io/) to edit profile and programming.
    
-   ## For disable the delay between trackpad and keyboard 
+   ## Custom setting the delay between trackpad and keyboard 
    To do that you need to edit Info.plist in VoodooI2CHID.kext:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
