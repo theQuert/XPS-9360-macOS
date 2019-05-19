@@ -153,7 +153,7 @@
    ```
    
    ## Fixing the Headset Jack 
-      Running the below commands to fix Headset Jack
+   - Running the below commands to fix Headset Jack
    ```BASH
       bash /Volumes/EFI/EFI/ComboJack/install.sh
    ```
