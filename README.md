@@ -176,6 +176,8 @@
    - `FruitJuice` to monitor the battery status and usage time.
    - [Xclient](https://xclient.info) to download some software, for testing purpose.
    - [Macxin](https://macxin.com) to download some software, for testing purpose.
+   - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP.
+   - [Atom](https://atom.io/) to edit profile and programming.
    
    ## For disable the delay between trackpad and keyboard 
       To do that you need to edit Info.plist in VoodooI2CHID.kext:
@@ -189,7 +191,7 @@
   
    ## Optional Settings
    ### IF you have the same CPU as mine, we can do the Undervolting settings below.
-   ## Warning!!! This may cause crash on your device, please be aware.
+   ### Warning!!! This may cause crash on your device, please be aware.
 ```
     Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
     (1) Overclock, CFG, WDT & XTU enable
@@ -212,3 +214,4 @@
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    ### [daliansky](https://github.com/daliansky)
    ### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
+   ##### Kexts version and author are included in `kexts_info.txt`
