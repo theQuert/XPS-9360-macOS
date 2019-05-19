@@ -109,25 +109,25 @@ Upate_Date: 20190519
     - /CLOVER/kexts/Other/BrcmFirmwareData.kext
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
-    ## You have to copy the three kext above to /Library/Extensions, and then running /tools/Kext Utility to fix the permission 
+ 5. You have to copy the three kext above to /Library/Extensions, and then running /tools/Kext Utility to fix the permission 
     ## If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts
  
- 5. Change your SMBIOS serial number for your Hackintosh
+ 6. Change your SMBIOS serial number for your Hackintosh
     Install CLover Configurator, then Open /CLOVER/config.plist with Clover_Configurator, enter the SMBIOS Mode.
     Then, generate new Serial Number, SMUUID, and save the changes.---> Then REBOOT
     ## If you boot with OpenCore Configurator rather than Clover, just Install OpenCore Configutrator, and enter SMBIOS then do the same things above.
   
-  6. Running XPS9360.sh
-    (1) After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
+  7. Running XPS9360.sh
+   -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
     ##Find the disk name of you EFI partition with the command
       sudo diskutil list
     ## Mount the disk name of your EFI partition with the command
       sudo diskutil mount /dev/disk?s?   <--The position of your EFI partition
-    (2) Running XPS9360.sh to Ccompile DSDT
+   -  Running XPS9360.sh to Ccompile DSDT
       bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt
-    (3) Running XPS9360.sh to Enable Third Party Application
+   -  Running XPS9360.sh to Enable Third Party Application
       bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
-    (4) Running XPS9360.sh to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
+   -  Running XPS9360.sh to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    
    # Fixing the Headset Jack 
