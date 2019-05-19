@@ -31,8 +31,8 @@ Upate_Date: 20190519
   setup_var 0x786 0x03 (Increase CFG Memory to maximum)
 ```
 2. SSD to 4k sector
-  You need any Linux version to create bootable USB, then enter Terminal run the following commands
-  (1) using nvme-cli formatting into 4k sector to work better with APFS, see the giude 
+  You need any Linux version to create bootable USB
+  - using nvme-cli formatting into 4k sector to work better with APFS, see the giude 
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
 3. BIOS settings
