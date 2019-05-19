@@ -13,10 +13,10 @@
 - Thunderbolt 3 Dongle: Dell DA300
 
 ## Not Work
-1. Fingerprint Sensor
-2. Card Reader
-3. FaceTime
-4. Messages
+- Fingerprint Sensor
+- Card Reader
+- FaceTime
+- Messages
 
 ## DeviceFirmware
 - BIOS Version: BIOS `2.8.1`
