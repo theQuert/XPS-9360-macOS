@@ -1,5 +1,5 @@
-# macOS_XPS13_9360
-## XPS_9360_Mojave 10.14.4 
+# macOS_XPS13_9360 Hackintosh
+## XPS 9360_Mojave 10.14.4 
 
 ### Last_Update: 20190519
 
@@ -12,20 +12,20 @@
 - Wifi-Card:  Swap the Original Killer 1535 with BCM94352z(DW1560)
 - Thunderbolt 3 Dongle: Dell DA300
 
-# Not Work
+## Not Work
 1. Fingerprint Sensor
 2. Card Reader
 3. FaceTime
 4. Messages
 
-# DeviceFirmware
+## DeviceFirmware
 - BIOS Version: `BIOS 2.8.1`
 - Thunderbolt Version: `NVM 26`
 
-# Clover Firmware
+## Clover Firmware
 - Clover `r4920`
 
-# Before Installation
+## Before Installation
 #### DVMT
   - Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
 ```
@@ -101,7 +101,7 @@
 
   - SupportAssist OS Recovery: OFF
   
-  # After Booting into System successfuly, FIX the things below
+  ## After Booting into System successfuly, FIX the things below
  
  1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
  2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
@@ -142,18 +142,18 @@
    ```
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
-   # Fixing the Headset Jack 
+   ## Fixing the Headset Jack 
    1. Running the below commands to fix Headset Jack
    ```BASH
       bash /Volumes/EFI/EFI/ComboJack/install.sh
    ```
       
-  # HIDPI on Hackintosh
+  ## HIDPI on Hackintosh
    Using `one-key-HIDPI`, Link is on below
       https://github.com/xzhih/one-key-hidpi
   
       
-   # Optional Settings
+   ## Optional Settings
    ### IF you have the same CPU as mine, we can do the Undervolting settings below.
    ## Warning!!! This may cause crash on your device, please be aware.
 ```
@@ -170,7 +170,7 @@
     ## Warning!!! This may cause crash on your device, please be aware.
 ``` 
     
-   # Credits
+   ## Credits
    ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
    ### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    ### [HIDPI](https://github.com/xzhih/one-key-hidpi)
