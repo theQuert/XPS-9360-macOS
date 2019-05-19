@@ -185,7 +185,7 @@
    - Changing the `value` you like
    #### I have preset the `value` to `0`
     
-   ## HiDPI on Hackintosh
+   ## HiDPI
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
   
    ## Optional Settings
