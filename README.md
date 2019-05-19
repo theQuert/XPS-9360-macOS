@@ -128,7 +128,7 @@
  #### 6. Change your `SMBIOS` Serial number for your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
 - Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
- ##### If you boot with `OpenCore Configurator` rather than `Clover`, just Install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), and enter `SMBIOS` then do the same things above.
+ ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than `Clover`, just Install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), and enter `SMBIOS` then do the same things above.
   
  #### 7. Running `XPS9360.sh`
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
@@ -181,10 +181,10 @@
    
    ## For disable the delay between trackpad and keyboard 
    To do that you need to edit Info.plist in VoodooI2CHID.kext:
-   - Open the info.plist in the VoodooI2CHID.kext with any Text Editor
+   - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
-   - Changing the value you like
-   #### I have preset the value to `0`
+   - Changing the `value` you like
+   #### I have preset the `value` to `0`
     
    ## HiDPI on Hackintosh
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
@@ -192,7 +192,7 @@
    ## Optional Settings
    ### IF you have the same CPU as mine, we can do the Undervolting settings below.
    ### Warning!!! This may cause crash on your device, please be aware.
- Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
+ Enter `BIOS/Boot Sequence` then add new Boot with `/tool/DVMT.efi` , then run the following commands
  ```
     (1) Overclock, CFG, WDT & XTU enable
         setup_var 0x4DE 0x00
