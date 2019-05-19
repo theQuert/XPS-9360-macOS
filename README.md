@@ -101,7 +101,7 @@
 
   - SupportAssist OS Recovery: OFF
   
-  ## After Booting into System successfuly, FIX the things below
+  ## Things to FIX after Boot into System
  
  1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
  
@@ -146,6 +146,18 @@
    ```
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
+   
+   ## For Better Sleep
+   Run the Commands below:
+   ```
+    sudo pmset -a hibernatemode 0
+ 	  sudo pmset -a autopoweroff 0
+ 	  sudo pmset -a standby 0
+ 	  sudo rm /private/var/vm/sleepimage
+ 	  sudo touch /private/var/vm/sleepimage
+ 	  sudo chflags uchg /private/var/vm/sleepimage
+   ```
+   
    ## Fixing the Headset Jack 
    1. Running the below commands to fix Headset Jack
    ```BASH
