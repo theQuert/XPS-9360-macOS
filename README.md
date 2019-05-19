@@ -177,3 +177,4 @@
    ### [Original_Image](https://blog.daliansky.net/macOS-Mojave-10.14.4-18E226-official-version-with-Clover-4903-original-image.html)
    ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
    ### [daliansky](https://github.com/daliansky)
+   ### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
