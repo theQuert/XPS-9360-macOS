@@ -3,13 +3,13 @@
 
 ### Upate_Date: 20190519
 
-- Device: Dell XPS 9360
-- CPU: i7-8550U
-- Graphics: Intel UHD 620
-- Sound: ALC256 also kown as #ALC3246
-- SSD: Sk-hynix PC401
-- Screen: 1080P FHD
-- Wifi-Card: Swap the Original Killer 1535 with BCM94352z(DW1560)
+- Device:     Dell XPS 9360
+- CPU:        i7-8550U
+- Graphics:   Intel UHD 620
+- Sound:      ALC256 (ALC3246)
+- SSD:        Sk-hynix PC401
+- Screen:     1080P FHD
+- Wifi-Card:  Swap the Original Killer 1535 with BCM94352z(DW1560)
 - Thunderbolt 3 Dongle: Dell DA300
 
 # Not Work
@@ -18,9 +18,12 @@
 3. FaceTime
 4. Messages
 
-# Firmware
-- BIOS Version: 2.8.1
-- Thunderbolt Version: NVM 26
+# DeviceFirmware
+- BIOS Version: `BIOS 2.8.1`
+- Thunderbolt Version: `NVM 26`
+
+# Clover Firmware
+- Clover `r4920`
 
 # Before Installation
 #### DVMT
@@ -117,7 +120,7 @@
     - Then, generate new Serial Number, SMUUID, and save the changes.---> Then REBOOT
     #### If you boot with OpenCore Configurator rather than Clover, just Install OpenCore Configutrator, and enter SMBIOS then do the same things above.
   
-  7. Running XPS9360.sh
+  7. Running `XPS9360.sh`
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
    -  Find the disk name of you EFI partition with the command
    ```BASH
@@ -127,15 +130,15 @@
    ```
       sudo diskutil mount /dev/disk?s?   ///The position of your EFI partition 
    ```
-   -  Running XPS9360.sh to Ccompile DSDT
+   -  Running `XPS9360.sh` to Compile `DSDT`
    ```
       bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt 
    ```
-   -  Running XPS9360.sh to Enable Third Party Application
+   -  Running `XPS9360.sh` to Enable Third Party Application
    ```
       bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
    ```
-   -  Running XPS9360.sh to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
+   -  Running `XPS9360.sh` to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
    ```
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
@@ -151,28 +154,26 @@
   
       
    # Optional Settings
-   IF you have the same CPU as mine, we can do the Undervolting settings below.
+   ### IF you have the same CPU as mine, we can do the Undervolting settings below.
    ## Warning!!! This may cause crash on your device, please be aware.
-    1. Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
+```
+    Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
     (1) Overclock, CFG, WDT & XTU enable
-    ```
         setup_var 0x4DE 0x00
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
-    ```
     (2) Undervolt values:
-    ```
         setup_var 0x653 0x64     (CPU: -100 mV)
         setup_var 0x655 0x01     (Negative voltage for 0x653)
         setup_var 0x85A 0x1E     (GPU: -30 mV)
         setup_var 0x85C 0x01     (Negative voltage for 0x85A)
-    ```
     ## Warning!!! This may cause crash on your device, please be aware.
-    
+``` 
     
    # Credits
-   ## [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
-   ## [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
-   ## [HIDPI](https://github.com/xzhih/one-key-hidpi)
-   
-
+   ### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
+   ### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
+   ### [HIDPI](https://github.com/xzhih/one-key-hidpi)
+   ### [Original_Image](https://blog.daliansky.net/macOS-Mojave-10.14.4-18E226-official-version-with-Clover-4903-original-image.html)
+   ### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
+   ### [Dalian_sky](https://github.com/daliansky)
