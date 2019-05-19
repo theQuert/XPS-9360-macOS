@@ -1,9 +1,9 @@
 # macOS Mojave_XPS13_9360 
 ## XPS 9360 Mojave 10.14.4 (18E226)
 
-### Last_Update: 20190519
+### Last_Update: `20190519`
 
-- Device:     Dell XPS 9360
+- Device:     Dell XPS 13 9360
 - CPU:        i7-8550U
 - Graphics:   Intel UHD 620
 - Sound:      ALC256 (ALC3246)
@@ -19,7 +19,7 @@
 4. Messages
 
 ## DeviceFirmware
-- BIOS Version: `BIOS 2.8.1`
+- BIOS Version: BIOS `2.8.1`
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
@@ -27,7 +27,7 @@
 
 ## Before Installation
 #### DVMT
-  - Enter BIOS/Boot_Sequence then add new Boot with /tool/DVMT.efi , then run the following commands
+  - Enter `BIOS/Boot Sequence`  add new Boot with `/tool/DVMT.efi` , then run the following commands
 ```
   setup_var 0x4de 0x00 (Disable CFG Lock)
   setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M)
@@ -35,7 +35,7 @@
 ```
 #### SSD to 4k sector
   You need any Linux version to create bootable USB
-  - using nvme-cli formatting into 4k sector to work better with `APFS`, see the giude 
+  - using `nvme-cli` formatting into 4k sector to work better with `APFS`, see the giude 
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
 #### BIOS settings
@@ -105,20 +105,20 @@
  
  1. Download and Installation the `Clover Configurator`, then Mount EFI partition with it.
  2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
- 3. Enter the BIOS/Boot_Sequence adding new entry with path 
+ 3. Enter the BIOS/Boot_Sequence adding new entry with path:
  - /EFI/EFI/CLOVER/CLOVERX64.efi
  4. Activate the Wifi and Bluetooth functions
     The kexts for `BCM94352z` has already put in 
     - /CLOVER/kexts/Other/BrcmFirmwareData.kext
     - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
     - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
- 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission 
-    #### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to /OC/Kexts already
+ 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
+    #### If you boot with OpenCore Configurator rather than Clover, I have put the three kexts above to `/OC/Kexts` already.
  
- 6. Change your SMBIOS serial number for your Hackintosh
-    - Install CLover Configurator, then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the SMBIOS Mode.
-    - Then, generate new Serial Number, SMUUID, and save the changes.---> Then REBOOT
-    #### If you boot with OpenCore Configurator rather than Clover, just Install OpenCore Configutrator, and enter SMBIOS then do the same things above.
+ 6. Change your `SMBIOS` Serial number for your Hackintosh
+    - Install CLover Configurator, then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
+    - Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
+    #### If you boot with `OpenCore Configurator` rather than `Clover`, just Install `OpenCore Configutrator`, and enter `SMBIOS` then do the same things above.
   
   7. Running `XPS9360.sh`
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
