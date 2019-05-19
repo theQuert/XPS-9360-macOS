@@ -121,8 +121,8 @@
 - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
 - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
  
- #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth 
- ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already.
+ #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth become disable after sleep.
+ ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. 
  
  #### 6. Change your `SMBIOS` Serial number for your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
