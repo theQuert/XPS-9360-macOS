@@ -2,17 +2,16 @@
 ## XPS 9360 Mojave 10.14.4 (18E226)
 
 #### Last_Update: `20190519`
-|       Hardware             |                                      Info                                   |
-|----------------------------|-----------------------------------------------------------------------------|
-|       Device               |  Dell XPS 13 9360                                                           |
-|       CPU                  |  Intel i7-8550U                                                             |
-|       Graphics             |  Intel UHD 620                                                              |
-|       Memory               |  SK Hynix 16GB 2133 MHz                                                     |
-|       Sound                |  ALC256 (ALC3246)                                                           |
-|       SSD                  |  SK Hynix PC401 512GB                                                       |
-|       Screen               |  1080P FHD                                                                  |
-|       Wifi-Card            | Swap the Original `Killer 1535` with `BCM94352z(DW1560)`                    |
-|       Thunderbolt 3 Dongle |  Dell DA300                                                                 |
+
+  - Device                 Dell XPS 13 9360                                                           
+  - CPU                    Intel i7-8550U                                                             
+  - Graphics               Intel UHD 620                                                              
+  - Memory                 SK Hynix 16GB 2133 MHz                                                     
+  - Sound                  ALC256 (ALC3246)                                                           
+  - SSD                    SK Hynix PC401 512GB                                                       
+  - Screen                 1080P FHD                                                                  
+  - Wifi-Card              Swap the Original `Killer 1535` with `BCM94352z(DW1560)`                    
+  - Thunderbolt 3 Dongle   Dell DA300                                                                 
 
 ## Not Work
 - Fingerprint Sensor
