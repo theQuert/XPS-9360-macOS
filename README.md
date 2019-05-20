@@ -34,9 +34,9 @@
 #### DVMT
   - Enter `BIOS/Boot Sequence`  add new Boot with `/tool/DVMT.efi` , then run the following commands
 ```
-  setup_var 0x4de 0x00 (Disable CFG Lock)
-  setup_var 0x785 0x06 (Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M)
-  setup_var 0x786 0x03 (Increase CFG Memory to maximum)
+  setup_var 0x4de 0x00  // Disable CFG Lock
+  setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
+  setup_var 0x786 0x03  // Increase CFG Memory to maximum
 ```
 #### Format SSD with 4K sectors for APFS
   You need any Linux version to create bootable USB
@@ -206,10 +206,10 @@
  ```
  - Undervolt values:
  ```BASH
-        setup_var 0x653 0x64     (CPU: -100 mV)
-        setup_var 0x655 0x01     (Negative voltage for 0x653)
-        setup_var 0x85A 0x1E     (GPU: -30 mV)
-        setup_var 0x85C 0x01     (Negative voltage for 0x85A)
+        setup_var 0x653 0x64     // CPU: -100 mV
+        setup_var 0x655 0x01     // Negative voltage for 0x653
+        setup_var 0x85A 0x1E     // GPU: -30 mV
+        setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ``` 
     
    ## Credits
