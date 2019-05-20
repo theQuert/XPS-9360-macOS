@@ -29,7 +29,7 @@
 #### Make Bootable Installation Drive
   - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) to open the EFI partition of the USB drive.
-  - Following the `README.md` in the EFI partition, to remove the essential kexts in `CLOVER/kexts/Other`
+  - According to `README.md` in the `/EFI/CLOVER/kexts/Other`, remove the kexts mentioned in `/EFI/CLOVER/kexts/Other`
   
 #### DVMT
   - Enter `BIOS/Boot Sequence`  add new Boot with `/tool/DVMT.efi` , then run the following commands
