@@ -135,25 +135,25 @@
       sudo diskutil list
    ```
    -  Mount the disk name of your EFI partition with the command
-   ```
+   ```BASH
       sudo diskutil mount /dev/disk0s1   //The position of your EFI partition 
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
-   ```
+   ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt 
    ```
    -  Running `XPS9360.sh` to Enable Third Party Application
-   ```
+   ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
    ```
    -  Running `XPS9360.sh` to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
-   ```
+   ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
    
    ## Enable TRIM on Hackintosh
    Although it's set Native TRIM support with the settings on this installation, if it's disabled, run the commands below.
-   ```
+   ```BASH
    sudo trimforce enable
    ```
    
@@ -165,7 +165,7 @@
    
    ## For Better Sleep
    Run the Commands below:
-```
+```BASH
     sudo pmset -a hibernatemode 0
  	  sudo pmset -a autopoweroff 0
  	  sudo pmset -a standby 0
@@ -198,13 +198,14 @@
    #### IF you have the same CPU as mine, we can do the Undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
  Enter `BIOS/Boot Sequence` then add new Boot with `/tool/DVMT.efi` , then run the following commands
- ```
-    (1) Overclock, CFG, WDT & XTU enable
+   (1) Overclock, CFG, WDT & XTU enable
+ ```BASH
         setup_var 0x4DE 0x00
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
-        
-    (2) Undervolt values:
+ ```
+   (2) Undervolt values:
+ ```BASH
         setup_var 0x653 0x64     (CPU: -100 mV)
         setup_var 0x655 0x01     (Negative voltage for 0x653)
         setup_var 0x85A 0x1E     (GPU: -30 mV)
