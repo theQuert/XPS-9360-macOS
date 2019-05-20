@@ -32,7 +32,7 @@
   - According to `README.md` in the `/EFI/CLOVER/kexts/Other`, remove the kexts mentioned in `/EFI/CLOVER/kexts/Other`
   
 #### DVMT
-  - Enter `BIOS/Boot Sequence`  add new Boot with `/tool/DVMT.efi` , then run the following commands
+  - Enter `BIOS/Boot Sequence`  add new Boot with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
   setup_var 0x4de 0x00  // Disable CFG Lock
   setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
@@ -197,7 +197,7 @@
    ## Optional Settings
    #### IF you have the same CPU as mine, we can do the Undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
- Enter `BIOS/Boot Sequence` then add new Boot with `/tool/DVMT.efi` , then run the following commands
+ Enter `BIOS/Boot Sequence` then add new Boot with `CLOVER/tools/DVMT.efi` , then run the following commands
  - Overclock, CFG, WDT & XTU enable
  ```BASH
         setup_var 0x4DE 0x00
