@@ -198,13 +198,13 @@
    #### IF you have the same CPU as mine, we can do the Undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
  Enter `BIOS/Boot Sequence` then add new Boot with `/tool/DVMT.efi` , then run the following commands
- - (1) Overclock, CFG, WDT & XTU enable
+ - Overclock, CFG, WDT & XTU enable
  ```BASH
         setup_var 0x4DE 0x00
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
  ```
- - (2) Undervolt values:
+ - Undervolt values:
  ```BASH
         setup_var 0x653 0x64     (CPU: -100 mV)
         setup_var 0x655 0x01     (Negative voltage for 0x653)
