@@ -106,6 +106,12 @@
 
   - SupportAssist OS Recovery: OFF
   
+  ## You may receive the messages below during insntallation.
+  
+  #### The macOS installation couldn't be completed.
+  #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the Clover Interface.
+  ### If the system still fail to boot with the entry, please install again.
+  
   ## Things to FIX after Boot into the System
  
  #### 1. Download and Installation the [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Mount EFI partition with it.
