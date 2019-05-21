@@ -106,7 +106,7 @@
 
   - SupportAssist OS Recovery: OFF
   
-  ## You may receive the messages below during insntallation.
+  ## You may receive the messages below during inntallation...
   
   #### `The macOS installation couldn't be completed.`
   #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the Clover Interface.
