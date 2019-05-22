@@ -9,7 +9,7 @@
   - Sound : ALC256 (ALC3246)                                                           
   - SSD : SK Hynix PC401 512GB                                                       
   - Screen : 1080P FHD                                                                  
-  - Wifi-Card : Swap the Original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
+  - Wifi-Card : Swap the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
 ## Not Work
 - Fingerprint Sensor
@@ -28,10 +28,10 @@
 #### Make Bootable Installation Drive - macOS with Clover
   - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) open EFI partition of the USB drive.
-  - According to `README.md` in the `/EFI/CLOVER/kexts/Other` from EFI partition of the insntallation drive, remove the kexts mentioned in `/EFI/CLOVER/kexts/Other`
+  - According to `README.md` in the `/EFI/CLOVER/kexts/Other` from EFI partition of the insntallation drive, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
   
 #### DVMT
-  - Enter `BIOS/Boot Sequence`  add new Boot with `CLOVER/tools/DVMT.efi` , then run the following commands
+  - Enter `BIOS/Boot Sequence`  add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
   setup_var 0x4de 0x00  // Disable CFG Lock
   setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
@@ -133,7 +133,7 @@
  
  #### 6. Change your `SMBIOS` Serial number of your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
-- Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> REBOOT
+- Then, generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` doing same things above.
   
  #### 7. Running `XPS9360.sh` with the instructions below
