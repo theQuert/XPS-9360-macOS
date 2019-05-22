@@ -107,10 +107,11 @@
   - SupportAssist OS Recovery: OFF
   
   ## You may receive the messages below during installation...
-  
+  #### `Fail to erase the disk you choose to install macOS`
+  ##### To solve the problem, you have to show up ``All Devices``before erasing, then erase the whole disk with `APFS` 
   #### `The macOS installation couldn't be completed.`
-  #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the Clover Interface.
-  ### If the system still fail to boot with the entry, please install again.
+  #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the `Clover Interface`.
+  ### If the system still fail to boot with the entry, please install the whole system again.
   
   ## Things to FIX after Boot into the System
  
