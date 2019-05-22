@@ -108,7 +108,7 @@
   
   ## You may receive the messages below during installation...
   #### `Fail to erase the disk you choose to install macOS`
-  ##### To solve the problem, you have to show up ``All Devices``before erasing, then erase the whole disk with `APFS` 
+  ##### To solve the problem, you have to show up `All Devices` before erasing, then erase the whole disk with `APFS`.
   #### `The macOS installation couldn't be completed.`
   #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the `Clover Interface`.
   ### If the system still fail to boot with the entry, please install the whole system again.
@@ -132,8 +132,8 @@
  
  #### 6. Change your `SMBIOS` Serial number of your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
-- Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> Then REBOOT
- ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), just Install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), and enter `SMBIOS` then do the same things above.
+- Then, generate new `Serial Number`, `SMUUID`, and save the changes.---> REBOOT
+ ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` doing same things above.
   
  #### 7. Running `XPS9360.sh` with the instructions below
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
@@ -204,7 +204,7 @@
    ## Optional Settings
    #### IF you have the same CPU as mine, we can do the Undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
- Enter `BIOS/Boot Sequence` then add new Boot with `CLOVER/tools/DVMT.efi` , then run the following commands
+ Enter `BIOS/Boot Sequence` then add new Boot with `CLOVER/tools/DVMT.efi`, run the following commands
  - Overclock, CFG, WDT & XTU enable
  ```BASH
         setup_var 0x4DE 0x00
