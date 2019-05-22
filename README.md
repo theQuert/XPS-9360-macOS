@@ -1,6 +1,6 @@
 ## XPS 9360 Mojave 10.14.4 (18E226)
 
-#### Last_Update: `20190520`
+#### Last_Update: `20190522`
 
   - Device : Dell XPS 13 9360                                                           
   - CPU    : Intel i7-8550U                                                             
