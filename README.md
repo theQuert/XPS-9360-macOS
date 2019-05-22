@@ -26,7 +26,7 @@
 - Clover `r4920`
 
 ## Before Installation
-#### Make Bootable Installation Drive
+#### Make Bootable Installation Drive - macOS with Clover
   - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) to open the EFI partition of the USB drive.
   - According to `README.md` in the `/EFI/CLOVER/kexts/Other`, remove the kexts mentioned in `/EFI/CLOVER/kexts/Other`
@@ -38,8 +38,9 @@
   setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
   setup_var 0x786 0x03  // Increase CFG Memory to maximum
 ```
-#### Format SSD with 4K sectors for APFS
-  You need any Linux version to create bootable USB
+#### Format SSD with 4K sectors for APFS - You will need to make a Linux Bootable Drive
+  ###### - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
+  - 
   - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude 
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
