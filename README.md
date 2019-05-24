@@ -2,13 +2,13 @@
 
 #### Last_Update: `20190522`
 
-  - Device : Dell XPS 13 9360                                                           
-  - CPU    : Intel i7-8550U                                                             
-  - Graphics : Intel UHD 620                                                              
-  - Memory : SK Hynix 16GB 2133 MHz LPDDR3                                                   
-  - Sound : ALC256 (ALC3246)                                                           
-  - SSD : SK Hynix PC401 512GB                                                       
-  - Screen : 1080P FHD                                                                  
+  - Device  : Dell XPS 13 9360                                                           
+  - CPU     : Intel i7-8550U                                                             
+  - GPU     : Intel UHD 620                                                              
+  - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
+  - Sound   : ALC256 (ALC3246)                                                           
+  - SSD     : SK Hynix PC401 512GB                                                       
+  - Display : 1080P FHD                                                                  
   - Wifi-Card : Swap the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
 ## Not Work
