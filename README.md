@@ -8,7 +8,7 @@
   - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
   - SSD     : PC401 NVMe SK hynix 512GB                                                      
-  - Display : FHD(1920x1080) 
+  - Display : FHD (1920x1080) 
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
