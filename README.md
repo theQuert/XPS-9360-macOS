@@ -8,7 +8,7 @@
   - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
   - SSD     : PC401 NVMe SK hynix 512GB                                                      
-  - Display : FHD (1920x1080) 
+  - Display : FHD (1920x1080)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
@@ -23,14 +23,14 @@
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r4920`
+- Clover `r4934`
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
   - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) open EFI partition of the USB drive.
   - According to `README.md` in the `/EFI/CLOVER/kexts/Other` from EFI partition of the insntallation drive, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
-  
+
 #### DVMT
   - Enter `BIOS/Boot Sequence`  add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
@@ -42,7 +42,7 @@
   ###### Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
   - Under Windows environment, you need to burn [Ubuntu](https://www.ubuntu.com/download/desktop) Disk image to USB Drive.
   - Boot with the Linux bootable drive.
-  - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude 
+  - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
 #### BIOS settings
@@ -107,36 +107,36 @@
   - Auto-OS recovery threshold: OFF
 
   - SupportAssist OS Recovery: OFF
-  
+
   ## You may receive the messages below during installation...
   #### `Fail to erase the disk you choose to install macOS`
   ##### To solve the problem, you have to show up `All Devices` before erasing, then erase the whole disk with `APFS`.
   #### `The macOS installation couldn't be completed.`
   #### To solve the problem, just IGNORE it. Then, REBOOT again. You will see the new entry has shown up in the `Clover Interface`.
   ### If the system still fail to boot with the entry, please install the whole system again.
-  
+
   ## Things to FIX after Boot into the System
- 
+
  #### 1. Download and Installation the [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Mount EFI partition with it.
- 
+
  #### 2. Copy the whole Folders and Files from this repository to your EFI partition, then your Hackintosh can boot without USB Installer.
- 
+
  #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
- 
+
  #### 4. Activate the Wifi and Bluetooth functions
- The kexts for `BCM94352z` has already put in 
+ The kexts for `BCM94352z` has already put in
 - /CLOVER/kexts/Other/BrcmFirmwareData.kext
 - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
 - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
- 
+
  #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth become disable after sleep.
- ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. 
- 
+ ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
+
  #### 6. Change your `SMBIOS` Serial number of your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
 - Then, generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` doing same things above.
-  
+
  #### 7. Running `XPS9360.sh` with the instructions below
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
    -  Find the disk name of you EFI partition with the command
@@ -145,11 +145,11 @@
    ```
    -  Mount the disk name of your EFI partition with the command
    ```BASH
-      sudo diskutil mount /dev/disk0s1   //The position of your EFI partition 
+      sudo diskutil mount /dev/disk0s1   //The position of your EFI partition
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
    ```BASH
-      bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt 
+      bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt
    ```
    -  Running `XPS9360.sh` to Enable Third Party Application
    ```BASH
@@ -159,19 +159,19 @@
    ```BASH
       bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
    ```
-   
+
    ## Enable TRIM on Hackintosh
    Although it's set Native TRIM support with the settings on this installation, if it's disabled, run the commands below.
    ```BASH
    sudo trimforce enable
    ```
-   
-   ## Fixing the Headset Jack 
+
+   ## Fixing the Headset Jack
   Running the below commands to fix Headset Jack
    ```BASH
       bash /Volumes/EFI/EFI/ComboJack/install.sh
    ```
-   
+
    ## For Better Sleep
    Run the Commands below:
    ```BASH
@@ -183,7 +183,7 @@
  	  sudo chflags uchg /private/var/vm/sleepimage
    ```
    ## For Better Using Experience
- You may need 
+ You may need
    - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
    - [Bartender](https://www.macbartender.com/) to add/remove the icon showing on the status bar.
    - [FruitJuice](https://fruitjuiceapp.com/) to monitor the battery status and usage time.
@@ -193,17 +193,17 @@
    - [Transmit](https://panic.com/transmit/) to access your Cloud Storage and FTP Server.
    - [Atom](https://atom.io/) to edit profile and programming.
    - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
-   
-   ## Custom setting the delay between trackpad and keyboard 
+
+   ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit Info.plist in VoodooI2CHID.kext:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
    - Changing the `value` you like
    #### I have preset the `value` to `0`
-    
+
    ## HiDPI
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
-  
+
    ## Optional Settings
    #### IF you have the same CPU as mine, we can do the Undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
@@ -220,8 +220,8 @@
         setup_var 0x655 0x01     // Negative voltage for 0x653
         setup_var 0x85A 0x1E     // GPU: -30 mV
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
-``` 
-    
+```
+
    ## Credits
    #### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
