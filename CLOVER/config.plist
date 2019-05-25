@@ -474,12 +474,8 @@
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
 		<string>0x67</string>
-		<key>MLB</key>
-		<string>C02852404QXJH4RA8</string>
 		<key>ROM</key>
-		<data>
-		vcKVpLkC
-		</data>
+		<string>UseMacAddr0</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -494,11 +490,11 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02852404QXJH4RA8</string>
+		<string>C02827130QXJH4R1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string>MacBookPro15,2</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -506,9 +502,9 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>220.250.320.0.0</string>
+		<string>220.200.252.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook</string>
 		<key>FirmwareFeatures</key>
 		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
@@ -519,6 +515,8 @@
 		<string>Apple Inc.</string>
 		<key>Memory</key>
 		<dict>
+			<key>Channels</key>
+			<integer>2</integer>
 			<key>Modules</key>
 			<array>
 				<dict>
@@ -554,6 +552,8 @@
 					<string>SK Hynix</string>
 				</dict>
 			</array>
+			<key>SlotCount</key>
+			<integer>2</integer>
 		</dict>
 		<key>Mobile</key>
 		<true/>
@@ -562,16 +562,18 @@
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02XWRY8JHCD</string>
+		<string>C02X1FYJJHCD</string>
 		<key>SmUUID</key>
-		<string>0D5045CE-78CC-51B4-936F-736AF5A4B902</string>
+		<string>3DD4606D-D7D5-4E38-AF9D-EADED737C6E8</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>CustomUUID</key>
-		<string>0D5045CE-78CC-51B4-936F-736AF5A4B902</string>
+		<string>CF3AF82F-AB0B-5C42-8A6A-DA83678B2AA3</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
