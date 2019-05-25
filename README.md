@@ -232,7 +232,7 @@
   - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude
          https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
    #### Time to clone system and data to the new SSD
-  - You will need a external NVMe reader to carry your new SSD as a external drive.
+  - You will need an external NVMe reader to carry your new SSD as a external drive.
   - Under Hackintosh environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
   -  When [Carbon Copy Cloner](https://bombich.com/download) done, you can set your `Startup Disk` to the new SSD drive to test if it works fine.
