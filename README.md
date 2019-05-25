@@ -29,16 +29,22 @@
 #### Make Bootable Installation Drive - macOS with Clover
   - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Then, use [DiskGenius](http://www.diskgenius.cn/download.php) open EFI partition of the USB drive.
-  - According to `README.md` in the `/EFI/CLOVER/kexts/Other` from EFI partition of the insntallation drive, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
+  - According to `README.md` in the `/EFI/CLOVER/kexts/Other` from EFI partition of the installation drive, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
 
 #### DVMT
   - Enter `BIOS/Boot Sequence`  add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
   setup_var 0x4de 0x00  // Disable CFG Lock
-  setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
+  setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommended setting to 192M
   setup_var 0x786 0x03  // Increase CFG Memory to maximum
 ```
 
+#### Format your SSD to 4K sectors#### Format SSD with 4K sectors for `APFS` - You would need to make a Linux Bootable Drive
+  - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
+  - Under Windows environment, you need to burn [Ubuntu](https://www.ubuntu.com/download/desktop) Disk image to USB Drive.
+  - Boot with the Linux bootable drive.
+  - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude
+      https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 
 #### BIOS settings
   - Sata: AHCI
@@ -218,18 +224,19 @@
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ```
    ## Things to do if you swap the SSD after using for a while...(Optional settings)
-   #### Format SSD with 4K sectors for APFS - You would need to make a Linux Bootable Drive
-  Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
+   #### Format SSD with 4K sectors for `APFS` - You would need to make a Linux Bootable Drive
+     - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
      - Under Windows environment, you need to burn [Ubuntu](https://www.ubuntu.com/download/desktop) Disk image to USB Drive.
      - Boot with the Linux bootable drive.
      - using `nvme-cli` formatting into `4K sectors` to work better with `APFS`, see the giude
          https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
-   - You need a external NVMe reader to carry your new SSD as a external drive.
-   - Under Hackintosh environment, using `Disk Utility` format your new SSD as APFS format.
-   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
-   -  When [Carbon Copy Cloner](https://bombich.com/download) done, you can set your Startup Disk as the new SSD drive to test if it works fine.
-   -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
-   -  Now, it's time to enjoy...
+   #### Time to clone system and data to the new SSD
+     - You will need a external NVMe reader to carry your new SSD as a external drive.
+     - Under Hackintosh environment, using `Disk Utility` format your new SSD as `APFS` format.
+     - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
+     -  When [Carbon Copy Cloner](https://bombich.com/download) done, you can set your `Startup Disk` to the new SSD drive to test if it works fine.
+     -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
+     -  Now, it's time to enjoy...
 
    ## Credits
    #### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
