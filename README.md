@@ -7,9 +7,10 @@
   - GPU     : Intel UHD 620                                                              
   - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
-  - SSD     : SK Hynix PC401 512GB                                                       
-  - Display : 1080P FHD                                                                  
-  - Wifi-Card : Swap the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
+  - SSD     : PC401 NVMe SK hynix 512GB                                                      
+  - Display : FHD(1920x1080) 
+  - Webcam  : UVC Camera VendorID_3034 ProductID_22155
+  - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
 ## Not Work
 - Fingerprint Sensor
@@ -37,7 +38,7 @@
   setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommanded set to 192M
   setup_var 0x786 0x03  // Increase CFG Memory to maximum
 ```
-#### Format SSD with 4K sectors for APFS - You will need to make a Linux Bootable Drive
+#### Format SSD with 4K sectors for APFS - You would need to make a Linux Bootable Drive
   ###### Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
   - Under Windows environment, you need to burn [Ubuntu](https://www.ubuntu.com/download/desktop) Disk image to USB Drive.
   - Boot with the Linux bootable drive.
@@ -173,7 +174,7 @@
    
    ## For Better Sleep
    Run the Commands below:
-```BASH
+   ```BASH
     sudo pmset -a hibernatemode 0
  	  sudo pmset -a autopoweroff 0
  	  sudo pmset -a standby 0
@@ -189,6 +190,7 @@
    - [Xclient](https://xclient.info) to download some software, for testing purpose.
    - [Macxin](https://macxin.com) to download some software, for testing purpose.
    - [Cyberduck](https://cyberduck.io/) to access your Cloud Storage and FTP Server.
+   - [Transmit](https://panic.com/transmit/) to access your Cloud Storage and FTP Server.
    - [Atom](https://atom.io/) to edit profile and programming.
    - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
    
