@@ -131,12 +131,12 @@
 - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
 
  #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth become disable after sleep.
- ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
+ ##### If you boot with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
  #### 6. Change your `SMBIOS` Serial number of your Hackintosh
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
 - Then, generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
- ##### If you boot with [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configutrator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` doing same things above.
+ ##### If you boot with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` doing same things above.
 
  #### 7. Running `XPS9360.sh` with the instructions below
    -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
@@ -216,7 +216,7 @@
         setup_var 0x64D 0x01
         setup_var 0x64E 0x01
  ```
- - Undervolt values:
+ - Undervolting values:
  ```BASH
         setup_var 0x653 0x64     // CPU: -100 mV
         setup_var 0x655 0x01     // Negative voltage for 0x653
