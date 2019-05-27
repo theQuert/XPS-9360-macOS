@@ -7,7 +7,7 @@
   - GPU     : Intel UHD 620                                                              
   - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
-  - SSD     : WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD                                                      
+  - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                                      
   - Display : FHD (1920x1080)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
