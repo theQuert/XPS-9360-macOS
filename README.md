@@ -123,13 +123,13 @@
 
  #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
- #### 4. Activate the Wifi and Bluetooth functions
+ #### 4. Activate the Wifi and Bluetooth functions for `BCM94352Z`, if not using this card you may remove the kexts below and unfollow Step 5.
  The kexts for `BCM94352z` has already put in
-- /CLOVER/kexts/Other/BrcmFirmwareData.kext
+- /CLOVER/kexts/Other/BrcmFirmwareRepo.kext
 - /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
 - /CLOVER/kexts/Other/AirportBrcmFixup.kext  
 
- #### 5. You have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which can fix the Wifi, Bluetooth become disable after sleep.
+ #### 5. You still have to copy the kexts from path `/BCM94352Z/BrcmFirmwareRepo.kext` `/BCM94352Z/BrcmPatchRAM2.kext` to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
  ##### If you boot with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), I have put the three kexts above to `/OC/Kexts` already, but you still have to copy the three kext above to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
  #### 6. Change your `SMBIOS` Serial number of your Hackintosh
