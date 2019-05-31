@@ -205,7 +205,8 @@
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
 
    ## Optional Settings
-   #### IF you have the same CPU as mine, we can do the Undervolting settings below.
+   ### CPU Undervolting
+   #### If having the same CPU as mine, you can do the undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
  Enter `BIOS/Boot Sequence` then add new Boot with `CLOVER/tools/DVMT.efi`, run the following commands
  - Overclock, CFG, WDT & XTU enable
@@ -221,9 +222,9 @@
         setup_var 0x85A 0x1E     // GPU: -30 mV
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ```
-   ## Things to do if you swap the SSD after using for a while...(Optional settings)
+   ### Swapping SSD
   - You need an external NVMe reader to carry your new SSD as a external drive.
-  - Under Hackintosh environment, using `Disk Utility` format your new SSD as `APFS` format.
+  - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
   - When [Carbon Copy Cloner](https://bombich.com/download) done, you can set your `Startup Disk` to the new SSD drive to test if it works fine.
   -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
