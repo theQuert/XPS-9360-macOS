@@ -226,7 +226,6 @@
   - You need an external NVMe reader to carry your new SSD as a external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
-  - When [Carbon Copy Cloner](https://bombich.com/download) done, you can set your `Startup Disk` to the new SSD drive to test if it works fine.
   -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
   -  Now, it's time to enjoy...
 
