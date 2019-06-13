@@ -426,7 +426,7 @@
 		<key>ScreenResolution</key>
 		<string>1600x900</string>
 		<key>Theme</key>
-		<string>HighSierra</string>
+		<string>random</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
