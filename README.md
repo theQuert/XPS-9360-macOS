@@ -22,7 +22,7 @@
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r4934`
+- Clover `r4961`
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
