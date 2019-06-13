@@ -6,9 +6,11 @@
   https://github.com/vit9696/AppleALC
   An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
 
-- BrcmPatchRAM (2018-0505)
+- BrcmPatchRAM (2018-0505)(2.2.10)
   https://github.com/RehabMan/OS-X-BrcmPatchRAM
   Support for firmware uploads into Broadcom PatchRAM USB devices
+
+- BT4LEContiunityFixup.kext (1.1.2)
 
 - CPUFriend.kext (1.1.)
   https://github.com/PMheart/CPUFriend
@@ -18,7 +20,7 @@
   https://github.com/acidanthera/Lilu
   An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
 
-- USBInjectall.kext (2018-1108)
+- USBInjectall.kext (2018-1108)(0.7.1)
   https://github.com/RehabMan/OS-X-USB-Inject-All
   Kext to inject all USB ports for the installed Intel EHCI/XHCI chipset automatically.
 
@@ -35,7 +37,7 @@
   https://github.com/alexandred/VoodooI2C
   I²C (Inter-Integrated Circuit) driver, for Synaptics TouchPad
 
-- VoodooPS2Controller.kext (2018-1008)
+- VoodooPS2Controller.kext (2018-1008)(1.9.2)
   https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller
   Updated Voodoo PS/2 Controller, improved Keyboard
 
