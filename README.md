@@ -194,19 +194,15 @@
    - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
    - [Carbon Copy Cloner](https://bombich.com/download) If you need swap the SSD.
 
-   ## Customizing your Launchpad
-   - Source from [少數派](https://www.zhihu.com/question/20873070/answer/259704106)
-   Running the commands below:
-```
-   defaults write com.apple.dock springboard-columns -int 8; defaults write com.apple.dock springboard-rows -int 7; defaults write com.apple.dock ResetLaunchPad -bool TRUE; killall Dock
-```
-
    ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
    - Changing the `value` you like
    #### I have preset the `value` to `0`
+
+   ## More Custom Settings
+   Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands)
 
    ## HiDPI
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
