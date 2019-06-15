@@ -1,0 +1,1 @@
+defaults write com.apple.screencapture location ~/Desktop/screenshots; killall SystemUIServer
