@@ -182,6 +182,11 @@
  	  sudo touch /private/var/vm/sleepimage
  	  sudo chflags uchg /private/var/vm/sleepimage
    ```
+
+   ## CPUFriend
+   The kexts of CPUFriend has put in [Kexts](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Kexts), but only for my CPU.
+   If you need to generate new CPUFriend kexts, running the [command](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/CPUFriend).
+   
    ## For Better Using Experience
  You may need
    - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
@@ -226,11 +231,10 @@
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ```
    ### Swapping SSD
-  - You need an external NVMe reader to carry your new SSD as a external drive.
+  - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
   -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
-  -  Now, it's time to enjoy...
 
    ## Credits
    #### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
