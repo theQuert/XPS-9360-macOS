@@ -185,8 +185,8 @@
 
    ## CPUFriend
    The kexts of CPUFriend has put in [Kexts](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Kexts), but only for my CPU.
-   If you need to generate new CPUFriend kexts, running the [command](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/CPUFriend).
-   
+   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands)
+
    ## For Better Using Experience
  You may need
    - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
