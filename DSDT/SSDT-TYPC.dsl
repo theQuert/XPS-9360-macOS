@@ -1,36 +1,38 @@
-//
-// SSDT-YTBT.dsl
-//
-// Dell XPS 15 9560
-//
-// This SSDT fixes Type-C hot plug, and attempts to implement Thunderbolt device tree structure.
-//
-// Credit to dpassmor for the original ExpressCard idea:
-// https://www.tonymacx86.com/threads/usb-c-hotplug-questions.211313/
-//
-
-// XHC.SS01 - USB 3 right side
-// XHC.SS02 - USB 3 left side
-// XHC.HS02 - USB 2 left side
-// XHC.HS01.HUB - USB 2 right side
-
-
+/*
+ * Intel ACPI Component Architecture
+ * AML/ASL+ Disassembler version 20180427 (64-bit version)(RM)
+ * Copyright (c) 2000 - 2018 Intel Corporation
+ * 
+ * Disassembling to non-symbolic legacy ASL operators
+ *
+ * Disassembly of SSDT-TYPC.aml, Sun Jun 23 12:38:51 2019
+ *
+ * Original Table Header:
+ *     Signature        "SSDT"
+ *     Length           0x00000064 (100)
+ *     Revision         0x02
+ *     Checksum         0x7A
+ *     OEM ID           "hack"
+ *     OEM Table ID     "TYPC"
+ *     OEM Revision     0x00000000 (0)
+ *     Compiler ID      "INTL"
+ *     Compiler Version 0x20170929 (538380585)
+ */
 DefinitionBlock ("", "SSDT", 2, "hack", "TYPC", 0x00000000)
 {
-	External (_SB.PCI0.RP01.PXSX, DeviceObj)    // (from opcode)
+    External (_SB_.PCI0.RP01.PXSX, DeviceObj)    // (from opcode)
 
-	// USB-C
-	Scope (_SB.PCI0.RP01.PXSX) // UPSB
-	{
-		// This is the key fix for machines that turn off the Type-C port, right here.
-		Method (_RMV, 0, NotSerialized)  // _RMV: Removal Status
-		{
-			Return (One) // Returning 0 means not a removable device. But we want to act like an ExpressCard! (credit dpassmor)
-		}
+    Scope (_SB.PCI0.RP01.PXSX)
+    {
+        Method (_RMV, 0, NotSerialized)  // _RMV: Removal Status
+        {
+            Return (One)
+        }
 
-		Method (_STA, 0, NotSerialized)  // _STA: Status
-		{
-			Return (0x0F)
-		}
-	}
+        Method (_STA, 0, NotSerialized)  // _STA: Status
+        {
+            Return (0x0F)
+        }
+    }
 }
+

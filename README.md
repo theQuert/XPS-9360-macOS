@@ -108,6 +108,8 @@
 
   - SupportAssist OS Recovery: OFF
 
+  - Disable Camera
+
   ## You may receive the messages below during installation
   #### `Fail to erase the disk you choose to install macOS`
   ##### To solve the problem, showing `All Devices` before erasing, then erase the whole disk with `APFS`.
