@@ -293,6 +293,8 @@
 				<key>PluginType</key>
 				<true/>
 			</dict>
+			<key>PluginType</key>
+			<string>1</string>
 		</dict>
 		<key>SortedOrder</key>
 		<array>
@@ -304,10 +306,11 @@
 			<string>SSDT-USBX.aml</string>
 			<string>SSDT-PTSWAK.aml</string>
 			<string>SSDT-PRW.aml</string>
-			<string>SSDT-TYPC.aml</string>
 			<string>SSDT-YTBT.aml</string>
 			<string>SSDT-I2C.aml</string>
 			<string>SSDT-SMCD.aml</string>
+			<string>SSDT-TYPC.aml</string>
+			<string>SSDT-CPUF.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -465,8 +468,6 @@
 		<false/>
 		<key>KernelXCPM</key>
 		<false/>
-		<key>KextsToPatch</key>
-		<array/>
 	</dict>
 	<key>RtVariables</key>
 	<dict>
