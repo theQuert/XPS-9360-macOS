@@ -239,7 +239,6 @@
   -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
 
    ## Credits
-   #### [the-darkvoid](https://github.com/the-darkvoid/XPS9360-macOS)
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
