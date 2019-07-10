@@ -11,11 +11,6 @@
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
-## Not Work
-- Fingerprint Sensor
-- Card Reader
-- FaceTime
-- Messages
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
@@ -26,7 +21,7 @@
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
-  - Download the version you like from [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
+  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
   - Open EFI partition with [DiskGenius](http://www.diskgenius.cn/download.php).
   - Follow `README.md` in the `/EFI/CLOVER/kexts/Other`, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
 
@@ -242,7 +237,7 @@
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
-   #### [Disk_Image](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)
+   #### [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8)
    #### [daliansky](https://github.com/daliansky)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
    #### Kexts version and authors are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
