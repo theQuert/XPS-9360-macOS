@@ -121,12 +121,9 @@
  #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
  #### 4. Activate Wifi and Bluetooth functions for `BCM94352Z`, if not using this card you may remove the kexts below and unfollow Step 5.
- The kexts for `BCM94352z` has already put in
-- /CLOVER/kexts/Other/BrcmFirmwareRepo.kext
-- /CLOVER/kexts/Other/BrcmPatchRAM2.kext  
-- /CLOVER/kexts/Other/AirportBrcmFixup.kext  
+ The kexts for `BCM94352z` has already put in the folder `/BCM94352Z`
 
- #### 5. You still have to copy the kexts from path `/BCM94352Z/BrcmFirmwareRepo.kext` `/BCM94352Z/BrcmPatchRAM2.kext` to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
+ #### 5. You have to copy the kexts from path `/BCM94352Z/BrcmFirmwareRepo.kext` `/BCM94352Z/BrcmPatchRAM2.kext` `/BCM94352Z/AirportBrcmFixup.kext` `/BCM94352Z/Lilu.kext` to `/Library/Extensions`, and then running `/tools/Kext Utility` or [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
  #### 6. Change your `SMBIOS` settings for your Hackintosh
@@ -195,6 +192,7 @@
    - [Atom](https://atom.io/) to edit profile and programming.
    - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
    - [Carbon Copy Cloner](https://bombich.com/download) If you need swap the SSD.
+   - [TurboBoost Switcher](http://tbswitcher.rugarciap.com/) To disable TurboBoost for extending battery duration time when on battery time.
 
    ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
