@@ -35,7 +35,6 @@
 
 #### Format SSD with 4K sectors for `APFS` - You would need to make a Linux Bootable Drive
   - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
-  - Under Windows environment, you need to burn [Ubuntu](https://www.ubuntu.com/download/desktop) Disk image to USB Drive.
   - Boot with the Linux bootable drive.
   - using `nvme-cli` formatting SSD into `4K sectors` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
@@ -107,10 +106,10 @@
 
   ## You may receive the messages below during installation
   #### `Fail to erase the disk you choose to install macOS`
-  ##### To solve the problem, showing `All Devices` before erasing, then erase the whole disk with `APFS`.
+  ##### To solve the problem, show `All Devices` before erasing, then erase the whole disk with `APFS`.
   #### `The macOS installation couldn't be completed.`
-  #### To solve the problem, ignore it, and reboot again. You will see the new entry on `Clover Interface`.
-  #### Then, you may receive `Kernek Panic` during second installation process, you can replace original EFI with my repository, which can complete installation successfully.
+  ##### To solve the problem, ignore it, and reboot again. You will see the new entry on `Clover Interface`.
+  ##### Then, you may receive `Kernel Panic` during second installation process, you should replace original EFI of installation drive with my repository, which can complete installation successfully.
 
   ## Things to fix after boot into the system successfully
 
@@ -229,7 +228,7 @@
   - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
-  -  If it works fine, shutdown the system, and use the screw to swap your SSD with the new one.
+  -  If it works fine, shutdown the system, then swap your SSD with the new one.
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
