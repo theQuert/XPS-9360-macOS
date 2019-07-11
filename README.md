@@ -1,4 +1,4 @@
-## XPS 9360 Mojave 10.14.4 (18E226)
+## XPS 9360 Mojave 10.14.5 (18F132)
 
 
   - Device  : Dell XPS 13 9360                                                           
@@ -109,8 +109,8 @@
   #### `Fail to erase the disk you choose to install macOS`
   ##### To solve the problem, showing `All Devices` before erasing, then erase the whole disk with `APFS`.
   #### `The macOS installation couldn't be completed.`
-  #### To solve the problem, IGNORE it, and REBOOT again. You will see the new entry on `Clover Interface`.
-  ### If the system still fail to boot with the entry, please install the whole system again.
+  #### To solve the problem, ignore it, and reboot again. You will see the new entry on `Clover Interface`.
+  #### Then, you may receive `Kernek Panic` during second installation process, you can replace original EFI with my repository, which can complete installation successfully.
 
   ## Things to fix after boot into the system successfully
 
