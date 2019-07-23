@@ -1,4 +1,4 @@
-## XPS 9360 Mojave 10.14.5 (18F132)
+## XPS 9360 Mojave 10.14.6 (18G84)
 
 
   - Device  : Dell XPS 13 9360                                                           
@@ -17,13 +17,11 @@
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r5018`
+- Clover `r5027`
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
   - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
-  - Open EFI partition with [DiskGenius](http://www.diskgenius.cn/download.php).
-  - Follow `README.md` in the `/EFI/CLOVER/kexts/Other`, remove the kexts mentioned from `/EFI/CLOVER/kexts/Other`
 
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
@@ -103,13 +101,6 @@
   - SupportAssist OS Recovery: OFF
 
   - Disable Camera
-
-  ## You may receive the messages below during installation
-  #### `Fail to erase the disk you choose to install macOS`
-  ##### To solve the problem, show `All Devices` before erasing, then erase the whole disk with `APFS`.
-  #### `The macOS installation couldn't be completed.`
-  ##### To solve the problem, ignore it, and reboot again. You will see the new entry on `Clover Interface`.
-  ##### Then, you may receive `Kernel Panic` during second installation process, you should replace original EFI of installation drive with my repository, which can complete installation successfully.
 
   ## Things to fix after boot into the system successfully
 
