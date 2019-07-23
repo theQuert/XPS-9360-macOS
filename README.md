@@ -21,6 +21,7 @@
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
+  - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8).
   - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
 
 #### DVMT
