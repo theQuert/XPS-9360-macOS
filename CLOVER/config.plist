@@ -562,10 +562,6 @@
 		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro15,2</string>
-		<key>SerialNumber</key>
-		<string>C02X1FYJJHCD</string>
-		<key>SmUUID</key>
-		<string>3DD4606D-D7D5-4E38-AF9D-EADED737C6E8</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
@@ -573,8 +569,6 @@
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
-		<key>CustomUUID</key>
-		<string>CF3AF82F-AB0B-5C42-8A6A-DA83678B2AA3</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>

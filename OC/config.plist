@@ -847,14 +847,14 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XW0DAJHCD</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>EBF67995-B6C6-4D56-B7B0-3E66B3858D50</string>
+			<string></string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string>C02852100GUJH4RA8</string>
+			<string></string>
 			<key>ROM</key>
 			<data>
 			yv66vt6tvu8=
@@ -862,9 +862,9 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XW0DAJHCD</string>
+			<string></string>
 			<key>SystemUUID</key>
-			<string>EBF67995-B6C6-4D56-B7B0-3E66B3858D50</string>
+			<string></string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
