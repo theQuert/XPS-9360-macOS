@@ -21,8 +21,8 @@
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
-  - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8).
-  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
+  - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
+  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
 
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
@@ -226,7 +226,7 @@
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
-   #### [Disk_Image](https://drive.google.com/open?id=1itXIfzYz8L6_iK7sr0FvNpOkJ2YRc9-8)
+   #### [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu)
    #### [daliansky](https://github.com/daliansky)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
    #### Kexts version and authors are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
