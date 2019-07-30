@@ -47,16 +47,6 @@
 
 -- Archived ---
 
-- AppleBacklightInjector.kext
-  https://www.tonymacx86.com/threads/guide-laptop-backlight-control-using-applebacklightinjector-kext.218222/
-  Implement backlight control for laptop internal displays on macOS/OS X
-
-- FakePCIID.kext (2018-1027)
-  FakePCIID_Broadcom_WiFi.kext
-  FakePCIID_Intel_HD_Graphics.kext
-  https://github.com/RehabMan/OS-X-Fake-PCI-ID
-  The purpose of this kext is to attach to any IOPCIDevice so it can provide alternate PCI ID when another driver attached to the same device requests them.
-
 - ACPIBatteryManager.kext (2018-1005)
   https://github.com/RehabMan/OS-X-ACPI-Battery-Driver
   ACPIBatteryManager by RehabMan
