@@ -23,11 +23,11 @@
 #### Make Bootable Installation Drive - macOS with Clover
   - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
   - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
-##### SHA256
+##### MD5
   ```
-  SHA256 (macOS Mojave 10.14.4(18E226) Installer with Clover 4961.dmg) = b11b40b03caf224588417bfb9077f89ee7917fe51c8dc00cb6bf20bd8f3b8ac2
-  SHA256 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 9a08b13a918955d8a7bf37612bb81451e409be45562911ecd1f8a27637bb485f
-  SHA256 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 22552fb5a0a7b9f03f40ef25a8f612adb01d58d81bcdf95265c96cffa11515f1
+  MD5 (macOS Mojave 10.14.4(18E226) Installer with Clover 4961.dmg) = 81e184a76eb8ab7cbfc77cae9a9f820b
+  MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 67fcfbc9e93371486075690cec882601
+  MD5 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 36c944388b42b531378847640e6cb236
   ```
 
 #### DVMT
