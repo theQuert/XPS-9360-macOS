@@ -175,8 +175,8 @@
    ```
 
    ## CPUFriend
-   The kexts of CPUFriend has put in [Kexts](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Kexts), but only for my CPU.
-   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands)
+   The kexts and SSDT for i7-8550U has put in [Kexts](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Kexts).
+   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend).
 
    ## For Better Using Experience
  You may need
@@ -199,7 +199,7 @@
    #### I have preset the `value` to `0`
 
    ## More Custom Settings
-   Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands)
+   Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
 
    ## HiDPI
    Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
@@ -230,9 +230,9 @@
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
+   #### [CPUFriend](https://github.com/acidanthera/CPUFriend)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
    #### [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu)
-   #### [daliansky](https://github.com/daliansky)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
    #### Kexts version and authors are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
