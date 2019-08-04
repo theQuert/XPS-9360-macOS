@@ -175,7 +175,7 @@
    ```
 
    ## CPUFriend
-   The kexts and SSDT for i7-8550U has put in [Kexts](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Kexts).
+   The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U).
    #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend).
 
    ## For Better Using Experience
