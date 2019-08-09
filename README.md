@@ -175,7 +175,11 @@
    ```
 
    ## CPUFriend
-   The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U).
+   The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by using SMBIOS with MacbookPro 14,1.
+   You have to put CPUFriend & CPUFrindDataProvider in both /CLOVER/kexts/Other and L/E, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
+   Furthermore, you also have to put SSDT-CPUF.aml to /CLOVER/ACPI/patched for working normal after awake.
+
+   #### If your config.plist works with MacbookPro 15,2 , I have put corresponding kexts and SSDT in the folder as well.
    #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend).
 
    ## For Better Using Experience
