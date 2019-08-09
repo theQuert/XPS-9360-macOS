@@ -558,11 +558,17 @@
 		<string>0x1A</string>
 		<key>ProductName</key>
 		<string>MacBookPro14,1</string>
+		<key>SerialNumber</key>
+		<string>C02VKRY6HV29</string>
+		<key>SmUUID</key>
+		<string>E467A093-815F-4C94-8B1F-C26A1D428498</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>96D967A5-0255-4A99-BAA6-98A11F548564</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
