@@ -1,4 +1,4 @@
-## XPS 9360 Mojave 10.14.6 (18G84)
+# XPS 9360 Mojave 10.14.6 (18G84)
 
 
   - Device  : Dell XPS 13 9360                                                           
