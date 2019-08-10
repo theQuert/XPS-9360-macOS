@@ -1,5 +1,5 @@
 # macOS on XPS 13 9360
-## macOS Mojave10.14.6 (18G84)
+## macOS Mojave 10.14.6 (18G84)
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
