@@ -28,6 +28,7 @@
   MD5 (macOS Mojave 10.14.4(18E226) Installer with Clover 4961.dmg) = 81e184a76eb8ab7cbfc77cae9a9f820b
   MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 67fcfbc9e93371486075690cec882601
   MD5 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 36c944388b42b531378847640e6cb236
+  MD5 (macOS Mojave 10.14.6(18G87) Installer with Clover 5033.dmg)  = f127d09038bf18df1b58c87d480adb85
   ```
 
 #### DVMT
