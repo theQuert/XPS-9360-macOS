@@ -4,7 +4,7 @@
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
   - GPU     : Intel UHD 620                                                              
-  - Ram     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
+  - RAM     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                                      
   - Display : FHD (1920x1080)
@@ -22,7 +22,8 @@
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
   - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
-  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu), then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive.
+  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
+  - Check MD5 checksum of the image files to make sure it is the same as below, then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive  .
 ##### MD5
   ```
   MD5 (macOS Mojave 10.14.4(18E226) Installer with Clover 4961.dmg) = 81e184a76eb8ab7cbfc77cae9a9f820b
