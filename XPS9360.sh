@@ -16,12 +16,13 @@ git_update()
 {
 	cd ${REPO}
 	echo "${GREEN}[GIT]${OFF}: Updating local data to latest version"
-	
-	echo "${BLUE}[GIT]${OFF}: Updating to latest XPS9360-macOS git master"
-	git pull
+
+	echo "${BLUE}[GIT]${OFF}: Updating to latest Dell-XPS0-9360-Hackintosh git master"
+	echo "${BLUE}[GIT]${OFF}: Git clone newest repository to current path"
+	git clone https://github.com/the-Quert/Dell-XPS-9360-Hackintosh.git
 }
 
-compile_dsdt() 
+compile_dsdt()
 {
 	echo "${GREEN}[DSDT]${OFF}: Compiling  DSDT / SSDT hotpatches in ./DSDT"
 	cd "${REPO}"
@@ -37,12 +38,12 @@ patch_hda()
 {
 	echo "${GREEN}[HDA]${OFF}: Creating AppleHDA injection kernel extension for ${BOLD}ALC256${OFF}"
 	cd "${REPO}"
-	
+
 	plist=./audio/AppleHDA_ALC256.kext/Contents/Info.plist
-	
+
 	echo "       --> ${BOLD}Creating AppleHDA_ALC256 file layout${OFF}"
 	rm -R ./audio/AppleHDA_ALC256.kext 2&>/dev/null
-	
+
 	cp -RX /System/Library/Extensions/AppleHDA.kext ./audio/AppleHDA_ALC256.kext
 	rm -R ./audio/AppleHDA_ALC256.kext/Contents/Resources/*
 	rm -R ./audio/AppleHDA_ALC256.kext/Contents/PlugIns
@@ -87,7 +88,7 @@ patch_hda()
 	/usr/libexec/PlistBuddy -c "Add ':IOKitPersonalities:HDA Hardware Config Resource:IOProbeScore' integer" $plist
 	/usr/libexec/PlistBuddy -c "Set ':IOKitPersonalities:HDA Hardware Config Resource:IOProbeScore' 2000" $plist
 	/usr/libexec/PlistBuddy -c "Merge ./audio/ahhcd.plist ':IOKitPersonalities:HDA Hardware Config Resource'" $plist
-    
+
 	echo "       --> ${BOLD}Created AppleHDA_ALC256.kext${OFF}"
 	sudo cp -r ./audio/AppleHDA_ALC256.kext /Library/Extensions
 	echo "       --> ${BOLD}Installed AppleHDA_ALC256.kext to /Library/Extensions${OFF}"
@@ -124,15 +125,11 @@ RETVAL=1
 
 case "$1" in
 	--update)
-		git_update
+		git_pull
 		RETVAL=0
 		;;
 	--compile-dsdt)
 		compile_dsdt
-		RETVAL=0
-		;;
-	--patch-hda)
-		patch_hda
 		RETVAL=0
 		;;
 	--combo-jack)
@@ -152,22 +149,22 @@ case "$1" in
 		RETVAL=0
 		;;
 	*)
-		echo "${BOLD}Dell XPS 9530${OFF} - High Sierra 10.13.6 (17G2208)"
-		echo "https://github.com/the-darkvoid/XPS9360-macOS"
+		echo "${BOLD}Dell XPS 9360 Hackintosh${OFF} - Mojave 10.14.6 (18G84)"
+		echo "https://github.com/the-Quert/Dell-XPS-9360-Hackintosh"
 		echo
 		echo "\t${BOLD}--update${OFF}: Update to latest git version (including externals)"
 		echo "\t${BOLD}--compile-dsdt${OFF}: Compile DSDT files to ./DSDT/compiled"
-		echo "\t${BOLD}--patch-hda${OFF}: Create AppleHDA injector kernel extension"
 		echo "\t${BOLD}--combo-jack${OFF}: Install ComboJack user daemon (Headset / Headphone detection)"
 		echo "\t${BOLD}--enable-trim${OFF}: Enable trim support for 3rd party SSD"
 		echo "\t${BOLD}--enable-3rdparty${OFF}: Enable 3rd party application support (run app from anywhere)"
 		echo "\t${BOLD}--disable-touchid${OFF}: Disable Touch ID daemons (Used for Macbook15,2 profile)"
 		echo
 		echo "Credits:"
-		echo "${BLUE}OS-X-Clover-Laptop-Config (Hot-patching)${OFF}: https://github.com/RehabMan/OS-X-Clover-Laptop-Config"
-		echo "${BLUE}Dell XPS 13 9360 Guide by bozma88${OFF}: https://www.tonymacx86.com/threads/guide-dell-xps-13-9360-on-macos-sierra-10-12-x-lts-long-term-support-guide.213141"
-		echo "${BLUE}AppleHDA ALC256${OFF}: https://github.com/Mirone/AppleHDAPatcher"
-		echo "${BLUE}AppleALC${OFF}: https://github.com/vit9696/AppleALC"
+		echo "${BLUE}ComboJack${OFF}: https://github.com/hackintosh-stuff/ComboJack"
+		echo "${BLUE}CPUFriend${OFF}: https://github.com/acidanthera/CPUFriend"
+		echo "${BLUE}HiDPI${OFF}: https://github.com/xzhih/one-key-hidpi"
+		echo "${BLUE}OpenCore-Configurator${OFF}: https://github.com/notiflux/OpenCore-Configurator"
+		echo "${BLUE}Leo Neo Usfsg${OFF}: https://www.facebook.com/yuting.lee.leo"
 		echo
 		;;
 esac
