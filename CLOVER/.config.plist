@@ -481,21 +481,21 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>05/28/2019</string>
+		<string>09/17/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.F000.B00.1905281616</string>
+		<string>MBP152.88Z.F000.B00.1809171524</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02742300CDHWVP1F</string>
+		<string>C02827130QXJH4R1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
-		<string>1.0</string>
+		<string>MacBookPro15,2</string>
 		<key>ChassisAssetTag</key>
 		<string>MacBook-Aluminum</string>
 		<key>ChassisManufacturer</key>
@@ -503,9 +503,9 @@
 		<key>ChassisType</key>
 		<string>0x09</string>
 		<key>EfiVersion</key>
-		<string>196.0.0.0.0</string>
+		<string>220.200.252.0.0</string>
 		<key>Family</key>
-		<string>MacBook Pro</string>
+		<string>MacBook</string>
 		<key>FirmwareFeatures</key>
 		<string>0xFC0FE137</string>
 		<key>FirmwareFeaturesMask</key>
@@ -516,6 +516,8 @@
 		<string>Apple Inc.</string>
 		<key>Memory</key>
 		<dict>
+			<key>Channels</key>
+			<integer>2</integer>
 			<key>Modules</key>
 			<array>
 				<dict>
@@ -551,22 +553,28 @@
 					<string>SK Hynix</string>
 				</dict>
 			</array>
+			<key>SlotCount</key>
+			<integer>2</integer>
 		</dict>
 		<key>Mobile</key>
 		<true/>
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro15,2</string>
 		<key>SerialNumber</key>
-		<string>C02VKRY6HV29</string>
+		<string>C02X1FYJJHCD</string>
 		<key>SmUUID</key>
-		<string>E467A093-815F-4C94-8B1F-C26A1D428498</string>
+		<string>3DD4606D-D7D5-4E38-AF9D-EADED737C6E8</string>
+		<key>Trust</key>
+		<true/>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
+		<key>CustomUUID</key>
+		<string>CF3AF82F-AB0B-5C42-8A6A-DA83678B2AA3</string>
 		<key>InjectKexts</key>
 		<string>Detect</string>
 		<key>InjectSystemID</key>
