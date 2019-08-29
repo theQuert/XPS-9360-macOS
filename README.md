@@ -1,5 +1,5 @@
 # macOS on XPS 13 9360
-## macOS Mojave 10.14.6 (18G84)
+## macOS Mojave 10.14.6 (18G95)
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
@@ -17,7 +17,7 @@
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r5033`
+- Clover `r5058`
 
 ## Before Installation
 #### Make Bootable Installation Drive - macOS with Clover
@@ -30,6 +30,7 @@
   MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 67fcfbc9e93371486075690cec882601
   MD5 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 36c944388b42b531378847640e6cb236
   MD5 (macOS Mojave 10.14.6(18G87) Installer with Clover 5033.dmg)  = f127d09038bf18df1b58c87d480adb85
+  MD5 (macOS Mojave 10.14.6(18G95) Installer with Clover 5058.dmg)  = 41c4b3e56c99a0e69616095dbe7b9eb7
   ```
 
 #### DVMT
@@ -142,15 +143,15 @@
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
    ```BASH
-      bash /Volumes/EFI/EFI/XPS9360.sh --compile-dsdt
+      bash /Volumes/EFI/XPS9360.sh --compile-dsdt
    ```
    -  Running `XPS9360.sh` to Enable Third Party Application
    ```BASH
-      bash /Volumes/EFI/EFI/XPS9360.sh --enable-3rdparty
+      bash /Volumes/EFI/XPS9360.sh --enable-3rdparty
    ```
    -  Running `XPS9360.sh` to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
    ```BASH
-      bash /Volumes/EFI/EFI/XPS9360.sh --disable-touchid
+      bash /Volumes/EFI/XPS9360.sh --disable-touchid
    ```
 
    ## Enable Trim on SSD
