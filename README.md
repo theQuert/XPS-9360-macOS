@@ -163,7 +163,7 @@
    ## Fix the Headset Jack
   Running the below commands to fix Headset Jack
    ```BASH
-      bash /Volumes/EFI/EFI/ComboJack/install.sh
+      bash /Volumes/EFI/ComboJack/install.sh
    ```
 
    ## For Better Sleep
