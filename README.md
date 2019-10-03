@@ -30,8 +30,7 @@
   MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 67fcfbc9e93371486075690cec882601
   MD5 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 36c944388b42b531378847640e6cb236
   ```
-##### Since 18G87 and 18G95 are un-bootable, the two versions will be deleted from repository and GDrive temporarily.
-##### New ISO for 18G87 and 18G95 will be testing and uploading in one week.
+
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
