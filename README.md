@@ -20,20 +20,6 @@
 - Clover `r5096`
 
 ## Before Installation
-#### Make Bootable Installation Drive - macOS with Clover
-  - I have made customized versions of [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
-  - Download the version you like from [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu).
-  - Check MD5 checksum of the image files to make sure it is the same as below, then burn the image with [Etcher](https://www.balena.io/etcher/) to your USB drive  .
-<<<<<<< HEAD
-=======
-##### MD5
-  ```
-  MD5 (macOS Mojave 10.14.4(18E226) Installer with Clover 4961.dmg) = 81e184a76eb8ab7cbfc77cae9a9f820b
-  MD5 (macOS Mojave 10.14.5(18F132) Installer with Clover 5018.dmg) = 67fcfbc9e93371486075690cec882601
-  MD5 (macOS Mojave 10.14.6(18G84) Installer with Clover 5027.dmg)  = 36c944388b42b531378847640e6cb236
-  ```
->>>>>>> f6db2e54d5f7a414449f8c2f50b3facfaeb22121
-
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
