@@ -7,9 +7,9 @@
   - RAM     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
   - Sound   : ALC256 (ALC3246)                                                           
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                                      
-  - Display : FHD (1920x1080)
+  - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
-  - Wifi-Card : Swapped the original `Killer 1535` with [`BCM94352z(DW1560)`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
+  - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
 
 ## Device Firmware
@@ -103,30 +103,30 @@
 
  #### 1. Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
 
- #### 2. Copy the whole folders and files from this repository to your EFI partition, for booting without USB purpose.
+ #### 2. Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
 
  #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
- #### 4. Activate Wifi and Bluetooth functions for `BCM94352Z`, if not using this card you may remove the kexts below and unfollow Step 5.
- The kexts for `BCM94352z` has already put in the folder `/BCM94352Z`
+ #### 4. Activate Wifi and Bluetooth functions for `DW1560`, follow Step 5, or skip to step 6.
+ The kexts for `DW1560` have already put in the folder `/DW1560`
 
- #### 5. You have to copy the kexts from path `/BCM94352Z/BrcmFirmwareRepo.kext` `/BCM94352Z/BrcmPatchRAM2.kext` `/BCM94352Z/AirportBrcmFixup.kext` `/BCM94352Z/Lilu.kext` to `/Library/Extensions`, and then running `/tools/Kext Utility` or [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
+ #### 5. You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
- #### 6. Change your `SMBIOS` settings for your Hackintosh
+ #### 6. Change your `SMBIOS` settings for your device
 - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
 - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
- #### 7. Running `XPS9360.sh` with the instructions below
-   -  After Mount the EFI partition with Clover Configurator or running the following commands in Terminal below
-   -  Find the disk name of you EFI partition with the command
+ #### 7. Running `XPS9360.sh` with the instructions as below
+   -  After mounting the EFI partition with Clover Configurator or running the following commands in Terminal below
+   -  Find the disk name of EFI partition with the command
    ```BASH
       sudo diskutil list
    ```
    -  Mount EFI partition with the command
    ```BASH
-      sudo diskutil mount /dev/disk0s1   //The position of your EFI partition
+      sudo diskutil mount /dev/disk0s1
    ```
    -  Running `XPS9360.sh` to Compile `DSDT`
    ```BASH
@@ -196,7 +196,7 @@
    Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
 
    ## HiDPI
-   Using [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
+   Use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
 
    ## Optional Settings
    ### CPU Undervolting
