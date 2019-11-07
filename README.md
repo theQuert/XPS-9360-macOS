@@ -19,7 +19,7 @@
 ## Clover Firmware
 - Clover `r5096`
 
-## Before Installation
+## Pre-Installation
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
@@ -227,6 +227,5 @@
    #### [CPUFriend](https://github.com/acidanthera/CPUFriend)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
-   #### [Disk_Image](https://drive.google.com/open?id=1XBn6rYLjRlheRmgJIT8gHj2SRqWU4dnu)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
    #### Kexts version and authors are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
