@@ -24,7 +24,7 @@
 #### Create bootable USB installer:
   - Running [Python Script](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader_1.py) in terminal, works with Windows|GNU/Linux|macOS environment, download the version you prefer.
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
-  - Copy the whole repository to the EFI partition. 
+  - Copy the whole repository to the EFI partition.
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
@@ -106,21 +106,20 @@
 
   ## Things to fix after boot into the system successfully
 
- #### 1. Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
+    - 1. Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
 
- #### 2. Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
+    - 2. Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
 
- #### 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
+    - 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
- #### 4. Activate Wifi and Bluetooth functions for `DW1560`, follow Step 5, or skip to step 6.
- The kexts for `DW1560` have already put in the folder `/DW1560`
+    - 4. Activate Wifi and Bluetooth functions for `DW1560`, follow Step 5, or skip to step 6.
 
- #### 5. You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission. Which may enhance the stability for Wifi & Bluetooth.
+    - 5. You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission.
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
- #### 6. Change your `SMBIOS` settings for your device
-- Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
-- Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
+    - 6. Change your `SMBIOS` settings for your device
+      - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
+      - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
  #### 7. Running `XPS9360.sh` with the instructions as below
@@ -175,26 +174,13 @@
    - Furthermore, you also have to put [SSDT-CPUF.aml](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/CPUFriend/i7-8550U/CPUFriend_14%2C1/SSDT-CPUF.aml) into [/CLOVER/ACPI/patched](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CLOVER/ACPI/patched) for working normal after awake.
 
    #### If your [config.plist](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/CLOVER/config.plist) works with MacbookPro 15,2 , I have put corresponding kexts and SSDT in the [folder](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U/CPUFriend_15%2C2) as well.
-   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend).
-
-   ## For Better Using Experience
- You may need
-   - [BetterSnapTool](https://itunes.apple.com/tw/app/bettersnaptool/id417375580?mt=12) to arrange the position of the windows on screen better.
-   - [Bartender](https://www.macbartender.com/) to add/remove the icon showing on the status bar.
-   - [FruitJuice](https://fruitjuiceapp.com/) to monitor the battery status and usage time.
-   - [Xclient](https://xclient.info) to download some software, for testing purpose.
-   - [Macxin](https://macxin.com) to download some software, for testing purpose.
-   - [Transmit](https://panic.com/transmit/) to access your Cloud Storage and FTP Server.
-   - [Atom](https://atom.io/) to edit profile and programming.
-   - [XDM](http://xdman.sourceforge.net/) works as a downloader on macOS.
-   - [Carbon Copy Cloner](https://bombich.com/download) If you need swap the SSD.
-   - [TurboBoost Switcher](http://tbswitcher.rugarciap.com/) To disable TurboBoost for extending battery duration time when on battery time.
+   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
-   - Changing the `value` you like
+   - Changing the `value` you prefer
    #### I have preset the `value` to `0`
 
    ## More Custom Settings
@@ -225,7 +211,6 @@
   - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
-  -  If it works fine, shutdown the system, then swap your SSD with the new one.
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
