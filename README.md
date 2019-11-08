@@ -1,6 +1,7 @@
 # macOS on XPS 13 9360
-## Compatible with macOS Catalina | Mojave
+## macOS Mojave 10.14.6 (18G95)
 
+- Currently compatible with macOS `10.15.1` `10.15` `10.14.6` `10.14.5` `10.14.4`  
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
   - GPU     : Intel UHD 620                                                              
@@ -10,8 +11,7 @@
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
-  - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - Current macOS version: Mojave 10.14.6 (18G85)                                            
+  - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                     
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
@@ -21,6 +21,10 @@
 - Clover `r5096`
 
 ## Pre-Installation
+#### Create bootable USB installer:
+  - Running [Python Script](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader_1.py) in terminal, works with Windows|GNU/Linux|macOS environment, download the version you prefer.
+  - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
+  - Copy the whole repository to the EFI partition. 
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
