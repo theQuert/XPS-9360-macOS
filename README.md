@@ -1,5 +1,5 @@
 # macOS on XPS 13 9360
-## macOS Mojave 10.14.6 (18G95)
+## Compatible with macOS Catalina | Mojave
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
@@ -10,7 +10,8 @@
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
-  - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)                                                   
+  - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
+  - Current macOS version: Mojave 10.14.6 (18G85)                                            
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
