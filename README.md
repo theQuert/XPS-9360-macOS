@@ -123,8 +123,8 @@
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
   - Running `XPS9360.sh` with the instructions as below
-   -  After mounting the EFI partition with Clover Configurator or running the following commands in Terminal below
-   -  Find the disk name of EFI partition with the command
+   -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
+   -  Find the disk name of EFI partition with the command.
    ```BASH
       sudo diskutil list
    ```
@@ -152,11 +152,14 @@
    ```
 
    ## Fix the Headset Jack
-  Running the below commands to fix Headset Jack
+  - Running the below commands to fix Headset Jack
    ```BASH
       bash /Volumes/EFI/ComboJack/install.sh
    ```
-
+  - Buzz sound occurs with headphone or speaker:
+  ```
+    Open System Preferences/Sound/Input
+```
    ## For Better Sleep
    Run the Commands below:
    ```BASH
