@@ -1,5 +1,5 @@
 # macOS on XPS 13 9360
-#### Currently compatible with macOS ```10.15.1``` ```10.15``` ```10.14.6``` ```10.14.5``` ```10.14.4```
+#### Currently compatible with macOS ```10.15.1```, ```10.15```, ```10.14.6``` ,```10.14.5```, ```10.14.4```
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
