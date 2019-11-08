@@ -106,23 +106,23 @@
 
   ## Things to fix after boot into the system successfully
 
-    - 1. Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
+     1. Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
 
-    - 2. Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
+     2. Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
 
-    - 3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
+     3. Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
-    - 4. Activate Wifi and Bluetooth functions for `DW1560`, follow Step 5, or skip to step 6.
+     4. Activate Wifi and Bluetooth functions for `DW1560`, follow Step 5, or skip to step 6.
 
-    - 5. You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission.
+     5. You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission.
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
 
-    - 6. Change your `SMBIOS` settings for your device
+     6. Change your `SMBIOS` settings for your device
       - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
       - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
- #### 7. Running `XPS9360.sh` with the instructions as below
+     7. Running `XPS9360.sh` with the instructions as below
    -  After mounting the EFI partition with Clover Configurator or running the following commands in Terminal below
    -  Find the disk name of EFI partition with the command
    ```BASH
