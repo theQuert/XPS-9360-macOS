@@ -38,6 +38,10 @@
   - Boot with the Linux bootable drive.
   - using `nvme-cli` formatting SSD into `4K sectors` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
+#### Get compatible with LITEON and PLEXTOR SSD
+  - To solve the problem, you need to add patches to existed config.plist
+  - THE config.plist with patches is under the path with [/CLOVER/config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config%20for%20LITEON).
+  - Try any one at each time, one of them is captible with your SSD.
 
 #### BIOS settings
   - Sata: AHCI
