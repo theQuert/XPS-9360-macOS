@@ -123,7 +123,7 @@
 
   -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
 
-  -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
+  -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/EFI/CLOVER/CLOVERX64.efi`
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
