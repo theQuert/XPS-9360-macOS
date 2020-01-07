@@ -1,6 +1,7 @@
 # macOS on XPS 13 9360
 #### This repo is currently compatible with macOS versions as below...
 | macOS Catalina  | macOS Mojave | macOS High Sierra |
+|-----------------|--------------|-------------------|
 |   10.15.2       |   10.14.6    |      10.13.6      |
 |   10.15.1       |   10.14.5    |                   |
 |   10.15         |   10.14.4    |                   |
