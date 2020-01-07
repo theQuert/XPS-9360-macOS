@@ -1,5 +1,5 @@
 # macOS on XPS 13 9360
-#### Currently compatible with macOS ```10.15.1```, ```10.15```, ```10.14.6``` ,```10.14.5```, ```10.14.4```
+#### Currently compatible with macOS ```10.15.2```, ```10.15.1```, ```10.15```, ```10.14.6``` ,```10.14.5```, ```10.14.4```
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
@@ -11,14 +11,14 @@
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - OS: macOS Mojave 10.14.6 (18G95)                                
+  - OS: macOS Mojave 10.15.2 (19C57)                                
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r5096`
+- Clover `r5102`
 
 ## Pre-Installation
 #### Create bootable USB installer:
@@ -108,15 +108,15 @@
 
   - Disable Camera
 
-  ## Things to fix after boot into the system successfully
+  ## Things to fix after booting into the system successfully
 
   - Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
 
-  -  Copy the whole folders and files from this repository to EFI partition, for booting without USB purpose.
+  -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
 
-  -  Enter the `BIOS/Boot Sequence` adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
+  -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/EFI/EFI/CLOVER/CLOVERX64.efi`
 
-  -  Activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
+  -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
   -  You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission.
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
