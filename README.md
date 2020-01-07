@@ -1,5 +1,13 @@
 # macOS on XPS 13 9360
-#### Currently compatible with macOS ```10.15.2```, ```10.15.1```, ```10.15```, ```10.14.6``` ,```10.14.5```, ```10.14.4```
+#### This repo is currently compatible with macOS versions as below...
+| macOS Catalina  | macOS Mojave | macOS High Sierra |
+|   10.15.2       |   10.14.6    |      10.13.6      |
+|   10.15.1       |   10.14.5    |                   |
+|   10.15         |   10.14.4    |                   |
+|                 |   10.14.3    |                   |
+|                 |   10.14.2    |                   |
+|                 |   10.14.1    |                   |
+|                 |   10.14      |                   |
 
   - Device  : Dell XPS 13 9360                                                           
   - CPU     : Intel i7-8550U                                                             
@@ -11,7 +19,7 @@
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - OS: macOS Mojave 10.15.2 (19C57)                                
+  - OS: `macOS Catalina 10.15.2 (19C57)`                                
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
