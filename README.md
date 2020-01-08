@@ -49,7 +49,7 @@
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 #### Get compatible with LITEON and PLEXTOR SSD
   - To solve the problem, you need to add patches to existed `config.plist`
-  - THE config.plist with patches is under the path with [/CLOVER/config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config%20for%20LITEON).
+  - Thea `config.plist` with patch is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
   - Try any one at each time, one of them is captible with your SSD.
 
 #### BIOS settings
@@ -177,13 +177,23 @@
    Run the Commands below:
    ```BASH
     sudo pmset -a hibernatemode 0
+   ```
+   ```BASH
  	  sudo pmset -a autopoweroff 0
+   ```
+   ```BASH
  	  sudo pmset -a standby 0
+   ```
+   ```BASH
  	  sudo rm /private/var/vm/sleepimage
+   ```
+   ```BASH
  	  sudo touch /private/var/vm/sleepimage
+   ```
+   ```BASH
  	  sudo chflags uchg /private/var/vm/sleepimage
    ```
-
+   
    ## SMBIOS
    - Default SMBIOS of this repo is `MacbookPro16,1`.
    - After testing, performance is working same as `MacbookPro15,2` and `MacbookPro14,1`.
