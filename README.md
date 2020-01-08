@@ -185,11 +185,11 @@
    ```
 
    ## CPUFriend
-   - The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by using SMBIOS with MacbookPro 14,1.
-   - You have to put [CPUFriend.kext](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U/CPUFriend_14%2C1/CPUFriend.kext) & [CPUFrindDataProvider.kext](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U/CPUFriend_14%2C1/CPUFriendDataProvider.kext/Contents) in both [/CLOVER/kexts/Other](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CLOVER/kexts/Other) and L/E, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
-   - Furthermore, you also have to put [SSDT-CPUF.aml](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/CPUFriend/i7-8550U/CPUFriend_14%2C1/SSDT-CPUF.aml) into [/CLOVER/ACPI/patched](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CLOVER/ACPI/patched) for working normal after awake.
+   - The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with MacbookPro 16,1.
+   - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `L/E`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
+   - Furthermore, you also have to put `SSDT-CPUF.aml` into `/CLOVER/ACPI/patched` for working normal after awake.
 
-   #### If your [config.plist](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/CLOVER/config.plist) works with MacbookPro 15,2 , I have put corresponding kexts and SSDT in the [folder](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U/CPUFriend_15%2C2) as well.
+   #### If your `config.plist` works with MacbookPro 15,2 or Macbook 14,1 , I have put corresponding kexts and SSDT in the [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
    #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
