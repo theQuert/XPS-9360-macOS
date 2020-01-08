@@ -10,17 +10,17 @@
 |                     |   10.14.1  (18B75)   |                       |
 |                     |   10.14    (18A389)  |                       |
 
-  - Device  : Dell XPS 13 9360                                                           
-  - CPU     : Intel i7-8550U                                                             
-  - GPU     : Intel UHD 620                                                              
-  - RAM     : SK Hynix 16GB 2133 MHz LPDDR3                                                   
-  - Sound   : ALC256 (ALC3246)                                                           
-  - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                                      
+  - Device  : Dell XPS 13 9360    
+  - CPU     : Intel i7-8550U                                                           
+  - GPU     : Intel UHD 620                                                             
+  - RAM     : SK Hynix 16GB 2133 MHz LPDDR3
+  - Sound   : ALC256 (ALC3246)                                              
+  - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                     
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - OS: macOS Catalina `10.15.2 (19C57)`                                
+  - OS: macOS Catalina `10.15.2 (19C57)`
 
 ## Device Firmware
 - BIOS Version: BIOS `2.8.1`
@@ -48,7 +48,7 @@
   - using `nvme-cli` formatting SSD into `4K sectors` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 #### Get compatible with LITEON and PLEXTOR SSD
-  - To solve the problem, you need to add patches to existed config.plist
+  - To solve the problem, you need to add patches to existed `config.plist`
   - THE config.plist with patches is under the path with [/CLOVER/config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config%20for%20LITEON).
   - Try any one at each time, one of them is captible with your SSD.
 
@@ -169,7 +169,7 @@
    ```BASH
       bash /Volumes/EFI/ComboJack/install.sh
    ```
-  - Buzz sound occurs with headphone or speaker:
+  - Buzz sounds or no sounds occurs with headphone or speaker:
   ```
     Open System Preferences/Sound/Input
 ```
@@ -185,17 +185,17 @@
    ```
 
    ## SMBIOS
-   - Default SMBIOS of this repo is MacbookPro16,1.
-   - After testing, performance is working same as MacbookPro15,2 and MacbookPro14,1.
-   - If you prefer MacbookPro15,2 or MacbookPro14,1 , corresponding config are provided in [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
+   - Default SMBIOS of this repo is `MacbookPro16,1`.
+   - After testing, performance is working same as `MacbookPro15,2` and `MacbookPro14,1`.
+   - If you prefer `MacbookPro15,2` or `MacbookPro14,1`, corresponding `config.plist` are provided in [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
    ## CPUFriend
-   - The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with MacbookPro16,1.
+   - The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro16,1`.
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` into `/CLOVER/ACPI/patched` for working normal after awake.
 
-   #### If your `config.plist` works with MacbookPro15,2 or MacbookPro14,1 , I have put corresponding kexts and SSDT in the [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
+   #### If your `config.plist` works with `MacbookPro15,2` or `MacbookPro14,1` , I have put corresponding kexts and SSDT in the [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
    #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
