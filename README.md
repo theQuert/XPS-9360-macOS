@@ -174,7 +174,7 @@
     Open System Preferences/Sound/Input
 ```
    ## For Better Sleep
-   Run the Commands below:
+   Run the commands below:
    ```BASH
     sudo pmset -a hibernatemode 0
    ```
@@ -193,7 +193,7 @@
    ```BASH
  	  sudo chflags uchg /private/var/vm/sleepimage
    ```
-   
+
    ## SMBIOS
    - Default SMBIOS of this repo is `MacbookPro16,1`.
    - After testing, performance is working same as `MacbookPro15,2` and `MacbookPro14,1`.
