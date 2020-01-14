@@ -19,7 +19,7 @@ git_update()
 
 	echo "${BLUE}[GIT]${OFF}: Updating to latest Dell-XPS0-9360-Hackintosh git master"
 	echo "${BLUE}[GIT]${OFF}: Git clone newest repository to current path"
-	git clone https://github.com/the-Quert/Dell-XPS-9360-Hackintosh.git
+	git clone https://github.com/the-Quert/XPS-9360-macOS.git
 }
 
 compile_dsdt()
@@ -157,7 +157,7 @@ case "$1" in
 		echo "\t${BOLD}--combo-jack${OFF}: Install ComboJack user daemon (Headset / Headphone detection)"
 		echo "\t${BOLD}--enable-trim${OFF}: Enable trim support for 3rd party SSD"
 		echo "\t${BOLD}--enable-3rdparty${OFF}: Enable 3rd party application support (run app from anywhere)"
-		echo "\t${BOLD}--disable-touchid${OFF}: Disable Touch ID daemons (Used for Macbook15,2 profile)"
+		echo "\t${BOLD}--disable-touchid${OFF}: Disable Touch ID daemons (Used for Macbook16,1 profile)"
 		echo
 		echo "Credits:"
 		echo "${BLUE}ComboJack${OFF}: https://github.com/hackintosh-stuff/ComboJack"

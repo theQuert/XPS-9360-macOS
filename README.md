@@ -115,7 +115,7 @@
 
   - SupportAssist OS Recovery: OFF
 
-  - Disable Camera
+  - Disable Camera (Optional)
 
   ## Things to fix after booting into the system successfully
 
