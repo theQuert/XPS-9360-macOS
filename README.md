@@ -31,9 +31,9 @@
 
 ## Pre-Installation
 #### Create bootable USB installer:
-  - Running [Python Script](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader_1.py) in terminal, works with Windows|GNU/Linux|macOS environment, download the version you prefer.
+  - Goto [Download Link](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), and download the version you prefer.
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
-  - Copy the whole repository to the EFI partition.
+  - Copy the whole repository to replace erverything in the EFI partition.
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
@@ -242,6 +242,12 @@
   - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
+
+   ### TODO after upgrading OS
+  - Before updating your device, remember to prepare external hard drive to backup with `Time Machine`.
+  - Creating bootable USB drive with the version of macOS you prefer. [Download Link](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/) [balenaEtcher](https://www.balena.io/etcher/)
+  - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
+  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#L119) below
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
