@@ -243,11 +243,14 @@
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
 
-   ### TODO after upgrading OS
+   ### TODO for upgrading macOS
   - Before updating your device, remember to prepare external hard drive to backup with `Time Machine`.
-  - Creating bootable USB drive with the version of macOS you prefer. [Download Link](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/) [balenaEtcher](https://www.balena.io/etcher/)
+  - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
-  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#L119) below
+  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#things-to-fix-after-booting-into-the-system-successfully) below.
+  - Follow the guide below to [Fix the Headset Jack](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#fix-the-headset-jack), and [For Better Sleep](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#for-better-sleep).
+  - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
+  - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
