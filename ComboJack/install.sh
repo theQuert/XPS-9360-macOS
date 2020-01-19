@@ -23,6 +23,7 @@ mkdir -p /usr/local/sbin
 sudo cp ComboJack /usr/local/sbin
 sudo chmod 755 /usr/local/sbin/ComboJack
 sudo chown root:wheel /usr/local/sbin/ComboJack
+sudo spctl --add /usr/local/sbin/ComboJack
 sudo cp hda-verb /usr/local/sbin
 #sudo chmod 755 /usr/local/sbin/hda-verb
 #sudo chown root:wheel /usr/local/sbin/hda-verb
