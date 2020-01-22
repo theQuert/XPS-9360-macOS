@@ -33,7 +33,7 @@
 #### Create bootable USB installer:
   - Goto [Download Link](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), and download the version you prefer.
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
-  - Copy the whole repository to replace erverything in the EFI partition.
+  - Copy the whole repository to replace erverything in  EFI partition.
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
@@ -47,9 +47,9 @@
   - Formatting SSD into `4K sectors` with `nvme-cli` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
 #### Get compatible with LITEON and PLEXTOR SSD
-  - To solve the problem, you need to add patches to existed `config.plist`
-  - Thea `config.plist` with patch is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
-  - Try one at each time, one of them is captible with your SSD.
+  - To solve the problem, `config.plist` with patches is needed.
+  - The `config.plist` with patches is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
+  - Rename to `config.plist` and try one at each time, one of them would be capatible with your SSD.
 
 #### BIOS settings
   - Sata: AHCI
@@ -118,8 +118,6 @@
 
   ## Things to fix after booting into the system successfully
 
-  - Download and install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then mount EFI partition.
-
   -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
 
   -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/EFI/CLOVER/CLOVERX64.efi`
@@ -136,11 +134,8 @@
 
   - Running `XPS9360.sh` with the instructions as below
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
-   -  Find the disk name of EFI partition with the command.
-   ```BASH
-      sudo diskutil list
    ```
-   -  Mount EFI partition with the command
+   -  Mount EFI partition with the command below
    ```BASH
       sudo diskutil mount /dev/disk0s1
    ```
@@ -237,6 +232,17 @@
         setup_var 0x655 0x01     // Negative voltage for 0x653
         setup_var 0x85A 0x1E     // GPU: -30 mV
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
+```
+   ### Allow 3rd party Applications to install on macOS
+```BASH
+        sudo spctl --master-disable
+```
+   ### Disable 4-Digit Pin Required on macOS
+```BASH
+        pwpolicy -clearaccountpolicies
+``` 
+```BASH
+        passwd
 ```
    ### Swapping SSD
   - You need an external NVMe reader to carry your new SSD as an external drive.
