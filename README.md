@@ -46,7 +46,7 @@
   - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
   - Formatting SSD into `4K sectors` with `nvme-cli` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
-#### Get compatible with LITEON and PLEXTOR SSD
+#### Get compatible with LITEON and PLEXTOR SSD - If you are not using with LITEON or PLEXTOR SSD, skip this step.
   - To solve the problem, `config.plist` with patches is needed.
   - The `config.plist` with patches is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
   - Rename to `config.plist` and try one at each time, one of them would be capatible with your SSD.
