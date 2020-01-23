@@ -194,7 +194,7 @@
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
    ## CPUFriend
-   - The kexts and SSDT for i7-8550U has put in [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro16,1`.
+   - The kexts and SSDT for `i7-8550U` has put [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro16,1`.
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
 
@@ -252,7 +252,7 @@
   - Before updating your device, remember to prepare external hard drive to backup with `Time Machine`.
   - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
-  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#things-to-fix-after-booting-into-the-system-successfully) below.
+  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#things-to-fix-after-booting-into-the-system-successfully).
   - Follow the guide below to [Fix the Headset Jack](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#fix-the-headset-jack), and [For Better Sleep](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#for-better-sleep).
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
