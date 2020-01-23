@@ -134,7 +134,6 @@
 
   - Running `XPS9360.sh` with the instructions as below
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
-   ```
    -  Mount EFI partition with the command below
    ```BASH
       sudo diskutil mount /dev/disk0s1
