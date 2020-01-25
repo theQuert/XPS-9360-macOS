@@ -411,13 +411,13 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP161.88Z.F000.B00.1911142228</string>
+		<string>MBP152.88Z.F000.B00.1911142159</string>
 		<key>Board-ID</key>
-		<string>Mac-E1008331FDC96864</string>
+		<string>Mac-827FB448E656EC26</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02906500GU0000UE</string>
+		<string>C027532704NJH4R1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -483,7 +483,7 @@
 		<key>PlatformFeature</key>
 		<string>0x02</string>
 		<key>ProductName</key>
-		<string>MacBookPro16,1</string>
+		<string>MacBookPro15,2</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

@@ -188,9 +188,9 @@
    ```
 
    ## SMBIOS
-   - Default SMBIOS settings for this repo is `MacbookPro16,1`.
-   - After testing, performance is working same as `MacbookPro15,2` and `MacbookPro14,1`.
-   - If you prefer `MacbookPro15,2` or `MacbookPro14,1`, corresponded `config.plist` are provided [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
+   - Default SMBIOS settings for this repo is `MacbookPro15,2`.
+   - After testing, performance is working same as `MacbookPro14,1`.
+   - If you prefer `MacbookPro14,1`, corresponded `config.plist` are provided [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
    ## CPUFriend
@@ -198,7 +198,7 @@
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
 
-   #### If your `config.plist` works with `MacbookPro15,2` or `MacbookPro14,1` , corresponding kexts and SSDT are put in [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
+   #### If your `config.plist` works with `MacbookPro14,1` , corresponding kexts and SSDT are put in [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
    #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
