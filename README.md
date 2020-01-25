@@ -194,7 +194,7 @@
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
    ## CPUFriend
-   - The kexts and SSDT for `i7-8550U` has put [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro16,1`.
+   - The kexts and SSDT for `i7-8550U` has put [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro15,2`.
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
 
