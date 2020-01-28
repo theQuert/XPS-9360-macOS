@@ -126,7 +126,7 @@
 
   - Cpoying kexts from path `/DW1560`  to `/Library/Extensions` is needed, and then running command to rebuild cache.
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --rebuild-cache
+      bash /Volumes/EFI/XPS.sh --rebuild-cache
    ```
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running previous command to rebuild cache.
 
@@ -141,33 +141,33 @@
    ```BASH
       sudo diskutil mount /dev/disk0s1
    ```
-   -  Running `XPS9360.sh` to Compile `DSDT`
+   -  Running `XPS.sh` to Compile `DSDT`
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --compile-dsdt
+      bash /Volumes/EFI/XPS.sh --compile-dsdt
    ```
-   -  Running `XPS9360.sh` to Allow 3rd party Applications to install on macOS
+   -  Running `XPS.sh` to Allow 3rd party Applications to install on macOS
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --enable-3rdparty
+      bash /Volumes/EFI/XPS.sh --enable-3rdparty
    ```
-   -  Running `XPS9360.sh` to fix Headphone Jack
+   -  Running `XPS.sh` to fix Headphone Jack
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --combo-jack
+      bash /Volumes/EFI/XPS.sh --combo-jack
    ```
-   -  Running `XPS9360.sh` to enable TRIM support on SSD
+   -  Running `XPS.sh` to enable TRIM support on SSD
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --enable-trim
+      bash /Volumes/EFI/XPS.sh --enable-trim
    ```
-   -  Running `XPS9360.sh` to rebuild cache
+   -  Running `XPS.sh` to rebuild cache
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --rebuild-cache
+      bash /Volumes/EFI/XPS.sh --rebuild-cache
    ```
-   -  Running `XPS9360.sh` to enable better sleep support
+   -  Running `XPS.sh` to enable better sleep support
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --better-sleep
+      bash /Volumes/EFI/XPS.sh --better-sleep
    ```
-   -  Running `XPS9360.sh` to Disable 4-Digit Pin Required on macOS
+   -  Running `XPS.sh` to Disable 4-Digit Pin Required on macOS
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --pin-custom
+      bash /Volumes/EFI/XPS.sh --pin-custom
    ```
 
    ## Fix the buzz sound from headphone jack
@@ -241,7 +241,7 @@
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - HDMI video output is working as normal, but Audio With HDMI is not working yet.
    - Info...
-      `ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
+    ```ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
        TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
        GPU Name: Intel HD Graphics 620
        Model Name(s): MacBookPro14,2
@@ -252,7 +252,8 @@
       [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - HDMI
       00000800 02000000 98000000
       01050900 00040000 87010000
-      02040A00 00080000 87010000`
+      02040A00 00080000 87010000
+      ```
   - Maybe problem with `framebuffer@2` or SMBIOS need to be earlier than `MacbookPro15,1`.
   ### Boot Arguments
    - `darkwake=4`
