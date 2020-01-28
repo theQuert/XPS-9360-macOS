@@ -262,7 +262,7 @@
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
 ```
   - Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
-  ### Boot Arguments explained...
+  ### Boot Arguments Explanation
    - `darkwake=4`
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
    - `igfxcflbklt=opcode`
