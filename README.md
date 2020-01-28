@@ -234,9 +234,9 @@
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
    
-   ### Experimental part...The part below is for developers and those who want to dig in...
+   ## Experimental part below is for developers and those who want to dig in more...
    ### External Display Support
-   - According to `ioregistryExplorer`, `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
+   - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - HDMI video output is working as normal, but Audio With HDMI is not working yet.
    - Info...
