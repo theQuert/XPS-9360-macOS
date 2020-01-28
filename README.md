@@ -233,9 +233,8 @@
   - Follow the guide below to [Fix the Headset Jack](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#fix-the-headset-jack), and [For Better Sleep](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#for-better-sleep).
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
-   ## The contents and steps above are for XPS 9360 macOS building...which is stable and reliable.
-
-   ## Experimental part...The part below is for developers and those who want to dig in...
+   
+   ### Experimental part...The part below is for developers and those who want to dig in...
    ### External Display Support
    - According to `ioregistryExplorer`, `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
