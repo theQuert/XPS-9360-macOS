@@ -259,8 +259,8 @@
     To enable audio in general and HDMI in particular use WEG along with AppleALC.kext.
     On 10.10.5 and above, WEG automatically changes the connector-type of DP (00040000) to HDMI (00080000) if no custom patches are used.
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
-```
-  - Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
+```       
+  Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
   ### Boot Arguments Explanation
    - `darkwake=4`     
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
