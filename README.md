@@ -211,8 +211,18 @@
    ## More Custom Settings
    Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
 
-   ## HiDPI
-   Use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
+   ## HiDPI & Fix blurry text
+   - Use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
+   - Commands...to fix blurry text
+   ```BASH
+        sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
+   ```
+   ```BASH
+        defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
+   ```
+   ```BASH
+        defaults -currentHost write -globalDomain AppleFontSmoothing -int 3
+   ```
 
    ## Optional Settings
    ### CPU Undervolting
