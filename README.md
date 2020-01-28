@@ -135,7 +135,7 @@
       - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
-  ## Running `XPS.sh` in Terminal with the following instructions...
+  ## Running shell script in Terminal with the following instructions...
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
    -  Mount EFI partition with the command below
    ```BASH
