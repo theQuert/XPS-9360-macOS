@@ -240,7 +240,7 @@
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - HDMI video output is working as normal, but Audio With HDMI is not working yet.
    - Info...
-    ```
+  ```
        ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
        TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
        GPU Name: Intel HD Graphics 620
@@ -253,7 +253,7 @@
           00000800 02000000 98000000
           01050900 00040000 87010000
           02040A00 00080000 87010000
-      ```
+```
   - Maybe problem with `framebuffer@2` or SMBIOS need to be earlier than `MacbookPro15,1`.
   ### Boot Arguments
    - `darkwake=4`
