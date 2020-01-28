@@ -262,13 +262,13 @@
 ```
   - Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
   ### Boot Arguments Explanation
-   - `darkwake=4`
+   - `darkwake=4`     
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
-   - `igfxcflbklt=opcode`
+   - `igfxcflbklt=opcode`     
       To work with `WhateverGreen.kext`, fixing BackLight.
-   - `brcmfx-country=XX`
+   - `brcmfx-country=XX`     
       Change the country code to XX (US, CN, #a, ...) For Broadcom WiFi card.
-   - `brcmfx-country=#a`
+   - `brcmfx-country=#a`     
       Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
 
    ## Credits
