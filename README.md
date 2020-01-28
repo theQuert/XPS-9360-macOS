@@ -20,10 +20,10 @@
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - Dual boot OS: macOS Catalina `10.15.2 (19C57)` & Ubuntu `18.04 LTS`
+  - Dual-Boot OS: macOS Catalina `10.15.2 (19C57)` & Ubuntu `18.04 LTS`
 
 ## Device Firmware
-- BIOS Version: BIOS `2.8.1`
+- BIOS Version: `2.8.1`
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
@@ -116,7 +116,7 @@
 
   - Disable Camera (Optional)
 
-  ## Things to fix after booting into the system successfully
+  ## Post-Installation
 
   -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
 
@@ -124,15 +124,18 @@
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
-  -  You have to copy the kexts from path `/DW1560`  to `/Library/Extensions`, and then running  [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands/rebuild_cache.sh)to fix the permission.
- ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running `/tools/Kext Utility` to fix the permission.
+  - Cpoying kexts from path `/DW1560`  to `/Library/Extensions` is needed, and then running command to rebuild cache.
+   ```BASH
+      bash /Volumes/EFI/XPS9360.sh --rebuild-cache
+   ```
+ ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running previous command to rebuild cache.
 
-  -  Change your `SMBIOS` settings for your device
-      - Install [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), then Open `/CLOVER/config.plist` with `Clover Configurator`, enter the `SMBIOS Mode`.
+  -  Change  `SMBIOS` settings for your device
+      - With [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), enter the `SMBIOS Mode` of `config.plist`.
       - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
-  - Running `XPS9360.sh` with the instructions as below
+  ## Running `XPS.sh` in Terminal with the following instructions...
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
    -  Mount EFI partition with the command below
    ```BASH
@@ -142,53 +145,38 @@
    ```BASH
       bash /Volumes/EFI/XPS9360.sh --compile-dsdt
    ```
-   -  Running `XPS9360.sh` to Enable Third Party Application
+   -  Running `XPS9360.sh` to Allow 3rd party Applications to install on macOS
    ```BASH
       bash /Volumes/EFI/XPS9360.sh --enable-3rdparty
    ```
-   -  Running `XPS9360.sh` to Disable Touch ID for the Fingerprint couldn't work on Hackintosh
+   -  Running `XPS9360.sh` to fix Headphone Jack
    ```BASH
-      bash /Volumes/EFI/XPS9360.sh --disable-touchid
+      bash /Volumes/EFI/XPS9360.sh --combo-jack
+   ```
+   -  Running `XPS9360.sh` to enable TRIM support on SSD
+   ```BASH
+      bash /Volumes/EFI/XPS9360.sh --enable-trim
+   ```
+   -  Running `XPS9360.sh` to rebuild cache
+   ```BASH
+      bash /Volumes/EFI/XPS9360.sh --rebuild-cache
+   ```
+   -  Running `XPS9360.sh` to enable better sleep support
+   ```BASH
+      bash /Volumes/EFI/XPS9360.sh --better-sleep
+   ```
+   -  Running `XPS9360.sh` to Disable 4-Digit Pin Required on macOS
+   ```BASH
+      bash /Volumes/EFI/XPS9360.sh --pin-custom
    ```
 
-   ## Enable Trim on SSD
-   Although it's set Native TRIM support with the settings on this installation, if it's disabled, run the commands below.
-   ```BASH
-   sudo trimforce enable
-   ```
-
-   ## Fix the Headset Jack
-  - Running the below commands to fix Headset Jack
-   ```BASH
-      bash /Volumes/EFI/ComboJack/install.sh
-   ```
-  - Buzz sounds or no sounds occurs with headphone or speaker:
+   ## Fix the buzz sound from headphone jack
   ```
     Open System Preferences/Sound/Input
 ```
-   ## For Better Sleep
-   Run the commands below:
-   ```BASH
-      sudo pmset -a hibernatemode 0
-   ```
-   ```BASH
- 	  sudo pmset -a autopoweroff 0
-   ```
-   ```BASH
- 	  sudo pmset -a standby 0
-   ```
-   ```BASH
- 	  sudo rm /private/var/vm/sleepimage
-   ```
-   ```BASH
- 	  sudo touch /private/var/vm/sleepimage
-   ```
-   ```BASH
- 	  sudo chflags uchg /private/var/vm/sleepimage
-   ```
 
    ## SMBIOS
-   - Default SMBIOS settings for this repo is `MacbookPro15,2`.
+   - Default SMBIOS settings of this repo is `MacbookPro15,2`.
    - After testing, performance is working same as `MacbookPro14,1`.
    - If you prefer `MacbookPro14,1`, corresponded `config.plist` are provided [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
@@ -232,30 +220,49 @@
         setup_var 0x85A 0x1E     // GPU: -30 mV
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ```
-   ### Allow 3rd party Applications to install on macOS
-```BASH
-        sudo spctl --master-disable
-```
-   ### Disable 4-Digit Pin Required on macOS
-```BASH
-        pwpolicy -clearaccountpolicies
-``` 
-```BASH
-        passwd
-```
    ### Swapping SSD
   - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
 
    ### TODO for upgrading macOS
-  - Before updating your device, remember to prepare external hard drive to backup with `Time Machine`.
+  - Before upgrading, remember to prepare external hard drive to backup with `Time Machine`.
   - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
   - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#things-to-fix-after-booting-into-the-system-successfully).
   - Follow the guide below to [Fix the Headset Jack](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#fix-the-headset-jack), and [For Better Sleep](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#for-better-sleep).
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
+   ## The contents and steps above are for XPS 9360 macOS building...which is stable and reliable.
+
+   ## Experimental part...The part below is for developers and those who want to dig in...
+   ### External Display Support
+   - According to `ioregistryExplorer`, `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
+   - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
+   - HDMI video output is working as normal, but Audio With HDMI is not working yet.
+   - Info...
+      `ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
+       TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
+       GPU Name: Intel HD Graphics 620
+       Model Name(s): MacBookPro14,2
+       Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+       Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+      [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+      [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
+      [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - HDMI
+      00000800 02000000 98000000
+      01050900 00040000 87010000
+      02040A00 00080000 87010000`
+  - Maybe problem with `framebuffer@2` or SMBIOS need to be earlier than `MacbookPro15,1`.
+  ### Boot Arguments
+   - `darkwake=4`
+      The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
+   - `igfxcflbklt=opcode`
+      To work with `WhateverGreen.kext`, fixing BackLight.
+   - `brcmfx-country=XX`
+      Change the country code to XX (US, CN, #a, ...) For Broadcom WiFi card.
+   - `brcmfx-country=#a`
+      Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
