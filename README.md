@@ -44,8 +44,7 @@
 
 #### Format SSD with 4K sectors for `APFS` - Creating a Linux bootable drive is needed.
   - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
-  - Formatting SSD into `4K sectors` with `nvme-cli` to work better with `APFS`, see the guide
-      https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
+  - Formatting SSD to `4K sectors` with `nvme-cli`... for working better with `APFS`, see `Step 2` in this [guide](https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/).
 #### Get compatible with LITEON and PLEXTOR SSD - If you are not using with LITEON or PLEXTOR SSD, skip it.
   - To solve the problem, `config.plist` with patches is needed.
   - The `config.plist` with patches is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
@@ -194,7 +193,7 @@
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
    - Changing the `value` you prefer
-   #### I have preset the `value` to `0`
+   ##### I have preset the `value` to `0`
 
    ## More Custom Settings
    Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
