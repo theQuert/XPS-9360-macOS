@@ -239,23 +239,30 @@
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - HDMI video output is working as normal, but Audio With HDMI is not working yet.
-   - Info...
   ```
-       ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
-       TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
-       GPU Name: Intel HD Graphics 620
-       Model Name(s): MacBookPro14,2
-       Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
-       Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
-       [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
-       [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187 - DP
-       [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - HDMI
-          00000800 02000000 98000000
-          01050900 00040000 87010000
-          02040A00 00080000 87010000
+    ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
+    TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
+    GPU Name: Intel HD Graphics 620
+    Model Name(s): MacBookPro14,2
+    Camelia: Disabled, Freq: 1388 Hz, FreqMax: 1388 Hz
+    Mobile: 1, PipeCount: 3, PortCount: 3, FBMemoryCount: 3
+     [0] busId: 0x00, pipe: 8, type: 0x00000002, flags: 0x00000098 - LVDS
+     [1] busId: 0x05, pipe: 9, type: 0x00000400, flags: 0x00000187  - DP
+     [2] busId: 0x04, pipe: 10, type: 0x00000800, flags: 0x00000187 - HDMI
+        00000800 02000000 98000000
+        01050900 00040000 87010000
+        02040A00 00080000 87010000
 ```
-  - Maybe problem with `framebuffer@2` or SMBIOS need to be earlier than `MacbookPro15,1`.
-  ### Boot Arguments
+  - Known info
+  ```
+    Digital Audio (HDMI / DVI / DP)
+    To enable digital audio it is necessary to set the necessary properties and, usually, patch the connectors.
+    To enable audio in general and HDMI in particular use WEG along with AppleALC.kext.
+    On 10.10.5 and above, WEG automatically changes the connector-type of DP (00040000) to HDMI (00080000) if no custom patches are used.
+    The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
+```
+  - Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
+  ### Boot Arguments explained...
    - `darkwake=4`
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
    - `igfxcflbklt=opcode`
