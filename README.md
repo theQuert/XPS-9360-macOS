@@ -46,7 +46,7 @@
   - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
   - Formatting SSD into `4K sectors` with `nvme-cli` to work better with `APFS`, see the guide
       https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/
-#### Get compatible with LITEON and PLEXTOR SSD - If you are not using with LITEON or PLEXTOR SSD, skip this step.
+#### Get compatible with LITEON and PLEXTOR SSD - If you are not using with LITEON or PLEXTOR SSD, skip it.
   - To solve the problem, `config.plist` with patches is needed.
   - The `config.plist` with patches is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
   - Rename to `config.plist` and try one at each time, one of them would be capatible with your SSD.
@@ -226,13 +226,13 @@
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
 
    ### TODO for upgrading macOS
-  - Before upgrading, remember to prepare external hard drive to backup with `Time Machine`.
+  - Before upgrading, remember to backup with `Time Machine` through external drive.
   - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
-  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#things-to-fix-after-booting-into-the-system-successfully).
-  - Follow the guide below to [Fix the Headset Jack](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#fix-the-headset-jack), and [For Better Sleep](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#for-better-sleep).
+  - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS#post-installation).
+  - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal-with-the-following-instructions) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
-  - Recovery you data and settings which you backup through `Time Machine` before with `Migration Assistant`.
+  - Recovery you data and settings from your backup through `Migration Assistant`.
    
    ## Experimental part below is for developers and those who want to dig in more...
    ### External Display Support
