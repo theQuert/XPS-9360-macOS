@@ -185,8 +185,8 @@
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
 
-   #### If your `config.plist` works with `MacbookPro14,1` , corresponding kexts and SSDT are put in [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
-   #### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow this [link](https://github.com/acidanthera/CPUFriend)
+   ##### If your `config.plist` works with `MacbookPro14,1` , corresponding kexts and SSDT are put in [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
+   ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
