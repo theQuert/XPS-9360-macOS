@@ -140,7 +140,7 @@
    ```BASH
       sudo diskutil mount /dev/disk0s1
    ```
-   -  Running `XPS.sh` to Compile `DSDT`
+   -  Running `XPS.sh` to compile DSDT
    ```BASH
       bash /Volumes/EFI/XPS.sh --compile-dsdt
    ```
