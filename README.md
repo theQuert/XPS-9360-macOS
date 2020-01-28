@@ -232,7 +232,7 @@
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal-with-the-following-instructions) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings from your backup through `Migration Assistant`.
-   
+-----
    ## Experimental part below is for developers and those who want to dig in more...
    ### External Display Support
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
