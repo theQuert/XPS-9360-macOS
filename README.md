@@ -263,7 +263,7 @@
 ```       
   When HDMI plugged in, macOS would recognized as DP (busID: 0x05), not HDMI (busID: 0x04).     
   Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.     
-  List of busId and ports for macOS
+  - List of busId and ports for macOS:     
 |   DP     |   HDMI   |    DVI    |
 | -------- | -------- | --------- |
 |   0x02   |   0x00   |    0x01   |
