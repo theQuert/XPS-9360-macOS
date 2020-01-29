@@ -18,7 +18,7 @@
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                     
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
-  - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)                    
+  - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
   - Dual-Boot OS: macOS Catalina `10.15.2 (19C57)` & Ubuntu `18.04 LTS`
 
@@ -134,7 +134,7 @@
       - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
 
-  ## Running shell script in Terminal with the following instructions...
+  ## Running shell script in Terminal
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
    -  Mount EFI partition with the command below
    ```BASH
@@ -232,12 +232,13 @@
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal-with-the-following-instructions) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings from your backup through `Migration Assistant`.
------
-   ## Experimental part below is for developers and researchers...
+-----     
+   ## Dev-Notes (for developers and those who need deeper understanding)
    ### External Display Support
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
-   - HDMI video output is working as normal, but Audio With HDMI is not working yet.
+   - Refer to [gfxutil](https://github.com/acidanthera/gfxutil/releases), path of iGPU is `DevicePath = PciRoot(0x0)/Pci(0x2,0x0)`
+   - HDMI video output is working as normal, but Audio With HDMI is not working yet. ha
   ```
     ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
     TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
@@ -260,7 +261,16 @@
     On 10.10.5 and above, WEG automatically changes the connector-type of DP (00040000) to HDMI (00080000) if no custom patches are used.
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
 ```       
-  Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.
+  When HDMI plugged in, macOS would recognized as DP (busID: 0x05), not HDMI (busID: 0x04).     
+  Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.     
+ - List of busID and ports for macOS:
+    |   DP   |  HDMI  |   DVI   |
+    |--------|--------|---------|
+    |  0x02  |  0x01  |   0x01  |
+    |  0x04  |  0x02  |   0x02  |
+    |  0x05  |  0x04  |   0x04  |
+    |  0x06  |  0x06  |   0x06  |
+
   ### Boot Arguments Explanation
    - `darkwake=4`     
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
@@ -270,6 +280,8 @@
       Change the country code to XX (US, CN, #a, ...) For Broadcom WiFi card.
    - `brcmfx-country=#a`     
       Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
+   - `agdpmod=vit9696`     
+      Disable check for `board-id`.
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
