@@ -238,7 +238,7 @@
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - Refer to [gfxutil](https://github.com/acidanthera/gfxutil/releases), path of iGPU is `DevicePath = PciRoot(0x0)/Pci(0x2,0x0)`
-   - HDMI video output is working as normal, but Audio With HDMI is not working yet. ha
+   - HDMI video output is working as normal, but Audio With HDMI is not working yet.
   ```
     ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
     TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
@@ -263,7 +263,7 @@
 ```       
   When HDMI plugged in, macOS would recognized as DP (busID: 0x05), not HDMI (busID: 0x04).     
   Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.     
- - List of busID and ports for macOS:
+ - List of busID and ports for macOS:     
     |   DP   |  HDMI  |   DVI   |
     |--------|--------|---------|
     |  0x02  |  0x01  |   0x01  |
