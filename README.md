@@ -125,6 +125,7 @@
 
   - Cpoying kexts from path `/DW1560`  to `/Library/Extensions` is needed, and then running command to rebuild cache.
    ```BASH
+      sudo diskutil mount /dev/disk0s1
       bash /Volumes/EFI/XPS.sh --rebuild-cache
    ```
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running previous command to rebuild cache.
@@ -262,7 +263,6 @@
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
 ```       
   When HDMI plugged in, macOS would recognized as DP (busID: 0x05), not HDMI (busID: 0x04).     
-  Maybe problem with `framebuffer@2` need to be fixed or SMBIOS need to be earlier than `MacbookPro15,1`.     
   - List of busID and ports recognized in macOS:
 
 |   DP     |   HDMI   |    DVI    |
@@ -271,6 +271,17 @@
 |   0x04   |   0x02   |    0x02   |
 |   0x05   |   0x04   |    0x04   |
 |   0x06   |   0x06   |    0x06   |
+   - `framebuffer-conX-enable`     
+      `01000000` -> Enable, `00000000` -> Disable
+   - `framebuffer-conX-type`
+      `00000800` -> HDMI output, `00000400` -> DP output
+   - `framebuffer-conX-index`
+      `fffffff` -> Block
+   - `framebuffer-unifiedmem`
+      `00000080` -> VRAM to 2048M, `000000C0` -> VRAM to 3072M
+   - `framebuffer-fbmem`
+      `00009000` -> 9M for FHD, `00000003` -> 48M for QHD/UHD
+   - All framebuffer values can be insert as `NUMBER` type, except `ig-platform-id`.
 
   ### Boot Arguments Explanation
    - `darkwake=4`     
@@ -283,6 +294,17 @@
       Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
+  ### More info about Clover
+   - `F1` Show Clover help menu.
+   - `F2` Save `preboot.log`to `EFI/CLOVER/misc`
+   - `F3` Show all san entries.
+   - `F4` Save DSDT to `EFI/CLOVER/ACPI/origin`
+   - `F5` Save edited DSDT to `EFI/CLOVER/ACPI/origin`
+   - `F6` Save ROM VideoBios of graphics to `EFI/CLOVER/misc`
+   - `F10` Screenshot
+   - `F11` To reset NVRAM
+   - `A`   About Clover
+   - `O`   Clover options
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
