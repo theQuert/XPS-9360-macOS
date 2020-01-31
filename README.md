@@ -27,7 +27,7 @@
 - Thunderbolt Version: `NVM 26`
 
 ## Clover Firmware
-- Clover `r5102`
+- Clover `r5103`
 
 ## Pre-Installation
 #### Create bootable USB installer:
