@@ -119,7 +119,7 @@
 
   -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
 
-  -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/EFI/CLOVER/CLOVERX64.efi`
+  -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/CLOVER/CLOVERX64.efi`
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
@@ -262,7 +262,7 @@
     On 10.10.5 and above, WEG automatically changes the connector-type of DP (00040000) to HDMI (00080000) if no custom patches are used.
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
 ```       
-  When HDMI plugged in, macOS would recognized as DP (busID: 0x05), not HDMI (busID: 0x04).     
+  When HDMI plugged in, macOS would recognize as DP (busID: 0x05), not HDMI (busID: 0x04).     
   - List of busID and ports recognized in macOS:
 
 |   DP     |   HDMI   |    DVI    |
