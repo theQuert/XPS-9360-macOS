@@ -294,17 +294,6 @@
       Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
-  ### More info about Clover
-   - `F1` Show Clover help menu.
-   - `F2` Save `preboot.log`to `EFI/CLOVER/misc`
-   - `F3` Show all san entries.
-   - `F4` Save DSDT to `EFI/CLOVER/ACPI/origin`
-   - `F5` Save edited DSDT to `EFI/CLOVER/ACPI/origin`
-   - `F6` Save ROM VideoBios of graphics to `EFI/CLOVER/misc`
-   - `F10` Screenshot
-   - `F11` To reset NVRAM
-   - `A`   About Clover
-   - `O`   Clover options
 
    ## Credits
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
