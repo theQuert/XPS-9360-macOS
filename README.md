@@ -177,8 +177,6 @@
 
    ## SMBIOS
    - Default SMBIOS settings of this repo is `MacbookPro15,2`.
-   - After testing, performance is working same as `MacbookPro14,1`.
-   - If you prefer `MacbookPro14,1`, corresponded `config.plist` are provided [here](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_other_SMBIOS).
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
    ## CPUFriend
@@ -186,7 +184,6 @@
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
 
-   ##### If your `config.plist` works with `MacbookPro14,1` , corresponding kexts and SSDT are put in [folder](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CPUFriend/i7-8550U) as well.
    ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
    ## Custom setting the delay between trackpad and keyboard
@@ -239,7 +236,7 @@
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
    - Refer to [gfxutil](https://github.com/acidanthera/gfxutil/releases), path of iGPU is `DevicePath = PciRoot(0x0)/Pci(0x2,0x0)`
-   - HDMI video output is working as normal, but Audio With HDMI is not working yet.
+   - HDMI is working perfectly, video and audio output are both working flawlessly.
   ```
     ID: 59160000, STOLEN: 34 MB, FBMEM: 0 bytes, VRAM: 1536 MB, Flags: 0x00000B0B
     TOTAL STOLEN: 35 MB, TOTAL CURSOR: 1 MB (1572864 bytes), MAX STOLEN: 103 MB, MAX OVERALL: 104 MB (109588480 bytes)
