@@ -1,4 +1,4 @@
-- AirportBrcmFixup (2.0.4)
+- AirportBrcmFixup (2.0.5)
   https://github.com/acidanthera/AirportBrcmFixup
   An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards.
 
@@ -6,7 +6,7 @@
   https://github.com/vit9696/AppleALC
   An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
 
-- BrcmPatchRAM (2.2.12)
+- BrcmPatchRAM (2.5.1)
   https://github.com/RehabMan/OS-X-BrcmPatchRAM
   Support for firmware uploads into Broadcom PatchRAM USB devices
 
