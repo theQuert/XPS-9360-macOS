@@ -12,9 +12,9 @@
 
   - Device  : Dell XPS 13 9360    
   - CPU     : Intel i7-8550U                                                           
-  - GPU     : Intel UHD 620                                                             
+  - GPU     : Intel UHD 620 Kaby Lake                                                         
   - RAM     : SK Hynix 16GB 2133 MHz LPDDR3
-  - Sound   : ALC256 (ALC3246)                                              
+  - Sound   : Realtek ALC256 (ALC3246)                                              
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                     
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Webcam  : UVC Camera VendorID_3034 ProductID_22155
@@ -227,7 +227,7 @@
   - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
   - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS#post-installation).
-  - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal-with-the-following-instructions) part, and follow the commands.
+  - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings from your backup through `Migration Assistant`.
 -----     
