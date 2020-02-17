@@ -7,6 +7,14 @@
 		<key>Add</key>
 		<array>
 			<dict>
+				<key>Path</key>
+				<string>SSDT-PWRB.aml</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Comment</key>
+				<string>Rename PBTN to PWRB (Dell)</string>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>Emulate Windows 2012</string>
 				<key>Enabled</key>

@@ -253,6 +253,7 @@
 			<string>SSDT-SMCD.aml</string>
 			<string>SSDT-TYPC.aml</string>
 			<string>SSDT-CPUF.aml</string>
+			<string>SSDT-PWRB.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
