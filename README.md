@@ -117,7 +117,7 @@
 
   ## Post-Installation
 
-  -  Copy all folders and files from this repository to EFI partition, for booting without USB purpose.
+  -  Copy all folders and files from this repository to EFI partition.
 
   -  Enter `BIOS/Boot Sequence` , and adding new entry with path `/CLOVER/CLOVERX64.efi`
 
@@ -224,7 +224,7 @@
 
    ### TODO for upgrading macOS
   - Before upgrading, remember to backup with `Time Machine` through external drive.
-  - Creating bootable USB drive with the version of macOS you prefer. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
+  - Creating bootable USB drive with the version of macOS you prefer, and replace EFI partition with this repo. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
   - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS#post-installation).
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
@@ -292,7 +292,11 @@
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
 
-   ## Credits
+  ### Shutdown Dialog
+   - To activate `shutdown dialog`, it's necessary to  `Rename PBTN to PWRB`.
+   - Although `SSDT-PWRB` is added, rename part is also needed in `LPCB`.
+
+   ## Contributors
    #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
    #### [CPUFriend](https://github.com/acidanthera/CPUFriend)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
