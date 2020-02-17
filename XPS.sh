@@ -17,9 +17,9 @@ git_update()
 	cd ${REPO}
 	echo "${GREEN}[GIT]${OFF}: Updating local data to latest version"
 
-	echo "${BLUE}[GIT]${OFF}: Updating to latest Dell-XPS0-9360-Hackintosh git master"
+	echo "${BLUE}[GIT]${OFF}: Updating to latest XPS-9360-Hackintosh git master"
 	echo "${BLUE}[GIT]${OFF}: Git clone newest repository to current path"
-	git clone https://github.com/the-Quert/XPS-9360-macOS.git
+	git pull
 }
 
 compile_dsdt()
@@ -112,7 +112,7 @@ case "$1" in
 		RETVAL=0
 		;;
 	*)
-		echo "${BOLD}macOS on XPS 13 9360${OFF} - Mojave 10.15.2 (19C57)"
+		echo "${BOLD}macOS on XPS 13 9360${OFF} - Catalina 10.15.3 (19D76)"
 		echo "https://github.com/the-Quert/XPS-9360-macOS"
 		echo
 		echo "\t${BOLD}--update${OFF}: Update to latest git version (including externals)"
