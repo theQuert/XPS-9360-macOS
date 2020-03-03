@@ -17,10 +17,6 @@
   https://github.com/PMheart/CPUFriend
   A Lilu plug-in for dynamic power management data injection
 
-- IOElectrify.kext (1.0.0)
-  https://github.com/the-darkvoid/macOS-IOElectrify
-  To enhance thunderbolt 3 hot-plug on i5 9360 model.
-
 - Lilu.kext (1.4.1) 
   https://github.com/acidanthera/Lilu
   An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
