@@ -31,12 +31,7 @@
 
 ## Pre-Installation
 #### Create bootable USB installer:
-  - Running [installinstallmacos.py](https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py), and download the version you prefer.
-  - To be awared, when running [installinstallmacos.py](https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py), `xattr` is required. Follow the command below...
-  ```
-    pip install xattr
-    python installinstallmacos.py
-  ```
+  - Running [Downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader_2.sh), then download the version you prefer.
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
   - Copy the whole repository to EFI partition.
 #### DVMT
