@@ -31,9 +31,14 @@
 
 ## Pre-Installation
 #### Create bootable USB installer:
-  - Goto [Download Link](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/), and download the version you prefer.
+  - Running [installinstallmacos.py](https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py), and download the version you prefer.
+  - To be awared, when running [installinstallmacos.py](https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py), `xattr` is required. Follow the command below...
+  ```
+    pip install xattr
+    python installinstallmacos.py
+  ```
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
-  - Copy the whole repository to replace erverything in  EFI partition.
+  - Copy the whole repository to EFI partition.
 #### DVMT
   - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
 ```
