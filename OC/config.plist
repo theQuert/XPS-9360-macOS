@@ -378,14 +378,16 @@
 		<dict>
 			<key>FadtEnableReset</key>
 			<false/>
-			<key>IgnoreForWindows</key>
+			<key>ResetHwSig</key>
 			<false/>
 			<key>NormalizeHeaders</key>
-			<true/>
+			<false/>
 			<key>RebaseRegions</key>
+			<true/>
+			<key>ResetLogoStatus</key>
 			<false/>
-			<key>resetLogoStatus</key>
-			<false/>
+			<key>KeySupport</key>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -619,7 +621,7 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
-				<string>UVC2FaceTimeHD.kext</string>
+				<string>FaceTimeHD.kext</string>
 				<key>Comment</key>
 				<string>Injection kext for webcam support</string>
 				<key>Enabled</key>
@@ -737,13 +739,23 @@
 			<key>ConsoleMode</key>
 			<string></string>
 			<key>HideSelf</key>
-			<true/>
+			<false/>
 			<key>Resolution</key>
 			<string>1600x900</string>
 			<key>ShowPicker</key>
-			<false/>
+			<true/>
 			<key>Timeout</key>
-			<integer>3</integer>
+			<integer>5</integer>
+			<key>HibernateMode</key>
+			<false/>
+			<key>HideAuxiliary</key>
+			<true/>
+			<key>PollAppleHotKeys</key>
+			<true/>
+			<key>TakeoffDelay</key>
+			<integer>0</integer>
+			<key>PickerMode</key>
+			<string>Builtin</string>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -770,6 +782,14 @@
 			<false/>
 			<key>RequireVault</key>
 			<false/>
+			<key>AllowNvramReset</key>
+			<true/>
+			<key>AllowSetDefault</key>
+			<true/>
+			<key>AuthRestart</key>
+			<false/>
+			<key>ExposeSensitiveData</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>NVRAM</key>
@@ -812,22 +832,22 @@
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02X1FYJJHCD</string>
 			<key>SystemUUID</key>
 			<string></string>
 		</dict>
 		<key>Generic</key>
 		<dict>
 			<key>MLB</key>
-			<string></string>
+			<string>C02848207QXJH4R1H</string>
 			<key>ROM</key>
 			<data>yv66vt6tvu8=</data>
 			<key>SystemProductName</key>
 			<string>MacBookPro15,2</string>
 			<key>SystemSerialNumber</key>
-			<string></string>
+			<string>C02X1FYJJHCD</string>
 			<key>SystemUUID</key>
-			<string></string>
+			<string>E8FD3118-3B94-491C-89BC-782A13851F02</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
@@ -836,7 +856,7 @@
 			<key>FirmwareFeaturesMask</key>
 			<string>3FFF1FFF 00000000</string>
 			<key>MLB</key>
-			<string>C02852100GUJH4RA8</string>
+			<string>C02848207QXJH4R1H</string>
 			<key>ROM</key>
 			<data>yv66vt6tvu8=</data>
 		</dict>
@@ -857,7 +877,7 @@
 			<key>BoardProduct</key>
 			<string>Mac-827FB448E656EC26</string>
 			<key>BoardSerialNumber</key>
-			<string>C02848207QXJH4R1H</string>
+			<string>C02X1FYJJHCD</string>
 			<key>BoardType</key>
 			<integer>10</integer>
 			<key>BoardVersion</key>
@@ -867,7 +887,7 @@
 			<key>ChassisManufacturer</key>
 			<string>Apple Inc.</string>
 			<key>ChassisSerialNumber</key>
-			<string>C02XW0DAJHCD</string>
+			<string>C02X1FYJJHCD</string>
 			<key>ChassisType</key>
 			<integer>9</integer>
 			<key>ChassisVersion</key>
@@ -891,9 +911,9 @@
 			<key>SystemSKUNumber</key>
 			<string>Mac-827FB448E656EC26</string>
 			<key>SystemSerialNumber</key>
-			<string>C02XW0DAJHCD</string>
+			<string>C02X1FYJJHCD</string>
 			<key>SystemUUID</key>
-			<string>EBF67995-B6C6-4D56-B7B0-3E66B3858D50</string>
+			<string>E8FD3118-3B94-491C-89BC-782A13851F02</string>
 			<key>SystemVersion</key>
 			<string>1.0</string>
 		</dict>
@@ -915,14 +935,8 @@
 			<string>HFSPlus.efi</string>
 			<string>VirtualSmc.efi</string>
 			<string>ApfsDriverLoader.efi</string>
-			<string>AppleUsbKbDxe.efi</string>
 			<string>FwRuntimeServices.efi</string>
-			<string>NvmExpressDxe.efi</string>
 			<string>VBoxHfs.efi</string>
-			<string>VirtualSmc.efi</string>
-			<string>AptioMemoryFix.efi</string>
-			<string>AppleKeyFeeder.efi</string>
-			<string>AppleUiSupport.efi</string>
 		</array>
 		<key>Protocols</key>
 		<dict>
