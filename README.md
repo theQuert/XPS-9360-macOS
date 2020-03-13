@@ -123,7 +123,7 @@
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
-  ### DW1560
+  ### DW1560 (If not using this card, skip it.)
   -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
    ```BASH
       sudo diskutil mount /dev/disk0s1
