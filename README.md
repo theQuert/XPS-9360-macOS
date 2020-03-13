@@ -123,7 +123,8 @@
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
-  - Cpoying kexts from path `/DW1560`  to `/Library/Extensions` is needed, and then running command to rebuild cache.
+  ### DW1560
+  -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
    ```BASH
       sudo diskutil mount /dev/disk0s1
       bash /Volumes/EFI/XPS.sh --rebuild-cache
