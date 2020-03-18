@@ -10,7 +10,7 @@
   https://github.com/acidanthera/BrcmPatchRAM
   Support for firmware uploads into Broadcom PatchRAM USB devices
 
-- BT4LEContiunityFixup.kext (1.1.2)
+- BT4LEContiunityFixup.kext (1.1.4)
   https://github.com/acidanthera/BT4LEContinuityFixup
 
 - CPUFriend.kext (1.1.9)
