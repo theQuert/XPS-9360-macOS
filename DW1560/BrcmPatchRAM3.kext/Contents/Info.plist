@@ -15,7 +15,7 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.5.1</string>
+	<string>2.5.2</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -23,11 +23,11 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.5.1</string>
+	<string>2.5.2</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
-	<string>11C29</string>
+	<string>11C504</string>
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
@@ -37,7 +37,7 @@
 	<key>DTXcode</key>
 	<string>1130</string>
 	<key>DTXcodeBuild</key>
-	<string>11C29</string>
+	<string>11C504</string>
 	<key>IOKitPersonalities</key>
 	<dict>
 		<key>0489_e032</key>
@@ -1884,7 +1884,7 @@
 	<key>OSBundleLibraries</key>
 	<dict>
 		<key>as.acidanthera.BrcmFirmwareStore</key>
-		<string>2.5.1</string>
+		<string>2.5.2</string>
 		<key>com.apple.iokit.IOUSBHostFamily</key>
 		<string>1.0.1</string>
 		<key>com.apple.kpi.bsd</key>

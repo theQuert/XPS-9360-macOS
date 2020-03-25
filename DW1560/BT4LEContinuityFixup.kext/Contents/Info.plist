@@ -4,18 +4,20 @@
 <dict>
 	<key>BuildMachineOSBuild</key>
 	<string>19C57</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
 	<key>CFBundleExecutable</key>
-	<string>BrcmFirmwareData</string>
+	<string>BT4LEContinuityFixup</string>
 	<key>CFBundleIdentifier</key>
-	<string>as.acidanthera.BrcmFirmwareStore</string>
+	<string>as.lvs1974.BT4LEContinuityFixup</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>BrcmFirmwareData</string>
+	<string>BT4LEContinuityFixup</string>
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.5.2</string>
+	<string>1.1.4</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleSupportedPlatforms</key>
@@ -23,7 +25,7 @@
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>2.5.2</string>
+	<string>1.1.4</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -40,30 +42,44 @@
 	<string>11C504</string>
 	<key>IOKitPersonalities</key>
 	<dict>
-		<key>BrcmFirmwareStore</key>
+		<key>as.lvs1974.BT4LEContinuityFixup</key>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>as.acidanthera.BrcmFirmwareStore</string>
+			<string>as.lvs1974.BT4LEContinuityFixup</string>
 			<key>IOClass</key>
-			<string>BrcmFirmwareStore</string>
+			<string>BT4LEContinuityFixup</string>
 			<key>IOMatchCategory</key>
-			<string>BrcmFirmwareStore</string>
+			<string>BT4LEContinuityFixup</string>
 			<key>IOProviderClass</key>
 			<string>IOResources</string>
+			<key>IOResourceMatch</key>
+			<string>IOKit</string>
 		</dict>
 	</dict>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.9</string>
+	<string>10.8</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2017 lvs1974. All rights reserved.</string>
 	<key>OSBundleCompatibleVersion</key>
-	<string>2.5.2</string>
+	<string>1.0</string>
 	<key>OSBundleLibraries</key>
 	<dict>
+		<key>as.vit9696.Lilu</key>
+		<string>1.2.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.dsep</key>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.iokit</key>
-		<string>9.0</string>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.libkern</key>
-		<string>9.0</string>
+		<string>12.0.0</string>
 		<key>com.apple.kpi.mach</key>
-		<string>9.0</string>
+		<string>12.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>12.0.0</string>
 	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
 </dict>
 </plist>
