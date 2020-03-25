@@ -1,4 +1,4 @@
-- AirportBrcmFixup (2.0.5)
+- AirportBrcmFixup (2.0.6)
   https://github.com/acidanthera/AirportBrcmFixup
   An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards.
 
@@ -6,7 +6,7 @@
   https://github.com/vit9696/AppleALC
   An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
 
-- BrcmPatchRAM (2.5.1)
+- BrcmPatchRAM (2.5.2)
   https://github.com/acidanthera/BrcmPatchRAM
   Support for firmware uploads into Broadcom PatchRAM USB devices
 
@@ -17,7 +17,7 @@
   https://github.com/PMheart/CPUFriend
   A Lilu plug-in for dynamic power management data injection
 
-- Lilu.kext (1.4.1) 
+- Lilu.kext (1.4.3) 
   https://github.com/acidanthera/Lilu
   An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
 
