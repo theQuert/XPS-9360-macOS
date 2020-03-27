@@ -27,8 +27,8 @@
 - Thunderbolt Version: `NVM 26`
 - Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
 
-## Clover Firmware
-- Clover `r5103`
+## Bootloader Firmware
+- Default bootloader: Clover `r5103`
 
 ## Pre-Installation
 #### Create bootable USB installer:
