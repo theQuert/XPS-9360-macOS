@@ -20,7 +20,7 @@
   - Camera  : UVC Camera VendorID_3034 ProductID_22155
   - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - Dual-Boot OS: macOS Catalina `10.15.2 (19C57)` & Ubuntu `18.04 LTS`
+  - Dual-Boot OS: macOS Catalina `10.15.4 (19E226)` & Ubuntu `18.04 LTS`
 
 ## Device Firmware
 - BIOS Version: `2.8.1`
