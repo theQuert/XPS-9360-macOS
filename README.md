@@ -32,7 +32,7 @@
 
 ## Pre-Installation
 #### Create bootable USB installer:
-  - Running [Downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader_2.sh), then download the version you prefer.
+  - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
   - Copy the whole repository to EFI partition.
 #### DVMT
@@ -303,5 +303,6 @@
    #### [Acidanthera](https://github.com/acidanthera)
    #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
    #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
+   #### [gibMacOS](https://github.com/corpnewt/gibMacOS)
    #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
    #### Kexts version and developers are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
