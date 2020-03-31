@@ -226,7 +226,7 @@
 
    ### TODO for upgrading macOS
   - Before upgrading, remember to backup with `Time Machine` through external drive.
-  - [Creating bootable USB drive](https://github.com/the-Quert/XPS-9360-macOS#create-bootable-usb-installer) with the version of macOS you prefer, and replace files under path `/EFI` in EFI partition with this repo.
+  - [Create bootable USB drive](https://github.com/the-Quert/XPS-9360-macOS#create-bootable-usb-installer) with the version of macOS you prefer, and replace files under path `/EFI` in EFI partition with this repo.
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
   - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS#post-installation).
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
