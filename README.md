@@ -34,9 +34,9 @@
 #### Create bootable USB installer:
   - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
   - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
-  - Copy the whole repository to EFI partition.
+  - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
 #### DVMT
-  - Enter `BIOS/Boot Sequence`, add `Boot Entry` with `CLOVER/tools/DVMT.efi` , then run the following commands
+  - Enter `BIOS/Boot Sequence` in `BIOS`, add `Boot Entry` with `/EFI/CLOVER/tools/DVMT.efi` , then run the following commands
 ```
   setup_var 0x4de 0x00  // Disable CFG Lock
   setup_var 0x785 0x06  // Increase DVMT pre-allocated size to 192M For FHD version, it's also recommended setting to 192M
@@ -128,7 +128,7 @@
   -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
    ```BASH
       sudo diskutil mount /dev/disk0s1
-      bash /Volumes/EFI/XPS.sh --rebuild-cache
+      bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running previous command to rebuild cache.
 
@@ -145,31 +145,31 @@
    ```
    -  Running `XPS.sh` to compile DSDT
    ```BASH
-      bash /Volumes/EFI/XPS.sh --compile-dsdt
+      bash /Volumes/EFI/EFI/XPS.sh --compile-dsdt
    ```
    -  Running `XPS.sh` to Allow 3rd party Applications to install on macOS
    ```BASH
-      bash /Volumes/EFI/XPS.sh --enable-3rdparty
+      bash /Volumes/EFI/EFI/XPS.sh --enable-3rdparty
    ```
    -  Running `XPS.sh` to fix Headphone Jack
    ```BASH
-      bash /Volumes/EFI/XPS.sh --combo-jack
+      bash /Volumes/EFI/EFI/XPS.sh --combo-jack
    ```
    -  Running `XPS.sh` to enable TRIM support on SSD
    ```BASH
-      bash /Volumes/EFI/XPS.sh --enable-trim
+      bash /Volumes/EFI/EFI/XPS.sh --enable-trim
    ```
    -  Running `XPS.sh` to rebuild cache
    ```BASH
-      bash /Volumes/EFI/XPS.sh --rebuild-cache
+      bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
    -  Running `XPS.sh` to enable better sleep support
    ```BASH
-      bash /Volumes/EFI/XPS.sh --better-sleep
+      bash /Volumes/EFI/EFI/XPS.sh --better-sleep
    ```
    -  Running `XPS.sh` to Disable 4-Digit Pin Required on macOS
    ```BASH
-      bash /Volumes/EFI/XPS.sh --pin-custom
+      bash /Volumes/EFI/EFI/XPS.sh --pin-custom
    ```
 
    ## Fix the buzz sound from headphone jack
@@ -184,7 +184,7 @@
    ## CPUFriend
    - The kexts and SSDT for `i7-8550U` has put [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro15,2`.
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
-   - Furthermore, you also have to put `SSDT-CPUF.aml` in `/CLOVER/ACPI/patched` for working as normal after awake.
+   - Furthermore, you also have to put `SSDT-CPUF.aml` in `/EFI/CLOVER/ACPI/patched` for working as normal after awake.
 
    ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
@@ -205,7 +205,7 @@
    ### CPU Undervolting
    #### If having the same CPU as mine, you can do the undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
- Enter `BIOS/Boot Sequence` then add new Boot with `CLOVER/tools/DVMT.efi`, run the following commands
+ Enter `BIOS/Boot Sequence` then add new Boot with `/EFI/CLOVER/tools/DVMT.efi`, run the following commands
  - Overclock, CFG, WDT & XTU enable
  ```BASH
         setup_var 0x4DE 0x00
@@ -226,7 +226,7 @@
 
    ### TODO for upgrading macOS
   - Before upgrading, remember to backup with `Time Machine` through external drive.
-  - Creating bootable USB drive with the version of macOS you prefer, and replace EFI partition with this repo. [[Download Link]](https://mirrors.dtops.cc/iso/MacOS/daliansky_macos/)   [[balenaEtcher]](https://www.balena.io/etcher/)
+  - [Creating bootable USB drive](https://github.com/the-Quert/XPS-9360-macOS#create-bootable-usb-installer) with the version of macOS you prefer, and replace files under path `/EFI` in EFI partition with this repo.
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
   - If you use `DW1560`, follow the [guide](https://github.com/the-Quert/XPS-9360-macOS#post-installation).
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
