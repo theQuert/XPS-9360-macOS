@@ -201,7 +201,10 @@
    ## HiDPI
    - Use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
 
-   ## Optional Settings
+   ## Fix Blurry Fonts for Non-Retina Displays
+   - Refer to [here](https://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/).
+
+   ## Optional Settings for CPU
    ### CPU Undervolting
    #### If having the same CPU as mine, you can do the undervolting settings below.
    #### Warning!!! This may cause crash on your device, please be aware.
