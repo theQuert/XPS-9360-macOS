@@ -130,14 +130,9 @@
       sudo diskutil mount /dev/disk0s1
       bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
- ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), the three kexts above has existed in `/OC/Kexts` already, you still have to copy them to `/Library/Extensions`, and then running previous command to rebuild cache.
+ ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
 
-  -  Change  `SMBIOS` settings for your device
-      - With [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), enter the `SMBIOS Mode` of `config.plist`.
-      - Generate new `Serial Number`, `SMUUID`, save the changes ---> REBOOT
- ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), install [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/), then enter `SMBIOS` to do same things above.
-
-  ## Running shell script in Terminal
+ ### Running shell script in Terminal
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
    -  Mount EFI partition with the command below
    ```BASH
