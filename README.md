@@ -183,6 +183,13 @@
 
    ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
+   ## Use eGPU with Thunderbolt 3
+   - You need to set `No Security` in TB3 BIOS option.
+   - Stop `Clover` when it counts down during booting with `Press Space`.
+   - Connect the TB3 cable to XPS.
+   - Turn on the eGPU.
+   - Wait for few seconds, and press `Enter` to boot macOS.
+
    ## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
