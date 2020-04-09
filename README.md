@@ -185,7 +185,7 @@
 
    ## Use eGPU with Thunderbolt 3
    - You need to set `No Security` in TB3 BIOS option.
-   - Stop `Clover` when it counts down during booting with `Press Space`.
+   - Stop `Clover` when it counts down during booting with pressing `Space`.
    - Connect the TB3 cable to XPS.
    - Turn on the eGPU.
    - Wait for few seconds, and press `Enter` to boot macOS.
