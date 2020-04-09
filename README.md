@@ -29,6 +29,7 @@
 
 ## Bootloader Firmware
 - Default bootloader: Clover `r5103`
+- Unstable: OpenCore `0.5.6`
 
 ## Pre-Installation
 #### Create bootable USB installer:
