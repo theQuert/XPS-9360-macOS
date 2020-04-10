@@ -18,14 +18,17 @@
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                     
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Camera  : UVC Camera VendorID_3034 ProductID_22155
-  - Wifi-Card : Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2)
+  - Wifi-Card :     
+  Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2).     
+  Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K).
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
   - Dual-Boot OS: macOS Catalina `10.15.4 (19E226)` & Ubuntu `18.04 LTS`
 
 ## Device Firmware
 - BIOS Version: `2.8.1`
-- Thunderbolt Version: `NVM 26`
-- Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
+- Thunderbolt 3 Version: `NVM 26`
+- `BCM94360CS2` Bluetooth Version: `v150 c9318`
+- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
 
 ## Bootloader Firmware
 - Default bootloader: Clover `r5103`
@@ -125,12 +128,17 @@
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
-  ### DW1560 (If not using this card, skip it.)
+  ### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
+  - To use this card, you need `BCM94360CS2` and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
+  - After installation, other modification is no needed.
+
+  ### Wireless card - DW1560 Installation (If not using this card, skip it.)
   -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
    ```BASH
       sudo diskutil mount /dev/disk0s1
       bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
+   
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
 
  ### Running shell script in Terminal
