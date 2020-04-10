@@ -129,7 +129,7 @@
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
   ### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
-  - To use this card, you need `BCM94360CS2` and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
+  - To use this card, you need [BCM94360CS2](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K) and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
   - After installation, other modification is no needed.
 
   ### Wireless card - DW1560 Installation (If not using this card, skip it.)
@@ -138,7 +138,7 @@
       sudo diskutil mount /dev/disk0s1
       bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
-   
+
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
 
  ### Running shell script in Terminal
@@ -192,7 +192,7 @@
 
    ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
-   ## Use eGPU with Thunderbolt 3
+   ## Enable eGPU with Thunderbolt 3
    - You need to set `No Security` in TB3 BIOS option.
    - Stop `Clover` when it counts down during booting with pressing `Space`.
    - Connect the TB3 cable to XPS.
