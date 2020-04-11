@@ -22,10 +22,12 @@ heading() { printf -- "   \033[1;30;42m $1 \033[0m\n\n"; }
 newUiPage() {
   clear
   echo "---------------------------------------------------"
-  echo "-       macOS Legit Copy Downloader v1.0.1        -"
-  echo "-                By Hanger1 (H1)                  -"
+  echo "-       macOS Legit Copy Downloader        -"
+  echo "- If want to create installer, be sure to  -"
+  echo "- erase your USB drive, and rename it to   -"
+  echo "- named <Installer>                        -"
   echo "---------------------------------------------------"
-  echo " Contributor: ricoc90"
+  echo " Contributor: ricoc90, the-Quert"
   echo " "
   echo " "
 }
@@ -150,7 +152,7 @@ downloadOS(){
 
 
 
-createinstallmedia(){
+createinstallapp(){
     #---------------------------------------------------------------------------
     #  Create Install Media
     #---------------------------------------------------------------------------
@@ -246,39 +248,25 @@ createinstallmedia(){
     # Replace InstallESDDmg.pkg to InstallESD.dmg in 'src/InstallInfo.plist'
     #----------------------------------------------------------------------------------------------------------
     sed -i "" 's/InstallESDDmg.pkg/InstallESD.dmg/g' "$SharedSupportDir/InstallInfo.plist"
-
-
-    # newUiPage
-
-    DEVICES=($(ls /Volumes))
-
-    read -p 'Enter name of USB media : ' INSTALLER_DEVICE
-
-
-
-    # Creates a bootable installer for macOS on selected media
-    # As discribed in https://support.apple.com/en-us/HT201372
-    print ""
-    sudo "$DIR/$installAppName/Contents/Resources/createinstallmedia" --volume /Volumes/$INSTALLER_DEVICE
-
-
-    read -p 'You wanna delete downloaded files ? (y/n) : ' ANSWER
-    if [ $ANSWER == y ]; then rm -R "$srcDir"; fi
 }
 
 
 
-
+burndmg()
+{
+    sudo ./Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/Installer
+}
 
 
 
 newUiPage
 # User input for selecting release type
 PS3=""$'\n'"What you want to do? "
-select RELEASETYPE in "Download macOS" "Make bootable Media"; do
+select RELEASETYPE in "Download macOS" "Make bootable Media" "Burn the target <Install macOS Catalina.app> to USB drive"; do
     case $RELEASETYPE in
         Download* ) downloadOS; break;;
-        Make* ) createinstallmedia; break;;
+        Make* ) createinstallapp; break;;
+        Burn* ) burndmg; break;;
     esac
 done
 
