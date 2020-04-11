@@ -35,10 +35,18 @@
 - Unstable: OpenCore `0.5.6`
 
 ## Pre-Installation
-#### Create bootable USB installer:
+#### Create bootable USB installer: (Option 1 with gitMacOS)
   - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
-  - Make bootable drive with [balenaEtcher](https://www.balena.io/etcher/).
   - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
+
+#### Create bootable USB installer: (Option 2 with macOS through my shell script)
+  - Running [macOS_downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader.sh) in Terminal. 
+  - Choose `1) Download macOS`, then download the version you prefer.
+  - Erase you USB drive with `Disk Utility`, and rename it to `Installer`.
+  - Running [macOS_downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader.sh) in Terminal again.
+  - Choose `2) Make bootable Media` .
+  - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
+
 #### DVMT
   - Enter `BIOS/Boot Sequence` in `BIOS`, add `Boot Entry` with `/EFI/CLOVER/tools/DVMT.efi` , then run the following commands
 ```
