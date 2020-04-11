@@ -35,7 +35,7 @@
 - Unstable: OpenCore `0.5.6`
 
 ## Pre-Installation
-#### Create bootable USB installer: (Option 1 with gitMacOS)
+#### Create bootable USB installer: (Option 1 with gibMacOS)
   - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
   - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
 
