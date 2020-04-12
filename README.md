@@ -25,7 +25,7 @@
   - Dual-Boot OS: macOS Catalina `10.15.4 (19E287)` & Ubuntu `18.04 LTS`
 
 ## Device Firmware
-- BIOS Version: `2.8.1`
+- BIOS Version: `2.8.1` - `2.13.0`
 - Thunderbolt 3 Version: `NVM 26`
 - `BCM94360CS2` Bluetooth Version: `v150 c9318`
 - `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
