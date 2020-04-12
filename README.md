@@ -152,9 +152,9 @@
       bash ./Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
 
- ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
+##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
 
- ### Running shell script in Terminal
+### Running shell script in Terminal
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
    -  Mount EFI partition with the command below
    ```BASH
@@ -189,49 +189,62 @@
       bash /Volumes/EFI/EFI/XPS.sh --pin-custom
    ```
 
-   ## Fix the buzz sound from headphone jack
-  ```
+## Fix the buzz sound from headphone jack
+```
     Open System Preferences/Sound/Input
 ```
 
-   ## SMBIOS
+## SMBIOS
    - Default SMBIOS settings of this repo is `MacbookPro15,2`.
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
 
-   ## CPUFriend
+## CPUFriend
    - The kexts and SSDT for `i7-8550U` has put [here](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/CPUFriend/i7-8550U), by working SMBIOS with `MacbookPro15,2`.
    - You have to put `CPUFriend.kext` & `CPUFrindDataProvider.kext` in both `/CLOVER/kexts/Other` and `Library/Extensions`, then [rebuild cache](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/Commands/rebuild_cache.sh).
    - Furthermore, you also have to put `SSDT-CPUF.aml` in `/EFI/CLOVER/ACPI/patched` for working as normal after awake.
 
-   ##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
+##### If you need to generate new CPUFriend kexts, refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands), and follow [here](https://github.com/acidanthera/CPUFriend)
 
-   ## Enable eGPU with Thunderbolt 3
+## Enable eGPU with Thunderbolt 3
    - You need to set `No Security` in TB3 BIOS option.
    - Stop `Clover` when it counts down during booting with pressing `Space`.
    - Connect the TB3 cable to XPS.
    - Turn on the eGPU.
    - Wait for few seconds, and press `Enter` to boot macOS.
 
-   ## Custom setting the delay between trackpad and keyboard
+## Custom setting the delay between trackpad and keyboard
    To do that you need to edit `Info.plist` in `VoodooI2CHID.kext`:
    - Open the `Info.plist` in the `VoodooI2CHID.kext` with any Text Editor(I use [Atom](https://atom.io/))
    - Finding the `QuietTimeAfterTyping`
    - Changing the `value` you prefer
    ##### I have preset the `value` to `0`
 
-   ## More Custom Settings
-   Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
+## More Custom Settings
+   - Refer to [Commands](https://github.com/the-Quert/macOS-Mojave-XPS9360/tree/master/Commands) for more customization.
 
-   ## HiDPI
+## HiDPI
    - Use [one-key-HiDPI](https://github.com/xzhih/one-key-hidpi)
 
-   ## Fix Blurry Fonts for Non-Retina Displays
+## Fix Blurry Fonts for Non-Retina Displays
    - Refer to [here](https://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/).
 
-   ## Optional Settings for CPU
-   ### CPU Undervolting
-   #### If having the same CPU as mine, you can do the undervolting settings below.
-   #### Warning!!! This may cause crash on your device, please be aware.
+## Fix AppleID issue on Catalina
+- If you encounter the problem with AppleID which cannot login and logout, this problem happened on both
+Hachintosh and Macintosh.
+- Fix this issue with the follwing commands...
+```BASH
+        sudo -v
+        killall -9 accountsd com.apple.iCloudHelper
+        defaults delete MobileMeAccounts
+        rm -rf ~/Library/Accounts
+        killall -9 accountsd com.apple.iCloudHelper
+        sudo reboot
+```
+
+## Optional Settings for CPU
+### CPU Undervolting
+#### If having the same CPU as mine, you can do the undervolting settings below.
+#### Warning!!! This may cause crash on your device, please be aware.
  Enter `BIOS/Boot Sequence` then add new Boot with `/EFI/CLOVER/tools/DVMT.efi`, run the following commands
  - Overclock, CFG, WDT & XTU enable
  ```BASH
@@ -246,12 +259,13 @@
         setup_var 0x85A 0x1E     // GPU: -30 mV
         setup_var 0x85C 0x01     // Negative voltage for 0x85A
 ```
-   ### Swapping SSD
+
+### Swapping SSD
   - You need an external NVMe reader to carry your new SSD as an external drive.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
 
-   ### TODO for upgrading macOS
+### TODO for upgrading macOS
   - Before upgrading, remember to backup with `Time Machine` through external drive.
   - [Create bootable USB drive](https://github.com/the-Quert/XPS-9360-macOS#create-bootable-usb-installer) with the version of macOS you prefer, and replace files under path `/EFI` in EFI partition with this repo.
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
@@ -259,8 +273,9 @@
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings from your backup through `Migration Assistant`.
------     
-   ## Dev-Notes
+-----  
+
+## Dev-Notes
    ### External Display Support
    - According to [ioregistryExplorer](https://github.com/vulgo/IORegistryExplorer), `Framebuffer@0 (Connector 0) ` is LVDS (Internal Display).
    - `Framebuffer@1 (Connector 1)`, `Framebuffer@2 (Connector 2)` are pointing to DisplayPort and HDMI respectively.
@@ -309,7 +324,7 @@
       `00009000` -> 9M for FHD, `00000003` -> 48M for QHD/UHD
    - All framebuffer values can be insert as `NUMBER` type, except `ig-platform-id`.
 
-  ### Boot Arguments Explanation
+### Boot Arguments Explanation
    - `darkwake=4`     
       The `darkwake` flag has to do with sleep. More information can be found in this [thread](https://www.tonymacx86.com/threads/important-darkwake-0-flag-can-break-auto-sleep-in-10-8-1.69714/#post-447117).
    - `igfxcflbklt=opcode`     
@@ -321,15 +336,15 @@
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
 
-  ### Shutdown Dialog
+### Shutdown Dialog
    - To activate `shutdown dialog`, it's necessary to  `Rename PBTN to PWRB`.
    - Although `SSDT-PWRB` is added, rename part is also needed in `LPCB`.
 
-   ## Contributors
-   #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
-   #### [Acidanthera](https://github.com/acidanthera)
-   #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
-   #### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
-   #### [gibMacOS](https://github.com/corpnewt/gibMacOS)
-   #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
-   #### Kexts version and developers are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
+## Contributors
+#### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
+#### [Acidanthera](https://github.com/acidanthera)
+#### [HiDPI](https://github.com/xzhih/one-key-hidpi)
+#### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
+#### [gibMacOS](https://github.com/corpnewt/gibMacOS)
+#### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
+#### Kexts version and developers are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
