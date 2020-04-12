@@ -144,10 +144,12 @@
   - After installation, other modification is no needed.
 
 #### Wireless card - DW1560 Installation (If not using this card, skip it.)
-  -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
+  -  Running following commands...
    ```BASH
       sudo diskutil mount /dev/disk0s1
-      bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
+      cd /Volumes/EFI/EFI
+      cp /DW1560/*.kext /CLOVER/kexts/Other
+      bash ./Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
 
  ##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
