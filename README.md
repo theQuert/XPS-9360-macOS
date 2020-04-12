@@ -58,6 +58,7 @@
 #### Format SSD with 4K sectors for `APFS` - Creating a Linux bootable drive is needed.
   - Choose any Linux distribution you like, I prefer [Ubuntu](https://www.ubuntu.com/download/desktop)
   - Formatting SSD to `4K sectors` with `nvme-cli`... for working better with `APFS`, see `Step 2` in this [guide](https://www.tonymacx86.com/threads/guide-sierra-on-hp-spectre-x360-native-kaby-lake-support.228302/).
+
 #### Get compatible with LITEON and PLEXTOR SSD - If you are not using with LITEON or PLEXTOR SSD, skip it.
   - To solve the problem, `config.plist` with patches is needed.
   - The `config.plist` with patches is under the path [config for LITEON](https://github.com/the-Quert/XPS-9360-macOS/tree/master/CLOVER/config_for_LITEON).
@@ -136,11 +137,13 @@
 
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
-  ### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
+#### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
   - To use this card, you need [BCM94360CS2](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K) and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
+  - Wireless card installtaion:     
+  See [Pic1](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Support%20Files/BCM94360CS2/1.JPG)and [pic2](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Support%20Files/BCM94360CS2/2.JPG).
   - After installation, other modification is no needed.
 
-  ### Wireless card - DW1560 Installation (If not using this card, skip it.)
+#### Wireless card - DW1560 Installation (If not using this card, skip it.)
   -  Copying kexts from path `/DW1560`  to `/EFI/CLOVER/kexts/Other ` is needed, and then running command to rebuild cache.
    ```BASH
       sudo diskutil mount /dev/disk0s1
