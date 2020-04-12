@@ -139,7 +139,7 @@
 
 #### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
   - To use this card, you need [BCM94360CS2](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K) and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
-  - Wireless card installtaion:     
+  - Wireless card installtion:     
   See [Pic1](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Support%20Files/BCM94360CS2/1.JPG)and [pic2](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Support%20Files/BCM94360CS2/2.JPG).
   - After installation, other modification is no needed.
 
