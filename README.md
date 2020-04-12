@@ -2,12 +2,12 @@
 #### This repo is currently compatible with macOS versions as below...
 |   macOS Catalina    |     macOS Mojave     |   macOS High Sierra   |
 |---------------------|----------------------|-----------------------|
-|   10.15.4  (19E266) |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
-|   10.15.3  (19D76)  |   10.14.5  (18F132)  |   10.13.6  (17G65)    |
-|   10.15.2  (19C57)  |   10.14.4  (18E226)  |                       |
-|   10.15.1  (19B88)  |   10.14.3  (18D42)   |                       |
-|   10.15    (19A583) |   10.14.2  (18C54)   |                       |
-|                     |   10.14.1  (18B75)   |                       |
+|   10.15.4  (19E287) |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
+|   10.15.4  (19E226) |   10.14.5  (18F132)  |   10.13.6  (17G65)    |
+|   10.15.3  (19D76)  |   10.14.4  (18E226)  |                       |
+|   10.15.2  (19C57)  |   10.14.3  (18D42)   |                       |
+|   10.15.1  (19B88)  |   10.14.2  (18C54)   |                       |
+|   10.15    (19A583) |   10.14.1  (18B75)   |                       |
 |                     |   10.14    (18A389)  |                       |
 
   - Device  : Dell XPS 13 9360    
@@ -22,7 +22,7 @@
   Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2).     
   Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K).
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - Dual-Boot OS: macOS Catalina `10.15.4 (19E226)` & Ubuntu `18.04 LTS`
+  - Dual-Boot OS: macOS Catalina `10.15.4 (19E287)` & Ubuntu `18.04 LTS`
 
 ## Device Firmware
 - BIOS Version: `2.8.1`
