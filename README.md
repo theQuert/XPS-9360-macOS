@@ -241,7 +241,7 @@ Hachintosh and Macintosh.
         sudo reboot
 ```
 
-## Optional Settings for CPU
+## Optional Settings
 ### CPU Undervolting
 #### If having the same CPU as mine, you can do the undervolting settings below.
 #### Warning!!! This may cause crash on your device, please be aware.
