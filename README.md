@@ -329,7 +329,7 @@ Hachintosh and Macintosh.
 
 |  USB 2 (XHC)  |  USB 3 (XHC)  | Thunderbolt 3 (TBTU) |        Dev Speed       |
 | ------------- | ------------- | -------------------- | ---------------------- |
-|      HS01     |      HS01     |                      |    12/480/5000 Mbps    |
+|      HS01     |      HS01     |                      |    12/480 Mbps         |
 |      HS02     |      HS02     |                      |    12/480 Mbps         |
 |               |      SS01     |                      |    5 Gbps              |
 |               |      SS02     |                      |    5 Gbps              |
