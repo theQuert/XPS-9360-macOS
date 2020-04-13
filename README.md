@@ -304,7 +304,7 @@ Hachintosh and Macintosh.
     The actual connection may be of any type (HDMI / DVI / DP), but for the digital audio to function the connector-type must explicitly be HDMI.
 ```       
   When HDMI plugged in, macOS would recognize as DP (busID: 0x05), not HDMI (busID: 0x04).     
-  - List of busID and ports recognized in macOS:
+  - Table of busID and ports are listed below:
 
 |   DP     |   HDMI   |    DVI    |
 | -------- | -------- | --------- |
@@ -323,6 +323,23 @@ Hachintosh and Macintosh.
    - `framebuffer-fbmem`
       `00009000` -> 9M for FHD, `00000003` -> 48M for QHD/UHD
    - All framebuffer values can be insert as `NUMBER` type, except `ig-platform-id`.
+
+### USB Ports Mapping
+  - Table of Type and Dev Speed are listed below:
+
+|  USB 2 (XHC)  |  USB 3 (XHC)  | Thunderbolt 3 (TBTU) |        Dev Speed       |
+| ------------- | ------------- | -------------------- | ---------------------- |
+|      HS01     |      HS01     |                      |    12/480/5000 Mbps    |
+|      HS02     |      HS02     |                      |    12/480 Mbps         |
+|               |      SS01     |                      |    5 Gbps              |
+|               |      SS02     |                      |    5 Gbps              |
+|               |               |       UB21           |    5 Gbps              |
+|               |               |       UB21           |    5 Gbps              |
+   - When USB3 injected, speed would run as 480Mbps/5Gbps.
+   - USB2 port: Wireless receiver would run as 12Mbps, other USB2 deivces run as 480Mbps.
+   - TB3 devices run as 5Gbps.
+   - `HS03` is occupied by `BCM9460CS2`/`DW1560`.
+   - `HS05` is occupied by `Intergrated Webcam HD`.
 
 ### Boot Arguments Explanation
    - `darkwake=4`     
