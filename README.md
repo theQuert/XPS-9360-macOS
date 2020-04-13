@@ -361,7 +361,6 @@ Hachintosh and Macintosh.
 #### [ComboJack](https://github.com/hackintosh-stuff/ComboJack)
 #### [Acidanthera](https://github.com/acidanthera)
 #### [HiDPI](https://github.com/xzhih/one-key-hidpi)
-#### [OpenCore-Configurator](https://github.com/notiflux/OpenCore-Configurator)
 #### [gibMacOS](https://github.com/corpnewt/gibMacOS)
 #### [Leo Neo Usfsg](https://www.facebook.com/yuting.lee.leo)
 #### Kexts version and developers are mentioned in [kexts_info.txt](https://github.com/the-Quert/macOS-Mojave-XPS9360/blob/master/kexts_info.txt)
