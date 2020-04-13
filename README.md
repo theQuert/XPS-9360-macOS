@@ -244,8 +244,8 @@ Hachintosh and Macintosh.
 ## Optional Settings
 ### CPU Undervolting
 #### If having the same CPU as mine, you can do the undervolting settings below.
-#### Warning!!! This may cause crash on your device, please be aware.
- Enter `BIOS/Boot Sequence` then add new Boot with `/EFI/CLOVER/tools/DVMT.efi`, run the following commands
+#### Warning!!! This may cause crash on your device, please be aware of that.
+ Enter `BIOS/Boot Sequence` , add new `Boot Option` with `/EFI/CLOVER/tools/DVMT.efi`, then run the following commands...
  - Overclock, CFG, WDT & XTU enable
  ```BASH
         setup_var 0x4DE 0x00
@@ -265,7 +265,7 @@ Hachintosh and Macintosh.
   - Under macOS environment, using `Disk Utility` format your new SSD as `APFS` format.
   - Using [Carbon Copy Cloner](https://bombich.com/download), to clone the whole System Disk to your new drive.
 
-### TODO for upgrading macOS
+### Upgrading macOS
   - Before upgrading, remember to backup with `Time Machine` through external drive.
   - [Create bootable USB drive](https://github.com/the-Quert/XPS-9360-macOS#create-bootable-usb-installer) with the version of macOS you prefer, and replace files under path `/EFI` in EFI partition with this repo.
   - After booting sucessfully, copy the whole repo to you EFI partition. (The commands to mount EFI partition is provided above.)
