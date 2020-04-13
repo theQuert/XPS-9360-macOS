@@ -138,7 +138,7 @@
   -  To activate Wifi and Bluetooth functions for `DW1560`, follow next step, or skip it.
 
 #### Wireless card - BCM94360CS2 Installation (If not using this card, skip it.)
-  - To use this card, you need [BCM94360CS2](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K) and [Custom Adapter](https://item.taobao.com/item.htm?ut_sk=1.XWsc4dMsS34DACEUylrXQaEj_21380790_1586529493675.Copy.1&id=597934983608&sourceType=item&price=35.96-49.56&suid=7553B292-D311-408D-85D2-302BC76C8C4F&un=e4e32345609137314e33a31e70d32733&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=wqJLbFc1MTlSR0xySsKi&cpp=1&shareurl=true&short_name=h.V6caJaX&sm=8accb9&fbclid=IwAR3aCmKWQWe-w_8d8E-2FpoPXMUdvvSH2vvoEDgG-37IuoLfsCjzrSq8E0k&app=chrome).
+  - To use this card, you need [BCM94360CS2](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K), [Custom Adapter](amazon.com/gp/product/B07JFYSNVL/ref=ppx_yo_dt_b_asin_title_o00_s00?ie=UTF8&psc=1), and [Antenna Extended Cable](https://www.amazon.com/HUYUN-BCM94360CSAX-BCM94360CS2-BCM94360CS2AX-BCM94352Z/dp/B07L3DGJ2D/ref=redir_mobile_desktop?ie=UTF8&ref=ppx_pt2_mob_b_prod_image).
   - Wireless card installation:     
   Instruction with images: [here](https://github.com/the-Quert/XPS-9360-macOS/issues/16#issuecomment-612562283).
   - After installation, other modification is no needed.
