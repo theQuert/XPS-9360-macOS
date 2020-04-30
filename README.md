@@ -18,9 +18,10 @@
   - SSD     : [WD Black SN750 (WDS100T3X0C) 1TB NVMe PCIe SSD](https://www.amazon.com/BLACK-SN750-500GB-Internal-Gaming/dp/B07MH2P5ZD)                                     
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Camera  : UVC Camera VendorID_3034 ProductID_22155
-  - Wireless Card (2 options):     
+  - Wireless Card (3 options):     
+  Swapped the original `Killer 1535` with [`BCM94360NG`](https://www.ebay.com/itm/Broadcom-BCM94360NG-WiFi-Card-better-than-DW1560-BT4-0-Adapter-802-11ac-1200Mbps-/283783627652)(Recommend).     
+  Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K)(Recommend).     
   Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2).     
-  Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K).
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
   - Dual-Boot OS: macOS Catalina `10.15.4 (19E287)` & Ubuntu `18.04 LTS`
 
@@ -142,6 +143,9 @@
   - Wireless card installation:     
   Instruction with images: [here](https://github.com/the-Quert/XPS-9360-macOS/issues/16#issuecomment-612562283).
   - After installation, other modification is no needed.
+
+#### Wireless card - BCM94360NG (If not using this card, skip it.)
+  - Install directly, kexts and adapter are not needed.
 
 #### Wireless card - DW1560 Installation (If not using this card, skip it.)
   -  Running following commands...
