@@ -245,6 +245,13 @@ Hachintosh and Macintosh.
         sudo reboot
 ```
 
+## Fix the AirPods choppy/unreliable when connected to macOS
+- Open `System Preferences` > `Sound` > `Input`
+- Change `Sound Input` from `Airpods` to `Internal Microphone`
+- Possible explanation:     
+Since `BCM94360CS2`/`DW1560`/`BCM94360NG` are running with `Bluetooth 4.0`, which has too low bandwidth to handle both input/output at a high quality.     
+Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio output is working as normal.
+
 ## Optional Settings
 ### CPU Undervolting
 #### If having the same CPU as mine, you can do the undervolting settings below.
