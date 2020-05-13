@@ -33,7 +33,7 @@
 
 ## Bootloader Firmware
 - Default bootloader: Clover `r5103`
-- Unstable: OpenCore `0.5.6`
+- Beta: OpenCore `0.5.7` More about [Migration](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore).
 
 ## Pre-Installation
 #### Create bootable USB installer: (Option 1 with gibMacOS)
@@ -156,7 +156,7 @@
       bash ./Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
 
-##### If booting with [OpenCore Configurator](https://mackie100projects.altervista.org/opencore-configurator/) rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
+##### If booting with `OpenCore` rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
 
 ### Running shell script in Terminal
    -  After mounting the EFI partition with Clover Configurator or running the following commands below in terminal..
@@ -284,6 +284,16 @@ Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio outpu
   - Refer to [shell script](https://github.com/the-Quert/XPS-9360-macOS#running-shell-script-in-terminal) part, and follow the commands.
   - Follow the guide to set your [CPUFriend](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#cpufriend).
   - Recovery you data and settings from your backup through `Migration Assistant`.
+
+### Migrate bootloader from Clover to OpenCore
+  - Copy the OC folder to EFI partition.
+  - Clear caches of `Clover`, and compile your own DSDTs by running the followig commands...
+  ```
+        bash /Volumes/EFI/EFI/OC/trans.sh
+        bash /Volumes/EFI/EFI/OC/XPS_OC.sh --compile-dsdt
+  ```
+  - Enter `BIOS/Boot Sequence` in `BIOS`, add `Boot Entry` with path `/EFI/OC/OpenCore.efi`
+  - Reboot and enjoy the flight, and feel free to file issues if encounter any problems.
 -----  
 
 ## Dev-Notes
