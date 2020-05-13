@@ -33,7 +33,7 @@
 
 ## Bootloader Firmware
 - Default bootloader: Clover `r5103`
-- Beta: OpenCore `0.5.7` More about [Migration](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore).
+- Beta: OpenCore `0.5.7` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
 
 ## Pre-Installation
 #### Create bootable USB installer: (Option 1 with gibMacOS)
