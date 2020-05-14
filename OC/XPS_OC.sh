@@ -29,15 +29,15 @@ compile_dsdt()
 
 	for f in ./DSDT/*.dsl
 	do
-		echo "${BLUE}$(basename $f)${OFF}: Compiling to ./CLOVER/ACPI/patched"
-		../tools/iasl -vr -w1 -ve -p ./ACPI/$(basename -s .dsl $f).aml $f
+		echo "${BLUE}$(basename $f)${OFF}: Compiling to ./ACPI"
+		./s_tools/iasl -vr -w1 -ve -p ./ACPI/$(basename -s .dsl $f).aml $f
 	done
 }
 
 combo_jack()
 {
 	echo "${GREEN}[ComboJack]${OFF}: Installing ComboJack for ${BOLD}ALC256${OFF}"
-	./ComboJack/install.sh
+	../ComboJack/install.sh
 }
 
 enable_trim()
