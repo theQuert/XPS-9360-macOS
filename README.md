@@ -234,7 +234,7 @@
 
 ## Fix AppleID issue on macOS Catalina
 - If you encounter the problem with AppleID which cannot login and logout, this problem happened on both
-Hachintosh and Macintosh.
+Hackintosh and Macintosh.
 - Fix this issue with the follwing commands...
 ```BASH
         sudo -v
