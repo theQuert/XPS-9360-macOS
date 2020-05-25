@@ -112,7 +112,7 @@ case "$1" in
 		RETVAL=0
 		;;
 	*)
-		echo "${BOLD}macOS on XPS 13 9360${OFF} - Catalina 10.15.3 (19D76)"
+		echo "${BOLD}macOS on XPS 13 9360${OFF} - Catalina 10.15.4 (19E287)"
 		echo "https://github.com/the-Quert/XPS-9360-macOS"
 		echo
 		echo "\t${BOLD}--update${OFF}: Update to latest git version (including externals)"
