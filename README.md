@@ -2,7 +2,7 @@
 #### This repo is currently compatible with macOS versions as below...
 |   macOS Catalina    |     macOS Mojave     |   macOS High Sierra   |
 |---------------------|----------------------|-----------------------|
-|   10.15.5  (19F96) |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
+|   10.15.5  (19F101) |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
 |   10.15.4  (19E287) |   10.14.5  (18F132)  |   10.13.6  (17G65)    |
 |   10.15.3  (19D76)  |   10.14.4  (18E226)  |                       |
 |   10.15.2  (19C57)  |   10.14.3  (18D42)   |                       |
@@ -19,8 +19,8 @@
   - Display : FHD (1920x1080) on XPS | QHD (2560x1440) on external display (CHIMEI 27P10Q)
   - Camera  : UVC Camera VendorID_3034 ProductID_22155
   - Wireless Card (3 options):     
-  Swapped the original `Killer 1535` with [`BCM94360NG`](https://www.ebay.com/itm/Broadcom-BCM94360NG-WiFi-Card-better-than-DW1560-BT4-0-Adapter-802-11ac-1200Mbps-/283783627652)(Recommend).     
-  Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K)(Recommend).     
+  Swapped the original `Killer 1535` with [`BCM94360NG`](https://www.ebay.com/itm/Broadcom-BCM94360NG-WiFi-Card-better-than-DW1560-BT4-0-Adapter-802-11ac-1200Mbps-/283783627652).     
+  Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K).     
   Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2).     
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
   - Dual-Boot OS: macOS Catalina `10.15.4 (19E287)` & Ubuntu `20.04 LTS`
@@ -32,7 +32,7 @@
 - `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
 
 ## Bootloader Firmware
-- Default bootloader: Clover `r5103`
+- Default bootloader: Clover `r5118`
 - Beta: OpenCore `0.5.8` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
 
 ## Pre-Installation
