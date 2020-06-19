@@ -377,7 +377,7 @@ Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio outpu
 ### XCPM and HWP
    - Verify working `XCPM` configuration by typing the commands below
    ```
-      sysctl machdep.xcpm.model
+      sysctl machdep.xcpm.mode
       // If returns '1', which means the XCPM is active.
    ```
    - Verify if the `X86PlatformPlugin.kext` is loaded
