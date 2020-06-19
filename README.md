@@ -374,7 +374,7 @@ Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio outpu
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
       
-#### XCPM and HWP
+### XCPM and HWP
    - Verify working `XCPM` configuration by typing the commands below
    ```
       sysctl machdep.xcpm.model
