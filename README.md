@@ -373,6 +373,17 @@ Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio outpu
       Enables 80MHz wide channels on the 5GHz spectrum. For Broadcom WiFi card.
    - `agdpmod=vit9696`     
       Disable check for `board-id`.
+      
+#### XCPM and HWP
+   - Verify working `XCPM` configuration by typing the commands below
+   ```
+      sysctl machdep.xcpm.model
+      // If returns '1', which means the XCPM is active.
+   ```
+   - Verify if the `X86PlatformPlugin.kext` is loaded
+   ```
+      kextstat|grep -y x86plat
+   ```
 
 ### Shutdown Dialog
    - To activate `shutdown dialog`, it's necessary to  `Rename PBTN to PWRB`.
