@@ -231,6 +231,8 @@
 
 ## Fix Blurry Fonts for Non-Retina Displays
    - Refer to [here](https://osxdaily.com/2018/09/26/fix-blurry-thin-fonts-text-macos-mojave/).
+##### If booting with `Clover`, blurry font is required to fix.
+##### If booting with `OpenCore`, font is clear as Retina.
 
 ## Fix AppleID issue on macOS Catalina
 - If you encounter the problem with AppleID which cannot login and logout, this problem happened on both
