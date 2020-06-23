@@ -9,7 +9,7 @@
 |   10.15.1  (19B88)  |   10.14.2  (18C54)   |                       |
 |   10.15    (19A583) |   10.14.1  (18B75)   |                       |
 |                     |   10.14    (18A389)  |                       |
-#### Prepare for macOS Big Sur 11.0 is on the way
+#### Preparation for macOS Big Sur 11.0 is on the way
   - Device  : Dell XPS 13 9360    
   - CPU     : Intel i7-8550U                                                           
   - GPU     : Intel UHD 620 Kaby Lake                                                         
