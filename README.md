@@ -9,7 +9,7 @@
 |   10.15.1  (19B88)  |   10.14.2  (18C54)   |                       |
 |   10.15    (19A583) |   10.14.1  (18B75)   |                       |
 |                     |   10.14    (18A389)  |                       |
-
+#### Prepare for macOS Big Sur 11.0 is on the way
   - Device  : Dell XPS 13 9360    
   - CPU     : Intel i7-8550U                                                           
   - GPU     : Intel UHD 620 Kaby Lake                                                         
@@ -378,12 +378,12 @@ Therefore, changing `Sound Input` to `Internal Microphone` to ensure audio outpu
       
 ### XCPM and HWP
    - Verify working `XCPM` configuration by typing the commands below
-   ```
+   ```BASH
       sysctl machdep.xcpm.mode
       // If returns '1', which means the XCPM is active.
    ```
    - Verify if the `X86PlatformPlugin.kext` is loaded
-   ```
+   ```BASH
       kextstat|grep -y x86plat
    ```
 
