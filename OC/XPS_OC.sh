@@ -37,13 +37,15 @@ compile_dsdt()
 combo_jack()
 {
 	echo "${GREEN}[ComboJack]${OFF}: Installing ComboJack for ${BOLD}ALC256${OFF}"
-	../ComboJack/install.sh
+  chmod +x ../ComboJack/install.sh
+  ../ComboJack/install.sh
 }
 
 enable_trim()
 {
 	echo "${GREEN}[TRIM]${OFF}: Enabling ${BOLD}TRIM${OFF} support for 3rd party SSD"
 	sudo trimforce enable
+  echo 'Trim is enabled.'
 }
 
 enable_3rdparty()
@@ -58,6 +60,7 @@ rebuild_cache()
 	sudo chmod -R 755 /Library/Extensions
 	sudo chown -R root:wheel /Library/Extensions
 	sudo kextcache -i /
+  echo 'Done'
 }
 better_sleep()
 {
@@ -68,6 +71,7 @@ better_sleep()
 	sudo rm /private/var/vm/sleepimage
 	sudo touch /private/var/vm/sleepimage
 	sudo chflags uchg /private/var/vm/sleepimage
+  echo 'Sleep is fixed'
 }
 pin_custom()
 {
@@ -126,10 +130,8 @@ case "$1" in
 		echo
 		echo "Credits:"
 		echo "${BLUE}ComboJack${OFF}: https://github.com/hackintosh-stuff/ComboJack"
-		echo "${BLUE}CPUFriend${OFF}: https://github.com/acidanthera/CPUFriend"
 		echo "${BLUE}HiDPI${OFF}: https://github.com/xzhih/one-key-hidpi"
-		echo "${BLUE}OpenCore-Configurator${OFF}: https://github.com/notiflux/OpenCore-Configurator"
-		echo "${BLUE}daliansky${OFF}: https://github.com/daliansky"
+		echo "${BLUE}OpenCore${OFF}: https://github.com/acidanthera"
 		echo "${BLUE}Leo Neo Usfsg${OFF}: https://www.facebook.com/yuting.lee.leo"
 		echo
 		;;
