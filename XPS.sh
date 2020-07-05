@@ -130,7 +130,7 @@ case "$1" in
 		echo "Credits:"
 		echo "${BLUE}ComboJack${OFF}: https://github.com/hackintosh-stuff/ComboJack"
 		echo "${BLUE}HiDPI${OFF}: https://github.com/xzhih/one-key-hidpi"
-		echo "${BLUE}OpenCore${OFF}: https://github.com/acidanthera
+		echo "${BLUE}OpenCore${OFF}: https://github.com/acidanthera"
 		echo "${BLUE}Leo Neo Usfsg${OFF}: https://www.facebook.com/yuting.lee.leo"
 		echo
 		;;
