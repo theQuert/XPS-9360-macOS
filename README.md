@@ -152,8 +152,8 @@
    ```BASH
       sudo diskutil mount /dev/disk0s1
       cd /Volumes/EFI/EFI
-      cp /DW1560/*.kext /CLOVER/kexts/Other
-      bash ./Volumes/EFI/EFI/XPS.sh --rebuild-cache
+      cp -R DW1560/*.kext CLOVER/kexts/Other
+      bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
 
 ##### If booting with `OpenCore` rather than [Clover Configurator](https://www.macupdate.com/app/mac/61090/clover-configurator), copy the three kexts above to `/EFI/OC/Kexts`, and then running previous command to rebuild cache.
