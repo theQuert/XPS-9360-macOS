@@ -29,7 +29,7 @@
 - BIOS Version: `2.8.1` - `2.13.0`
 - Thunderbolt 3 Version: `NVM 26`
 - `BCM94360CS2` Bluetooth Version: `v150 c9318`
-- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.2`
+- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.4`
 
 ## Bootloader Firmware
 - Default bootloader: Clover `r5118`
