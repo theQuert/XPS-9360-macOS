@@ -32,9 +32,8 @@
 - `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.4`
 
 ## Bootloader Firmware
-- Default bootloader: Clover `r5118`
-- Beta: OpenCore `0.6.0` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
-
+- Default bootloader: OpenCore `0.6.0` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
+- No longer maintained: Clover `r5118`
 ## Pre-Installation
 #### Create bootable USB installer: (Option 1 with gibMacOS)
   - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
