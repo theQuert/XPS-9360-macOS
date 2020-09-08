@@ -9,7 +9,6 @@
 	rm -rf "/etc/rc.boot.d"
 	rm -rf "/etc/rc.shutdown.d"
 	launchctl unload '/Library/LaunchDaemons/com.slice.CloverDaemonNew.plist'
-	rm -rf '/Library/LaunchDaemons/com.slice.CloverDaemonNew.plist'
 	rm -rf '/Library/Application Support/Clover/CloverDaemonNew'
 	rm -rf '/Library/Application Support/Clover/CloverLogOut'
 	rm -rf '/Library/Application Support/Clover/CloverWrapper.sh'
