@@ -1,30 +1,30 @@
-- AirportBrcmFixup (2.0.8)
+- AirportBrcmFixup (2.1.1)
   https://github.com/acidanthera/AirportBrcmFixup
   An open source kernel extension providing a set of patches required for non-native Airport Broadcom Wi-Fi cards.
 
-- AppleALC (1.5.1)
+- AppleALC (1.5.4)
   https://github.com/vit9696/AppleALC
   An open source kernel extension enabling native macOS HD audio for not officially supported codecs without any filesystem modifications.
 
-- BrcmPatchRAM (2.5.4)
+- BrcmPatchRAM (2.5.5)
   https://github.com/acidanthera/BrcmPatchRAM
   Support for firmware uploads into Broadcom PatchRAM USB devices
 
 - BT4LEContiunityFixup.kext (1.1.5)
   https://github.com/acidanthera/BT4LEContinuityFixup
 
-- CPUFriend.kext (1.2.1)
+- CPUFriend.kext (1.2.2)
   https://github.com/PMheart/CPUFriend
   A Lilu plug-in for dynamic power management data injection
 
-- Lilu.kext (1.4.6) 
+- Lilu.kext (1.4.9) 
   https://github.com/acidanthera/Lilu
   An open source kernel extension bringing a platform for arbitrary kext, library, and program patching throughout the system for macOS.
 
 - NoTouchID.kext (1.0.3)
   https://github.com/al3xtjames/NoTouchID
 
-- NVMeFix.kext (1.0.3)
+- NVMeFix.kext (1.0.4)
   https://github.com/acidanthera/NVMeFix
 
 - USBInjectall.kext (0.7.5)
@@ -35,20 +35,20 @@
   https://www.tonymacx86.com/threads/guide-dell-xps-13-9350-macos-10-12-1.204730/page-35#post-1386360
   Injector to allow webcam to appear as Apple iSight Webcam
 
-- VirtualSMC.kext (1.1.5)
+- VirtualSMC.kext (1.1.8)
   https://github.com/acidanthera/VirtualSMC
   Advanced Apple SMC emulator in the kernel
 
-- VoodooI2C.kext (2.3)
+- VoodooI2C.kext (2.5.2)
   VoodooI2CHID.kext
   https://github.com/alexandred/VoodooI2C
   I²C (Inter-Integrated Circuit) driver, for Synaptics TouchPad
 
-- VoodooPS2Controller.kext (2.1.6)
+- VoodooPS2Controller.kext (2.1.8)
   https://github.com/RehabMan/OS-X-Voodoo-PS2-Controller
   Updated Voodoo PS/2 Controller, improved Keyboard
 
-- WhateverGreen.kext (1.4.1)
+- WhateverGreen.kext (1.4.4)
   https://github.com/acidanthera/WhateverGreen
   Lilu plugin providing patches to select GPUs on macOS.
 
