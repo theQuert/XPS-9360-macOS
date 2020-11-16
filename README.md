@@ -29,10 +29,10 @@
 - BIOS Version: `2.8.1` - `2.13.0`
 - Thunderbolt 3 Version: `NVM 26`
 - `BCM94360CS2` Bluetooth Version: `v150 c9318`
-- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.4`
+- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.5`
 
 ## Bootloader Firmware
-- Default bootloader: OpenCore `0.6.0` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
+- Default bootloader: OpenCore `0.6.3` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
 - No longer maintained: Clover `r5118`
 ## Pre-Installation
 #### Create bootable USB installer: (Option 1 with gibMacOS)
