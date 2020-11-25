@@ -197,7 +197,7 @@
     Open System Preferences/Sound/Input
 ```
 
-## Fix the "Webcam Black Screen" problem:
+## Fix the "Webcam Black Screen" problem
 ```
     sudo killall VDCAssistant
 ```
