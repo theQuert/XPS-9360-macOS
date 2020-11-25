@@ -197,6 +197,10 @@
     Open System Preferences/Sound/Input
 ```
 
+## Fix the "Webcam Black Screen" problem:
+```
+    sudo killall VDCAssistant
+```
 ## SMBIOS
    - Default SMBIOS settings of this repo is `MacbookPro15,2`.
    - `Serial Number` and `SmUUID` are erased beforehand, you need to generaete on your own.
