@@ -35,17 +35,19 @@
 - Default bootloader: OpenCore `0.6.3` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
 - No longer maintained: Clover `r5118`
 ## Pre-Installation
-#### Create bootable USB installer: (Option 1 with gibMacOS)
+#### Create bootable USB installer: (With gibMacOS)
   - Running [gibMacOS](https://github.com/corpnewt/gibMacOS), then download the version you prefer (gibMacOS script is allowed to download macOS images on all OS platforms with Python installed).
-  - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
-
-#### Create bootable USB installer: (Option 2 with macOS through my shell script)
-  - Running [macOS_downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader.sh) in Terminal. 
-  - Choose `1) Download macOS`, then download the version you prefer.
-  - Erase you USB drive with `Disk Utility`, and rename it to `Installer`.
-  - Running [macOS_downloader](https://github.com/the-Quert/XPS-9360-macOS/blob/master/Commands/macOS_downloader.sh) in Terminal again.
-  - Choose `2) Make bootable Media` .
-  - Copy the whole repository to EFI partition under path `/EFI` (You have to create an empty EFI directory, and put the whole repo in it).
+  - Finding and running `InstallAssistant.pkg` under the path `macOS Downloads`.
+  - Erase your USB drive with `Disk Utility`(Name: "USB"; Format: "Mac OS Extended (Journaled)"; Scheme: "GUID")
+  - Running the following commands to make bootable USB with `Install macOS Big Sur.app`:
+  ```
+    sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/USB
+  ```
+  - Running the commands to mount the EFI partion of USB:
+  ```
+    sudo diskutil mount /dev/disk3s1
+  ```
+  - Copy the whole repository to EFI partition to the path mentioned above. (You have to create an empty EFI directory, and put the whole repo in it).
 
 #### DVMT
   - Enter `BIOS/Boot Sequence` in `BIOS`, add `Boot Entry` with `/EFI/CLOVER/tools/DVMT.efi` , then run the following commands
