@@ -1,0 +1,2 @@
+sudo xattr -rd com.apple.quarantine /Applications/xxxxxx.app
+sudo xattr -rd com.apple.quarantine
