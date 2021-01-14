@@ -201,7 +201,7 @@
 
 ## Fix the "Webcam Black Screen" problem
 ```
-    sudo killall VDCAssistant
+    Unsolved
 ```
 ## SMBIOS
    - Default SMBIOS settings of this repo is `MacbookPro15,2`.
