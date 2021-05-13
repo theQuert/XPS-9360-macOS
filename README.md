@@ -2,12 +2,12 @@
 #### This repo is currently compatible with macOS versions as below...
 |  macOS Big Sur   |   macOS Catalina     |     macOS Mojave     |   macOS High Sierra   |
 |------------------|----------------------|----------------------|-----------------------|
-|  11.2.1 (20D74)  |   10.15.7  (19H15)   |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
-|  11.2   (20D64)  |   10.15.6  (19G2021) |   10.14.5  (18F132)  |   10.13.6  (17G65)    |
-|  11.1   (20C69)  |   10.15.5  (19F2200) |   10.14.4  (18E226)  |                       |
-|  11.0.1 (20B50)  |   10.15.4  (19E287)  |   10.14.3  (18D42)   |                       |
-|  11.0   (20A2411)|   10.15.3  (19D76)   |   10.14.2  (18C54)   |                       |
-|                  |   10.15.2  (19C57)   |   10.14.1  (18B75)   |                       |
+|  11.2.3 (20D91)  |   10.15.7  (19H15)   |   10.14.6  (18G87)   |   10.13.6  (17G2112)  |
+|  11.2.1 (20D74)  |   10.15.6  (19G2021) |   10.14.5  (18F132)  |   10.13.6  (17G65)    |
+|  11.2   (20D64)  |   10.15.5  (19F2200) |   10.14.4  (18E226)  |                       |
+|  11.1   (20C69)  |   10.15.4  (19E287)  |   10.14.3  (18D42)   |                       |
+|  11.0.1 (20B50)  |   10.15.3  (19D76)   |   10.14.2  (18C54)   |                       |
+|  11.0   (20A2411)|   10.15.2  (19C57)   |   10.14.1  (18B75)   |                       |
 |                  |   10.15.1  (19B88)   |   10.14    (18A389)  |                       |
 |                  |   10.15    (19A583)  |                      |                       |
   - Device  : Dell XPS 13 9360    
@@ -32,7 +32,7 @@
 - `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.5`
 
 ## Bootloader Firmware
-- Default bootloader: OpenCore `0.6.3` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
+- Default bootloader: OpenCore `0.6.7` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
 - No longer maintained: Clover `r5118`
 ## Pre-Installation
 #### Create bootable USB installer: (With gibMacOS)
