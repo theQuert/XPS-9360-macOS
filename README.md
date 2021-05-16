@@ -23,13 +23,13 @@
   Swapped the original `Killer 1535` with [`BCM94360CS2`](https://www.amazon.com/Broadcom-Bcm94360cs2-Bcm94360cs2ax-Bluetooth-Wireless/dp/B00PDNDQ0K).     
   Swapped the original `Killer 1535` with [`DW1560`](https://www.amazon.com/Broadcom-BCM94352Z-802-11a-Bluetooth-867Mbps/dp/B0156DVQ7G/ref=sr_1_2?keywords=dw1560&qid=1558493816&s=electronics&sr=1-2).     
   - Thunderbolt 3 Dongle : [Dell DA300](https://www.amazon.com/Dell-DA300-USB-C-Mobile-Adapter/dp/B079MDQDP4)
-  - Dual-Boot OS: macOS Catalina `10.15.4 (19E287)` & Ubuntu `20.04 LTS`
+  - Dual-Boot OS: macOS Catalina `11.2.3 (20D91)` & Ubuntu `20.04 LTS`
 
 ## Device Firmware
 - BIOS Version: `2.8.1` - `2.13.0`
 - Thunderbolt 3 Version: `NVM 26`
 - `BCM94360CS2` Bluetooth Version: `v150 c9318`
-- `DW1560` Bluetooth Version: `v14 c5668` with BrcmPatch `v2.5.5`
+- `DW1560` Bluetooth Version: `v16.0 (1657)` with BrcmPatch `v2.5.8`
 
 ## Bootloader Firmware
 - Default bootloader: OpenCore `0.6.7` See more [info](https://github.com/the-Quert/XPS-9360-macOS/blob/master/README.md#Migrate-bootloader-from-Clover-to-OpenCore) about migration.
@@ -167,31 +167,31 @@
    ```
    -  Running `XPS.sh` to compile DSDT
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --compile-dsdt
+      ./Volumes/EFI/EFI/XPS.sh --compile-dsdt
    ```
    -  Running `XPS.sh` to Allow 3rd party Applications to install on macOS
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --enable-3rdparty
+      ./Volumes/EFI/EFI/XPS.sh --enable-3rdparty
    ```
    -  Running `XPS.sh` to fix Headphone Jack
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --combo-jack
+      ./Volumes/EFI/EFI/XPS.sh --combo-jack
    ```
    -  Running `XPS.sh` to enable TRIM support on SSD
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --enable-trim
+      ./Volumes/EFI/EFI/XPS.sh --enable-trim
    ```
    -  Running `XPS.sh` to rebuild cache
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --rebuild-cache
+      ./Volumes/EFI/EFI/XPS.sh --rebuild-cache
    ```
    -  Running `XPS.sh` to enable better sleep support
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --better-sleep
+      ./Volumes/EFI/EFI/XPS.sh --better-sleep
    ```
    -  Running `XPS.sh` to Disable 4-Digit Pin Required on macOS
    ```BASH
-      bash /Volumes/EFI/EFI/XPS.sh --pin-custom
+      ./Volumes/EFI/EFI/XPS.sh --pin-custom
    ```
 
 ## Fix the buzz sound from headphone jack
