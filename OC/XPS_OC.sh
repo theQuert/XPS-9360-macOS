@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Bold / Non-bold
 BOLD="\033[1m"
